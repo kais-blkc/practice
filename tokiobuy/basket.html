@@ -10,6 +10,7 @@
 <body>
   <div class="black"></div>
   <header>
+    <!-- HEADER ============================-->
     <div class="container"><a href="#"><img class="logo" src="img/logo.png"/></a>
       <div class="header-nav">
         <nav><a class="header-link" href="index.html">Главная</a><a class="header-link" href="contacts.html">Контакты</a><a class="header-link" href="basket.html">Корзина</a>
@@ -28,11 +29,14 @@
     </div>
   </header>
   <main>
+    <!-- BASKET SECTION =========================================-->
     <section class="basket">
       <div class="container">
-        <h2>Корзина</h2>
+        <h1>Корзина</h1>
         <div class="order-sheet">
+          <!-- PRODUCTS ===============-->
           <div class="order-sheet_list">
+            <!-- ORDER SHEET ITEM =========================================-->
             <div class="order-sheet_item"><img class="item_img" src="img/product/img-1.jpg" alt="No img"/>
               <div class="item_desc">
                 <div class="title">
@@ -44,7 +48,7 @@
               <div class="item_number">
                 <div class="counts">
                   <button class="minus-btn" type="button"></button>
-                  <div class="count">0</div>
+                  <div class="count">1</div>
                   <button class="plus-btn" type="button"></button>
                 </div>
                 <div class="price">495<span class="rub">руб</span></div>
@@ -53,6 +57,7 @@
                 <button class="item_delete" type="button"></button>
               </div>
             </div>
+            <!-- ORDER SHEET ITEM =========================================-->
             <div class="order-sheet_item"><img class="item_img" src="img/product/img-6.jpg" alt="No img"/>
               <div class="item_desc">
                 <div class="title">
@@ -64,7 +69,7 @@
               <div class="item_number">
                 <div class="counts">
                   <button class="minus-btn" type="button"></button>
-                  <div class="count">0</div>
+                  <div class="count">1</div>
                   <button class="plus-btn" type="button"></button>
                 </div>
                 <div class="price">450<span class="rub">руб</span></div>
@@ -73,6 +78,7 @@
                 <button class="item_delete" type="button"></button>
               </div>
             </div>
+            <!-- ORDER SHEET ITEM =========================================-->
             <div class="order-sheet_item"><img class="item_img" src="img/product/img-7.jpg" alt="No img"/>
               <div class="item_desc">
                 <div class="title">
@@ -84,7 +90,7 @@
               <div class="item_number">
                 <div class="counts">
                   <button class="minus-btn" type="button"></button>
-                  <div class="count">0</div>
+                  <div class="count">1</div>
                   <button class="plus-btn" type="button"></button>
                 </div>
                 <div class="price">380<span class="rub">руб</span></div>
@@ -94,13 +100,84 @@
               </div>
             </div>
           </div>
-          <div class="order-sheet_footer"></div>
-          <div class="order-sheet_final"></div>
+          <!-- PROMO AND CLEAN ===================-->
+          <div class="order-sheet_promo_clean">
+            <form class="promo">
+              <input class="promo-input" type="text" name="promo-input" id="promo-input" placeholder="Промокод"/>
+              <button class="promo-button" type="button">Использовать</button>
+            </form>
+            <button class="clean_basket" type="button">Очистить корзину</button>
+          </div>
+          <!-- SUM ======================-->
+          <div class="order-sheet_sum-block">
+            <p class="sum-basket">Сумма вашей корзины</p>
+            <div class="delivery">
+              <div class="dlvry"> <img src="img/delivery.png" alt=""/>Доставка:</div>
+              <p class="sum-price">100<span class="sum-rub">&#8381;</span></p>
+            </div>
+            <div class="sum">
+              <p>Сумма заказа:</p>
+              <p class="sum-price">1425<span class="sum-rub">&#8381;</span></p>
+            </div>
+          </div>
+          <!-- NUMBER OF PEOPLE ======================-->
+          <div class="order-sheet_num">
+            <h2>Количество персон</h2>
+            <div class="num_desc">
+              <p>Исходя из количества участников вашей трапезы, мы бесплатно укомплектуем Ваш заказ аксессуарами.</p>
+              <div class="counts">
+                <button class="minus-btn" type="button"></button>
+                <div class="count">1</div>
+                <button class="plus-btn" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <!-- COMMENT ==================-->
+          <div class="order-sheet_comment">
+            <h2>Комментарий к заказу</h2>
+            <form class="comment">
+              <textarea name="comment" placeholder="Комментарий..."></textarea>
+            </form>
+          </div>
+          <!-- PAYMENT METHOD-->
+          <div class="order-sheet_payment-method">
+            <h2>Способ оплаты</h2>
+            <form class="methods">
+              <div class="method courier">
+                <input class="custom-radio" type="radio" name="payment-method" id="method_courier" value="1" checked="checked"/>
+                <label for="method_courier">Наличными курьеру</label>
+              </div>
+              <div class="method courier-online">
+                <input class="custom-radio" type="radio" name="payment-method" id="method_courier-online" value="2"/>
+                <label for="method_courier-online">Оплата картой при получении</label>
+              </div>
+              <div class="method online">
+                <input class="custom-radio" type="radio" name="payment-method" id="method_online" value="3"/>
+                <label for="method_online">Оплатить онлайн</label>
+              </div>
+            </form>
+          </div>
+          <!-- PERSON DETAILS-->
+          <div class="order-sheet_person-details">
+            <h2>Контактные данные</h2>
+            <form class="details">
+              <div class="name">
+                <label for="name">Имя</label>
+                <input class="detail" type="text" name="name" id="name"/>
+              </div>
+              <div class="tel">
+                <label for="tel">Номер телефона</label>
+                <input class="detail" type="number" name="tel" id="tel"/>
+              </div>
+              <button class="btn-detail" type="button">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
+    <!-- FOOTER =======================================-->
     <div class="container">
       <p class="copyright">&copy;copyright 2020</p>
     </div>

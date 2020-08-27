@@ -36,15 +36,17 @@ addEventListener('DOMContentLoaded', () => {
 
 	function setHeightMain() {
 		if (winHeight > fullHeight) {
-			main.style.height = winHeight - (header.offsetHeight + footer.offsetHeight) + 'px';
-		} 
+			main.style.height = winHeight - (header.offsetHeight + footer.offsetHeight) + 50 + 'px';
+		}
+
+		// console.log('fullH: ' + fullHeight);
+		// console.log('winH: ' + winHeight);
 	}
 
 	setHeightMain();
 
-	window.addEventListener('resize', () => {
-		setHeightMain();
-		// console.log(fullHeight)
-		// console.log(winHeight)
-	});
+
+	// window.addEventListener('resize', () => {
+	// 	setHeightMain();
+	// });
 });
