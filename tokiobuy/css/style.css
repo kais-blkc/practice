@@ -142,6 +142,15 @@ header .container {
   justify-content: space-between;
 }
 
+header .basket-logo {
+  display: block;
+}
+
+header .basket-logo i {
+  font-size: 35px;
+  color: #333;
+}
+
 header .logo {
   width: 240px;
 }
@@ -864,6 +873,7 @@ main .product-list {
 }
 
 .basket .order-sheet_person-details .details {
+  margin-top: 15px;
   width: 350px;
 }
 
@@ -950,6 +960,7 @@ main .product-list {
   -ms-user-select: none;
   user-select: none;
   position: relative;
+  cursor: pointer;
 }
 
 .custom-radio + label::before {
@@ -985,6 +996,10 @@ footer .copyright {
 }
 
 @media (min-width: 768px) {
+  header .basket-logo {
+    display: none;
+  }
+
   header .burger-click {
     display: none;
   }
@@ -1008,6 +1023,10 @@ footer .copyright {
   .product-item {
     width: 45%;
   }
+
+  .basket .order-sheet_num .counts {
+    width: 40%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1016,7 +1035,8 @@ footer .copyright {
   }
 
   header .logo {
-    width: 160px;
+    width: 120px;
+    margin-left: -15px;
   }
 
   header .header-nav {
@@ -1212,5 +1232,17 @@ footer .copyright {
 @media (max-width: 368px) {
   .basket .order-sheet_promo_clean .clean_basket {
     width: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .basket .order-sheet_payment-method {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .custom-radio + label::before {
+    height: 1em;
   }
 }
