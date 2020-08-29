@@ -56,13 +56,13 @@ input[type=number]::-webkit-outer-spin-button {
   width: 50%;
   height: 100%;
   background-color: #fff;
-  -webkit-transition: all .6s ease;
-  -o-transition: all .6s ease;
-  transition: all .6s ease;
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
+  -o-transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
   z-index: 2;
   position: fixed;
   top: 0;
-  right: -500px;
+  right: -50%;
 }
 
 .burger-menu .close-btn {
@@ -326,7 +326,9 @@ main .product-list {
 .product-item .product-footer .counts .minus-btn,
 .product-item .product-footer .counts .plus-btn,
 .product-item .product-footer .basket .order-sheet_list .order-sheet_item .item_number .counts .plus-btn,
-.basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn {
+.basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn,
+.product-item .product-footer .modal .modal-content .right .price .counts .plus-btn,
+.modal .modal-content .right .price .product-item .product-footer .counts .plus-btn {
   width: 15px;
   height: 15px;
   cursor: pointer;
@@ -343,17 +345,23 @@ main .product-list {
 .product-item .product-footer .counts .plus-btn:hover,
 .product-item .product-footer .basket .order-sheet_list .order-sheet_item .item_number .counts .plus-btn:hover,
 .basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn:hover,
+.product-item .product-footer .modal .modal-content .right .price .counts .plus-btn:hover,
+.modal .modal-content .right .price .product-item .product-footer .counts .plus-btn:hover,
 .product-item .product-footer .counts .minus-btn:focus,
 .product-item .product-footer .counts .plus-btn:focus,
 .product-item .product-footer .basket .order-sheet_list .order-sheet_item .item_number .counts .plus-btn:focus,
-.basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn:focus {
+.basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn:focus,
+.product-item .product-footer .modal .modal-content .right .price .counts .plus-btn:focus,
+.modal .modal-content .right .price .product-item .product-footer .counts .plus-btn:focus {
   color: #ff6340;
 }
 
 .product-item .product-footer .counts .minus-btn::before,
 .product-item .product-footer .counts .plus-btn::before,
 .product-item .product-footer .basket .order-sheet_list .order-sheet_item .item_number .counts .plus-btn::before,
-.basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn::before {
+.basket .order-sheet_list .order-sheet_item .item_number .product-item .product-footer .counts .plus-btn::before,
+.product-item .product-footer .modal .modal-content .right .price .counts .plus-btn::before,
+.modal .modal-content .right .price .product-item .product-footer .counts .plus-btn::before {
   content: "";
   display: block;
   width: 100%;
@@ -748,7 +756,9 @@ main .product-list {
 .basket .order-sheet_num .counts .minus-btn,
 .basket .order-sheet_num .order-sheet_list .order-sheet_item .item_number .counts .plus-btn,
 .basket .order-sheet_list .order-sheet_item .item_number .order-sheet_num .counts .plus-btn,
-.basket .order-sheet_num .counts .plus-btn {
+.basket .order-sheet_num .counts .plus-btn,
+.basket .order-sheet_num .modal .modal-content .right .price .counts .plus-btn,
+.modal .modal-content .right .price .basket .order-sheet_num .counts .plus-btn {
   margin: 0 40px;
   width: 15px;
   height: 15px;
@@ -766,17 +776,23 @@ main .product-list {
 .basket .order-sheet_num .order-sheet_list .order-sheet_item .item_number .counts .plus-btn:hover,
 .basket .order-sheet_list .order-sheet_item .item_number .order-sheet_num .counts .plus-btn:hover,
 .basket .order-sheet_num .counts .plus-btn:hover,
+.basket .order-sheet_num .modal .modal-content .right .price .counts .plus-btn:hover,
+.modal .modal-content .right .price .basket .order-sheet_num .counts .plus-btn:hover,
 .basket .order-sheet_num .counts .minus-btn:focus,
 .basket .order-sheet_num .order-sheet_list .order-sheet_item .item_number .counts .plus-btn:focus,
 .basket .order-sheet_list .order-sheet_item .item_number .order-sheet_num .counts .plus-btn:focus,
-.basket .order-sheet_num .counts .plus-btn:focus {
+.basket .order-sheet_num .counts .plus-btn:focus,
+.basket .order-sheet_num .modal .modal-content .right .price .counts .plus-btn:focus,
+.modal .modal-content .right .price .basket .order-sheet_num .counts .plus-btn:focus {
   color: #ff6340;
 }
 
 .basket .order-sheet_num .counts .minus-btn::before,
 .basket .order-sheet_num .order-sheet_list .order-sheet_item .item_number .counts .plus-btn::before,
 .basket .order-sheet_list .order-sheet_item .item_number .order-sheet_num .counts .plus-btn::before,
-.basket .order-sheet_num .counts .plus-btn::before {
+.basket .order-sheet_num .counts .plus-btn::before,
+.basket .order-sheet_num .modal .modal-content .right .price .counts .plus-btn::before,
+.modal .modal-content .right .price .basket .order-sheet_num .counts .plus-btn::before {
   content: "";
   display: block;
   width: 100%;
@@ -1060,6 +1076,157 @@ main .product-list {
 @keyframes test {
 }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #0007;
+  position: fixed;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.modal .modal-content {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fefefe;
+  position: relative;
+}
+
+.modal .modal-content .close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 40px;
+  color: #555;
+}
+
+.modal .modal-content .left img {
+  width: 90%;
+  display: block;
+}
+
+.modal .modal-content .right {
+  padding: 45px 0;
+}
+
+.modal .modal-content .right h3 {
+  font-size: 25px;
+}
+
+.modal .modal-content .right .desc {
+  margin-top: 20px;
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal .modal-content .right .price {
+  margin-top: 30px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  border-top: 1px solid #ccc9;
+  border-bottom: 1px solid #ccc9;
+}
+
+.modal .modal-content .right .price .rub {
+  font-size: 0.8em;
+}
+
+.modal .modal-content .right .price .counts {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal .modal-content .right .price .counts .minus-btn,
+.modal .modal-content .right .price .counts .plus-btn {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-color: inherit;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.modal .modal-content .right .price .counts .minus-btn:hover,
+.modal .modal-content .right .price .counts .plus-btn:hover,
+.modal .modal-content .right .price .counts .minus-btn:focus,
+.modal .modal-content .right .price .counts .plus-btn:focus {
+  color: #ff6340;
+}
+
+.modal .modal-content .right .price .counts .minus-btn::before,
+.modal .modal-content .right .price .counts .plus-btn::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: currentColor;
+  position: absolute;
+  top: 47%;
+}
+
+.modal .modal-content .right .price .counts .plus-btn::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  border-radius: 4px;
+  background-color: currentColor;
+  position: relative;
+  left: 44%;
+}
+
+.modal .modal-content .right .socials {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.modal .modal-content .right .socials .social {
+  margin-left: 15px;
+  font-size: 23px;
+}
+
+.modal .close {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 footer {
   padding: 7px 0;
   color: #fff7;
@@ -1331,6 +1498,21 @@ footer .container .socials .social i {
 
   .contacts .our-contacts .contacts-list .contact-block {
     width: 100%;
+  }
+
+  .modal .modal-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .modal .modal-content .left img {
+    margin: 0 auto;
+  }
+
+  .modal .modal-content .right {
+    padding: 0;
   }
 }
 
