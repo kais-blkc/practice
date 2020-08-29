@@ -860,31 +860,37 @@ main .product-list {
   margin: 0 auto;
   padding: 25px 0 25px;
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+}
+
+.basket .order-sheet_person-details h2 {
+  text-align: center;
 }
 
 .basket .order-sheet_person-details .details {
+  margin: 0 auto;
   margin-top: 15px;
-  width: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.basket .order-sheet_person-details .details .name label,
-.basket .order-sheet_person-details .details .tel label {
+.basket .order-sheet_person-details .details .field {
+  width: 45%;
+  margin: 0 15px;
+}
+
+.basket .order-sheet_person-details .details .field label {
   margin-left: 5px;
   font-weight: 500;
 }
 
-.basket .order-sheet_person-details .details .name .detail,
-.basket .order-sheet_person-details .details .tel .detail {
+.basket .order-sheet_person-details .details .field .detail {
   margin: 7px 0 15px;
   padding: 6px 10px;
   display: block;
@@ -899,16 +905,19 @@ main .product-list {
   color: #333;
 }
 
-.basket .order-sheet_person-details .details .name .detail:focus,
-.basket .order-sheet_person-details .details .tel .detail:focus {
+.basket .order-sheet_person-details .details .field .detail:focus {
   border-color: #333;
 }
 
-.basket .order-sheet_person-details .details .btn-detail {
-  margin-top: 15px;
-  padding: 10px 12px;
+.basket .order-sheet_person-details .details .btn-send {
   width: 100%;
-  display: inline-block;
+}
+
+.basket .order-sheet_person-details .details .btn-send .btn-detail {
+  margin: 15px auto 0;
+  padding: 10px 12px;
+  width: 94%;
+  display: block;
   font-size: 16px;
   font-weight: 500;
   color: #ff6340;
@@ -922,7 +931,7 @@ main .product-list {
   transition: all .3s ease-out;
 }
 
-.basket .order-sheet_person-details .details .btn-detail:hover {
+.basket .order-sheet_person-details .details .btn-send .btn-detail:hover {
   background-color: #ff6340;
   color: #fff;
 }
@@ -989,6 +998,7 @@ main .product-list {
   font-size: 35px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .contacts .map {
@@ -1000,7 +1010,7 @@ main .product-list {
 }
 
 .contacts .our-contacts {
-  padding: 35px 0;
+  padding: 30px 0;
   margin-bottom: 50px;
 }
 
@@ -1133,6 +1143,12 @@ footer .container .socials .social i {
   .contacts .our-contacts .contacts-list .contact-block {
     width: 100%;
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .basket .order-sheet_person-details .details .field {
+    width: 100%;
   }
 }
 
@@ -1303,6 +1319,14 @@ footer .container .socials .social i {
 
   .basket .order-sheet_person-details .details {
     width: 100%;
+  }
+
+  .contacts h2 {
+    margin-bottom: 0;
+  }
+
+  .contacts .our-contacts {
+    padding: 15px 0;
   }
 
   .contacts .our-contacts .contacts-list .contact-block {

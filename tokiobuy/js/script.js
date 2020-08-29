@@ -1,33 +1,38 @@
-// Боковое меню
-let close = document.querySelector('.burger-menu');
-let burger = document.querySelector('.burger-click');
-let link = document.querySelectorAll('.header-link');
-let black = document.querySelector('.black');
-// Открытие меню
-burger.addEventListener('click', () => {
-	close.classList.add('open');
-	black.style.opacity = '1';
-	black.style.visibility = 'visible';
-});
-// Открытие меню
-close.addEventListener('click', () => {
-	close.classList.remove('open');
-	black.style.opacity = '0';
-	black.style.visibility = 'hidden';
-});
+addEventListener('DOMContentLoaded', () => {
+	// Модальное окно
+	
 
-document.addEventListener('click', (event) => {
-	console.log(event.target.className);
-	if (event.target.className == 'black') {
+
+
+	// Боковое меню
+	let close = document.querySelector('.burger-menu');
+	let burger = document.querySelector('.burger-click');
+	let link = document.querySelectorAll('.header-link');
+	let black = document.querySelector('.black');
+	// Открытие меню
+	burger.addEventListener('click', () => {
+		close.classList.add('open');
+		black.style.opacity = '1';
+		black.style.visibility = 'visible';
+	});
+	// Открытие меню
+	close.addEventListener('click', () => {
 		close.classList.remove('open');
 		black.style.opacity = '0';
 		black.style.visibility = 'hidden';
-	}
-})
+	});
+
+	document.addEventListener('click', (event) => {
+		console.log(event.target.className);
+		if (event.target.className == 'black') {
+			close.classList.remove('open');
+			black.style.opacity = '0';
+			black.style.visibility = 'hidden';
+		}
+	})
+
 
 // Для нормальной высоты main
-addEventListener('DOMContentLoaded', () => {
-
 	let fullHeight = document.documentElement.offsetHeight;
 	let winHeight = document.documentElement.clientHeight;
 	let header = document.querySelector('header');
