@@ -1,92 +1,49 @@
-addEventListener('DOMContentLoaded', () => {
-	// Модальное окно
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Modal==================
 	let modal = document.querySelector('#myModal');
-	let span = document.querySelectorAll('.close')[0];
+	let closeModal = document.querySelector('#close');
 
 	document.addEventListener("click", (event) => {
 		if (event.target.closest('.product-body')) {
 			modal.style.opacity = "1";
 			modal.style.visibility = "visible";
+
+			bgBlack.style.opacity = "1";
+			bgBlack.style.visibility = "visible";
+
 			document.body.style.overflow = "hidden";
-		} else if (event.target.closest('.burger')) {
-			document.body.style.overflow = "hidden";
-		} else {
+		} else if (event.target.closest('#close')) {
+			modal.style.opacity = "0";
+			modal.style.visibility = "hidden";
+
+			bgBlack.style.opacity = "0";
+			bgBlack.style.visibility = "hidden";
+
 			document.body.style.overflow = "auto";
 		}
 	});
 
-	span.onclick = () => {
-		modal.style.opacity = "0";
-		modal.style.visibility = "hidden";
-	}
+	// Burger Menu=======================
+	let openBurger = document.querySelector('#burger');
+	let bMenu = document.querySelector('#burger-menu');
+	let closeBurger = document.querySelector('#close-burger');
+	let bgBlack = document.querySelector('#black');
 
-	window.onclick = (event) => {
-		if (event.target == modal) {
-			modal.style.opacity = "0";
-			modal.style.visibility = "hidden";
-		}
-	}
+	openBurger.addEventListener("click", () => {
+		bMenu.style.right = "0";
 
+		bgBlack.style.opacity = "1";
+		bgBlack.style.visibility = "visible";
+		document.body.style.overflow = "hidden";
+	});
 
+	closeBurger.addEventListener("click", () => {
+		bMenu.style.right = "-50%";
 
-	// Боковое меню
-	let close = document.querySelector('.burger-menu');
-	let burger = document.querySelector('.burger-click');
-	let link = document.querySelectorAll('.header-link');
-	let black = document.querySelector('.black');
+		bgBlack.style.opacity = "0";
+		bgBlack.style.visibility = "hidden";
+		document.body.style.overflow = "auto";
+	});
 
-	// Открытие меню
-	burger.onclick = () => {
-		close.classList.add('open');
-		black.style.opacity = '1';
-		black.style.visibility = 'visible';
-	};
-
-	// document.onclick = (event) => {
-	// 	if (event.target.closest('.burger')) {
-	// 		document.body.style.overflow = "hidden";
-	// 	} else {
-	// 		document.body.style.overflow = "auto";
-	// 	}
-	// };
-
-	// Закрытие меню
-	close.onclick = () => {
-		close.classList.remove('open');
-		black.style.opacity = '0';
-		black.style.visibility = 'hidden';
-	};
-	
-	document.addEventListener('click', (event) => {
-		// console.log(event.target.className);
-		if (event.target.className == 'black') {
-			close.classList.remove('open');
-			black.style.opacity = '0';
-			black.style.visibility = 'hidden';
-		}
-	})
-
-
-// Для нормальной высоты main
-	let fullHeight = document.documentElement.offsetHeight;
-	let winHeight = document.documentElement.clientHeight;
-	let header = document.querySelector('header');
-	let footer = document.querySelector('footer');
-	let main = document.querySelector('main');
-
-	function setHeightMain() {
-		if (winHeight > fullHeight) {
-			main.style.height = winHeight - (header.offsetHeight + footer.offsetHeight) + 50 + 'px';
-		}
-
-		// console.log('fullH: ' + fullHeight);
-		// console.log('winH: ' + winHeight);
-	}
-
-	setHeightMain();
-
-
-	// window.addEventListener('resize', () => {
-	// 	setHeightMain();
-	// });
 });
