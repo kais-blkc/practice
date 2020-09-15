@@ -1274,6 +1274,74 @@ footer .container .socials .social i {
   color: #fff;
 }
 
+.modal-bg {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 3;
+}
+
+.modal-bg .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-bg .modal {
+  padding: 25px;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+}
+
+.modal-bg .modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal-bg .modal .close {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 1%;
+}
+
+.modal-bg .modal .close::before,
+.modal-bg .modal .close::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 40%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-bg .modal .close::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 @media (min-width: 768px) {
   header .basket-logo {
     display: none;
