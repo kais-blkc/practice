@@ -10,7 +10,7 @@ body {
 	padding: 0;
 	display: grid;
 
-	background-color: #292929;
+	background-color: #14243f;
 }
 
 .header,
@@ -55,10 +55,16 @@ body {
 	font-size: 55px;
 	text-align: center;
 	color: #fff;
+	margin: 0!important;
+}
+
+.demo-text {
+	margin: 0;
+	color: #fff5;
 }
 
 .main-menu {
-	margin: 55px auto 0;
+	margin: 35px auto 0;
 	max-width: 400px;
 	min-height: 100px;
 	transition: all .5s ease;
