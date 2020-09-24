@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Irvas okna</title>
+  <link rel="stylesheet" href="css/style.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+</head>
+<body><!-- HEADER ======================== -->
+  <header>
+    <div class="container">
+      <div class="left"><img class="logo" src="img/logo.png" alt="logo"/>
+        <p class="logo-text">Остекление балконов и лоджий в Москве и Московской области</p>
+      </div>
+      <div class="right"><a class="summon" href="#" id="modal"><img src="img/edit.png" alt="img"/>
+          <p class="summon-text">Вызвать замерщика</p></a>
+        <div class="work-time"><img src="img/clock.png" alt=""/>
+          <div class="work-time_time">
+            <p class="wknd">без выходных</p>
+            <p class="time">9:00 - 18:00</p>
+          </div>
+        </div>
+        <div class="phone-number">
+          <div class="phone"><img src="img/phone.png" alt="img"/> +7 (495) 646-61-71</div><a href="#" id="modal">Заказать обратный звонок</a>
+        </div>
+      </div><!-- BURGER ======================== -->
+      <div class="menu-block" id="menu-block"></div>
+      <div class="menu-nav" id="menu-nav">
+        <div class="work-time mobile"><img src="img/clock.png" alt=""/>
+          <div class="work-time_time">
+            <p class="wknd">без выходных</p>
+            <p class="time">9:00 - 18:00</p>
+          </div>
+        </div>
+        <div class="nav"><a class="summon mobile" href="#"><img src="img/edit.png" alt="img"/>
+            <p class="summon-text">ВЫЗВАТЬ ЗАМЕРЩИКА</p></a>
+          <div class="phone-number mobile">
+            <div class="phone">+7 (495) 646-61-71</div><a href="#">Заказать обратный звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="burger-btn" id="burger-btn"><span></span></div>
+    </div>
+  </header>
+  <main><!-- SECTION-INITIAL ======================== -->
+    <section class="section-initial">
+      <div class="container">
+        <div class="section-initial-left">
+          <p class="glazing-balconies">Остекление балконов "под ключ"</p>
+          <h1 class="glazing-price">за 12 800 рублей!</h1>
+          <div class="initial-icons">
+            <div class="initial-icon"><img src="img/initial-icon1.png" alt="img"/></div>
+            <div class="initial-icon"><img src="img/initial-icon2.png" alt="img"/></div>
+            <div class="initial-icon"><img src="img/initial-icon3.png" alt="img"/></div>
+            <div class="initial-icon"><img src="img/initial-icon4.png" alt="img"/></div>
+          </div>
+        </div>
+        <div class="section-initial-right">
+          <form class="form-free_measurement">
+            <p class="sign-up">Запишитесь сегодня на</p>
+            <p class="free">БЕСПЛАТНЫЙ ЗАМЕР</p>
+            <input class="name" type="text" name="name" placeholder="Введите ваше имя"/>
+            <input class="phone-number phone" type="tel" name="phone-number" placeholder="+7 (___) ___-__-__"/>
+            <button class="yellow-btn" type="button" id="modal">Вызвать замерщика!</button><span class="confidential">Ваши данные конфиденциальны</span>
+          </form>
+        </div>
+      </div>
+    </section><!-- SECTION-GLAZING ======================== -->
+    <section class="glazing">
+      <div class="container">
+        <h2 class="title-section">Остекление болконов и лоджий</h2>
+        <div class="balconies-list"><a class="balconies-item active" href="#balconies-item-1"><img src="img/window1.png" alt="img"/>
+            <p class="balconies-item_text">Деревянное остекление</p></a><a class="balconies-item" href="#balconies-item-2"><img src="img/window2.png" alt="img"/>
+            <p class="balconies-item_text">Алюминиевое остекление</p></a><a class="balconies-item" href="#balconies-item-3"><img src="img/window3.png" alt="img"/>
+            <p class="balconies-item_text">Остекление пластиковыми рамами</p></a><a class="balconies-item" href="#balconies-item-4"><img src="img/window4.png" alt="img"/>
+            <p class="balconies-item_text">Французское остекление (панорамное)</p></a><a class="balconies-item" href="#balconies-item-5"><img src="img/window5.png" alt="img"/>
+            <p class="balconies-item_text">Остекление с выносом</p></a></div><!-- Cold warm item -->
+        <div class="cold-warm faded in active" id="balconies-item-1">
+          <div class="cold-warm_item cold">
+            <h3>холодное</h3><img src="img/cold.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">2600 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+          <div class="cold-warm_item warm">
+            <h3>теплое</h3><img src="img/warm.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">4000 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button">рассчитать стоимость</button>
+            </div>
+          </div>
+        </div><!-- Cold warm item -->
+        <div class="cold-warm faded" id="balconies-item-2">
+          <div class="cold-warm_item warm">
+            <h3>Таб 2</h3>
+            <h3>теплое</h3><img src="img/warm.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">4000 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+          <div class="cold-warm_item cold">
+            <h3>Таб 2</h3>
+            <h3>холодное</h3><img src="img/cold.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">2600 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+        </div><!-- Cold warm item -->
+        <div class="cold-warm faded" id="balconies-item-3">
+          <div class="cold-warm_item warm">
+            <h3>Таб 3</h3>
+            <h3>теплое</h3><img src="img/warm.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">4000 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+          <div class="cold-warm_item cold">
+            <h3>Таб 3</h3>
+            <h3>холодное</h3><img src="img/cold.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">2600 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+        </div><!-- Cold warm item -->
+        <div class="cold-warm faded" id="balconies-item-4">
+          <div class="cold-warm_item warm">
+            <h3>Таб 4</h3>
+            <h3>теплое</h3><img src="img/warm.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">4000 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+          <div class="cold-warm_item cold">
+            <h3>Таб 4</h3>
+            <h3>холодное</h3><img src="img/cold.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">2600 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+        </div><!-- Cold warm item -->
+        <div class="cold-warm faded" id="balconies-item-5">
+          <div class="cold-warm_item warm">
+            <h3>Таб 5</h3>
+            <h3>теплое</h3><img src="img/warm.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">4000 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+          <div class="cold-warm_item cold">
+            <h3>Таб 5</h3>
+            <h3>холодное</h3><img src="img/cold.jpg" alt="img"/>
+            <ul class="cold-warm_item_list">
+              <li>Конструктивная толщина 42-58 мм</li>
+              <li>Остекление: полированное стекло (толщиной 4 - 5 мм)</li>
+              <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+              <li>Звукоизоляция: 20-27 дб</li>
+            </ul>
+            <div class="cold-warm_footer">
+              <div class="cold-warm_price">
+                <p class="price">2600 руб.кв.м.</p>
+                <p class="key">под ключ с установкой</p>
+              </div>
+              <button class="yellow-btn" type="button" id="modal">рассчитать стоимость</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- FINISHING (ОТДЕЛКА) ======================== -->
+    <section class="finishing">
+      <div class="container">
+        <h2 class="title-section">ЗАКАЖИТЕ ОТДЕЛКУ БАЛКОНА СО СКИДКОЙ 60%!</h2>
+        <div class="fishing-items">
+          <div class="fishing-items-titles"><a class="fishing-item-title active" href="#fishing-item-title-1">
+              <div></div>
+              <h3>ВНУТРЕННЯЯ ОТДЕЛКА</h3></a><a class="fishing-item-title" href="#fishing-item-title-2">
+              <div></div>
+              <h3>ВНЕШНЯЯ ОТДЕЛКА</h3></a><a class="fishing-item-title" href="#fishing-item-title-3">
+              <div></div>
+              <h3>ВЫНОСНОЕ ОСТЕКЛЕНИЕ</h3></a><a class="fishing-item-title" href="#fishing-item-title-4">
+              <div></div>
+              <h3>КРЫША НА БАЛКОН</h3></a></div>
+          <div class="fishing-items-list"><!-- fishing-item -->
+            <div class="fishing-item faded in active" id="fishing-item-title-1">
+              <div class="fishing-item-img"><img src="img/fishing1.jpg" alt="img"/></div>
+              <div class="fishing-item-parts">
+                    <div class="fishing-item-part"><img src="img/otdelka1.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">600<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka2.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Пластиковая вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">750<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka3.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">ПВХ-панели</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">800<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka4.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из ламината</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1250<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka5.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из дерева</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1650<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+              </div>
+              <form class="form-free_measurement">
+                <p class="sign-up">Запишитесь сегодня на</p>
+                <p class="free">БЕСПЛАТНЫЙ ЗАМЕР</p>
+                <input class="name" type="text" name="name" placeholder="Введите ваше имя"/>
+                <input class="phone-number phone" type="tel" name="phone-number" placeholder="+7 (___) ___-__-__"/>
+                <button class="yellow-btn" type="button" id="modal">Вызвать замерщика!</button><span class="confidential">Ваши данные конфиденциальны</span>
+              </form>
+            </div><!-- fishing-item -->
+            <div class="fishing-item faded" id="fishing-item-title-2">
+              <div class="fishing-item-img">Таб 2<img src="img/fishing1.jpg" alt="img"/></div>
+              <div class="fishing-item-parts">
+                    <div class="fishing-item-part"><img src="img/otdelka1.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">600<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka2.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Пластиковая вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">750<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka3.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">ПВХ-панели</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">800<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka4.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из ламината</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1250<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka5.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из дерева</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1650<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+              </div>
+              <form class="form-free_measurement">
+                <p class="sign-up">Запишитесь сегодня на</p>
+                <p class="free">БЕСПЛАТНЫЙ ЗАМЕР</p>
+                <input class="name" type="text" name="name" placeholder="Введите ваше имя"/>
+                <input class="phone-number phone" type="tel" name="phone-number" placeholder="+7 (___) ___-__-__"/>
+                <button class="yellow-btn" type="button" id="modal">Вызвать замерщика!</button><span class="confidential">Ваши данные конфиденциальны</span>
+              </form>
+            </div><!-- fishing-item -->
+            <div class="fishing-item faded" id="fishing-item-title-3">
+              <div class="fishing-item-img">Таб 3<img src="img/fishing1.jpg" alt="img"/></div>
+              <div class="fishing-item-parts">
+                    <div class="fishing-item-part"><img src="img/otdelka1.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">600<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka2.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Пластиковая вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">750<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka3.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">ПВХ-панели</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">800<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka4.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из ламината</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1250<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka5.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из дерева</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1650<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+              </div>
+              <form class="form-free_measurement">
+                <p class="sign-up">Запишитесь сегодня на</p>
+                <p class="free">БЕСПЛАТНЫЙ ЗАМЕР</p>
+                <input class="name" type="text" name="name" placeholder="Введите ваше имя"/>
+                <input class="phone-number phone" type="tel" name="phone-number" placeholder="+7 (___) ___-__-__"/>
+                <button class="yellow-btn" type="button" id="modal">Вызвать замерщика!</button><span class="confidential">Ваши данные конфиденциальны</span>
+              </form>
+            </div><!-- fishing-item -->
+            <div class="fishing-item faded" id="fishing-item-title-4">
+              <div class="fishing-item-img">Таб 4<img src="img/fishing1.jpg" alt="img"/></div>
+              <div class="fishing-item-parts">
+                    <div class="fishing-item-part"><img src="img/otdelka1.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">600<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka2.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Пластиковая вагонка</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">750<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka3.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">ПВХ-панели</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">800<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka4.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из ламината</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1250<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+                    <div class="fishing-item-part"><img src="img/otdelka5.png" alt="img"/>
+                      <p class="fishing-item-part-subtitle">Настил пола из дерева</p>
+                      <div class="fishing-text">
+                        <p class="fishing-item-part-price">1650<span> руб. кв.м.</span></p>
+                        <p>с материалом <span></span></p>
+                      </div>
+                    </div>
+              </div>
+              <form class="form-free_measurement">
+                <p class="sign-up">Запишитесь сегодня на</p>
+                <p class="free">БЕСПЛАТНЫЙ ЗАМЕР</p>
+                <input class="name" type="text" name="name" placeholder="Введите ваше имя"/>
+                <input class="phone-number phone" type="tel" name="phone-number" placeholder="+7 (___) ___-__-__"/>
+                <button class="yellow-btn" type="button" id="modal">Вызвать замерщика!</button><span class="confidential">Ваши данные конфиденциальны</span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- OUR WORKS ======================== -->
+    <section class="works">
+      <div class="container">
+        <h2 class="title-section">Наши работы</h2>
+        <div class="works-list">
+          <div class="works-item active"><a href="img/our-works1.jpg" data-fancybox="gallery"><img src="img/our-works1.jpg" alt="img"/></a></div>
+          <div class="works-item active"><a href="img/our-works2.jpg" data-fancybox="gallery"><img src="img/our-works2.jpg" alt="img"/></a></div>
+          <div class="works-item active"><a href="img/our-works3.jpg" data-fancybox="gallery"><img src="img/our-works3.jpg" alt="img"/></a></div>
+          <div class="works-item"><a href="img/our-works4.jpg" data-fancybox="gallery"><img src="img/our-works4.jpg" alt="img"/></a></div>
+          <div class="works-item"><a href="img/our-works5.jpg" data-fancybox="gallery"><img src="img/our-works5.jpg" alt="img"/></a></div>
+          <div class="works-item"><a href="img/our-works6.jpg" data-fancybox="gallery"><img src="img/our-works6.jpg" alt="img"/></a></div>
+          <div class="works-item"><a href="img/our-works7.jpg" data-fancybox="gallery"><img src="img/our-works7.jpg" alt="img"/></a></div>
+          <div class="works-item"><a href="img/our-works8.jpg" data-fancybox="gallery"><img src="img/our-works8.jpg" alt="img"/></a></div>
+        </div>
+      </div>
+    </section><!-- GUARANTEE ======================== -->
+    <section class="guarantee">
+      <div class="container">
+        <h2 class="title-section">МЫ ГАРАНТИРУЕМ ВАМ</h2>
+        <div class="guarantee-list">
+          <div class="guarantee-item"><img src="img/guarantee1.png" alt="img"/>
+            <div class="guarantee-item_text">Высокое качество</div>
+          </div>
+          <div class="guarantee-item"><img src="img/guarantee2.png" alt="img"/>
+            <div class="guarantee-item_text">Выполнение работ <br/> под ключ</div>
+          </div>
+          <div class="guarantee-item"><img src="img/guarantee3.png" alt="img"/>
+            <div class="guarantee-item_text">Монтаж в короткие <br/> сроки</div>
+          </div>
+          <div class="guarantee-item"><img src="img/guarantee4.png" alt="img"/>
+            <div class="guarantee-item_text">Цены от <br/> производителя</div>
+          </div>
+          <div class="guarantee-item"><img src="img/guarantee5.png" alt="img"/>
+            <div class="guarantee-item_text">Бесплатный замер <br/> и консультацию</div>
+          </div>
+          <div class="guarantee-item"><img src="img/guarantee6.png" alt="img"/>
+            <div class="guarantee-item_text">Тепло и уют <br/> на балконе</div>
+          </div>
+        </div>
+      </div>
+    </section><!-- PAY METHODS ======================== -->
+    <section class="pay-methods">
+      <div class="container">
+        <h2 class="title-section">Вы можете оплатить наши услуги:</h2>
+        <div class="pay-list"><a class="pay-item" href="#"><img src="img/pay1.png" alt="img"/>
+            <p>Наличными</p></a><a class="pay-item" href="#"><img src="img/pay2.png" alt="img"/>
+            <p>Банковской картой</p></a><a class="pay-item" href="#"><img src="img/pay3.png" alt="img"/>
+            <p>Безналичный расчет</p></a></div>
+      </div>
+    </section><!-- STOCK ======================== -->
+    <section class="stock">
+      <div class="container">
+        <div class="left">
+          <h3>Акция - 60%</h3>
+          <p>Успей сэкономить на остеклении! <br/> Только до 23 апреля!</p>
+          <div class="timer">
+            <h4>До завершения акции:</h4>
+            <div class="time" id="timer">
+              <div class="time-item"> 
+                <div class="time-item_number" id="days">00</div>
+                <p>дней</p>
+              </div>
+              <div class="time-item"> 
+                <div class="time-item_number" id="hours">00</div>
+                <p>часов</p>
+              </div>
+              <div class="time-item"> 
+                <div class="time-item_number" id="minutes">00</div>
+                <p>минут</p>
+              </div>
+              <div class="time-item"> 
+                <div class="time-item_number" id="seconds">00</div>
+                <p>секунд</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form class="form-free_measurement">
+            <p class="sign-up">Запишитесь сегодня на</p>
+            <p class="free">БЕСПЛАТНЫЙ ЗАМЕР</p>
+            <input class="name" type="text" name="name" placeholder="Введите ваше имя"/>
+            <input class="phone-number phone" type="tel" name="phone-number" placeholder="+7 (___) ___-__-__"/>
+            <button class="yellow-btn" type="button" id="modal">Вызвать замерщика!</button><span class="confidential">Ваши данные конфиденциальны</span>
+          </form>
+        </div>
+      </div>
+    </section><!-- WHERE US ======================== -->
+    <section class="where_us">
+      <h2 class="title-section">Как нас найти</h2>
+      <div class="container">
+        <div class="left"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A01c05123be6033ceedb6f4bccc4fc55ffac8f2c4f45677bfe098711b15362558&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script></div>
+        <div class="right">
+          <div class="where-item">
+            <h4>Юридический адрес:</h4>
+            <p>ООО «ИРВАС», 127411, г.Москва, Дмитровское шоссе, д.125, корпус 1</p>
+          </div>
+          <div class="where-item">
+            <h4>Фактический адрес:</h4>
+            <p>ООО «ИРВАС», 141031, МО, Мытищинский р-он, п.Вешки,Выставочная,д.53</p>
+          </div>
+          <div class="where-item">
+            <h4>Телефон:</h4>
+            <p>+7 (495) 646-61- 71 (многоканальный)</p>
+          </div>
+          <div class="where-item">
+            <h4>E-mail:</h4><a href="mailto:zheltiyhleb@yandex.com" id="active">info@irvasokna.ru</a>
+          </div>
+          <div class="where-item">
+            <h4>Режим работы:</h4>
+            <p>9:00 - 18:00 без выходных</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <p>Остались вопросы? </p><a href="mailto:zheltiyhleb@yandex.com" id="active">Спросите у нашего специалиста!</a>
+      </div>
+    </section>
+    <div class="modal">
+      <div class="container">
+        <div class="modal-window">
+          <div class="close-modal"></div>
+          <h3>Здесь должно что-то быть</h3>
+          <p>Так как это демо версия сайта, здесь пусто.</p>
+        </div>
+      </div>
+    </div>
+  </main><!-- FOOTER ======================== -->
+  <footer>
+    <div class="container">
+      <div class="copyright">2017 &copy; Ирвас окна <br/> Работаем без выходных</div><img src="img/logo.png" alt="LOGO"/>
+      <div class="phone">+7 (495) 646-61-71 <br/><a href="mailto:zheltiyhleb@yandex.com" id="active">info@irvasokna.ru</a></div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>

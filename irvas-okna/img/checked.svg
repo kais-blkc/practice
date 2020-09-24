@@ -1,0 +1,11 @@
+<svg id="checked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e8e8e8;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_2" data-name="Эллипс 2" class="cls-1" cx="12.5" cy="12.5" r="12.5"/>
+  <image id="checked_9_" data-name="checked (9)" x="8" y="9" width="10" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAZUlEQVQYlWMgAmxnYGB4QEjZRgYGhv8MDAwzQBwlBgYGbiyKDkAV5cAEQJyXDAwMTFA+IwMDw1moeAKyzjio4BUGBgZDBgaGa1B+CDa3uEMlYRjExwl8GRgY7jMwMDhiqGBgYAAAVKIT0plxUZsAAAAASUVORK5CYII="/>
+</svg>
