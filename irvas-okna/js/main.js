@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 
 	// Timer
-	let deadline = new Date('2020-10-18T00:00:00').getTime();
+	let deadline = new Date('2020-11-18T00:00:00').getTime();
 
 	let timerFunc = setInterval(function() {
 		let now = new Date().getTime();
