@@ -1,221 +1,224 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="css/style.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-  <title>Корзина</title>
-</head>
-<body>
-  <div class="black" id="black"></div>
-  <header>
-    <!-- HEADER ============================-->
-    <div class="container"><a class="basket-logo" href="basket.html"><i class="fas fa-shopping-cart"></i></a><a href="index.html"><img class="logo" src="img/logo.png"/></a>
-      <div class="header-nav">
-        <nav><a class="header-link" href="index.html">Главная</a><a class="header-link" href="contacts.html">Контакты</a><a class="header-link" href="basket.html">Корзина</a>
-        </nav>
-      </div>
-      <div class="burger-click">
-        <div class="burger" id="burger"></div>
-      </div>
-      <div class="burger-menu" id="burger-menu">
-        <div class="close-btn" id="close-burger">
-          <div class="btn-close"></div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/f-a-pro-all.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css"/>
+  </head>
+  <body><!-- HEADER =============================== -->
+    <header>
+      <div class="burger-wrapper">
+        <div class="burger-menu">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Каталог</a></li>
+            <li><a href="promo.html">Акции</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="phone-number"><a href="tel:+79277444646">+7 (927) 744-4-646</a>
+            <p class="small-red">Доставка 10:00 - 20:00</p>
+          </div>
         </div>
-        <nav><a class="header-link" href="index.html">Главная</a><a class="header-link" href="contacts.html">Контакты</a><a class="header-link" href="basket.html">Корзина</a>
-        </nav>
       </div>
-    </div>
-  </header>
-  <main>
-    <!-- BASKET SECTION =========================================-->
-    <section class="basket">
       <div class="container">
-        <h1>Корзина</h1>
-        <div class="order-sheet">
-          <!-- PRODUCTS ===============-->
-          <div class="order-sheet_list">
-            <!-- ORDER SHEET ITEM =========================================-->
-            <div class="order-sheet_item"><img class="item_img" src="img/product/img-1.jpg" alt="No img"/>
-              <div class="item_desc">
-                <div class="title">
-                  <h4>Ланч с креветками и курицей</h4>
-                </div>
-                <div class="desc">Окинава ролл, салат сендай, лапша с курицей, булочка с кунжутом</div>
-                <div class="info">495<span class="rub">руб</span></div>
-              </div>
-              <div class="item_number">
-                <div class="counts">
-                  <button class="minus-btn" type="button"></button>
-                  <div class="count">1</div>
-                  <button class="plus-btn" type="button"></button>
-                </div>
-                <div class="price">495<span class="rub">руб</span></div>
-              </div>
-              <div class="item_delete-btn">
-                <button class="item_delete" type="button"></button>
-              </div>
-            </div>
-            <!-- ORDER SHEET ITEM =========================================-->
-            <div class="order-sheet_item"><img class="item_img" src="img/product/img-6.jpg" alt="No img"/>
-              <div class="item_desc">
-                <div class="title">
-                  <h4>Тунец Фьюжн</h4>
-                </div>
-                <div class="desc">Тунец, огурец, авокадо, сыр, кинза, лук фри</div>
-                <div class="info">450<span class="rub">руб</span></div>
-              </div>
-              <div class="item_number">
-                <div class="counts">
-                  <button class="minus-btn" type="button"></button>
-                  <div class="count">1</div>
-                  <button class="plus-btn" type="button"></button>
-                </div>
-                <div class="price">450<span class="rub">руб</span></div>
-              </div>
-              <div class="item_delete-btn">
-                <button class="item_delete" type="button"></button>
-              </div>
-            </div>
-            <!-- ORDER SHEET ITEM =========================================-->
-            <div class="order-sheet_item"><img class="item_img" src="img/product/img-7.jpg" alt="No img"/>
-              <div class="item_desc">
-                <div class="title">
-                  <h4>Азиатский салат с курицей</h4>
-                </div>
-                <div class="desc">Курица в перечно-цитрусовом соусе, руккола, дайкон, огурец, шпинат, кинза, кешью, кунжут, соус «Вафу-лемонграсс»</div>
-                <div class="info">380<span class="rub">руб</span></div>
-              </div>
-              <div class="item_number">
-                <div class="counts">
-                  <button class="minus-btn" type="button"></button>
-                  <div class="count">1</div>
-                  <button class="plus-btn" type="button"></button>
-                </div>
-                <div class="price">380<span class="rub">руб</span></div>
-              </div>
-              <div class="item_delete-btn">
-                <button class="item_delete" type="button"></button>
-              </div>
-            </div>
+        <div class="navbar">
+          <div class="burger-btn">
+            <div class="burger"></div>
+          </div><a class="logo" href="index.html"><img class="img" src="./img/logo.png" alt="Tokio Buy"/></a>
+          <div class="phone-number"><a href="tel:+79277444646">+7 (927) 744-4-646</a>
+            <p class="small-red">Доставка 10:00 - 20:00</p>
           </div>
-          <!-- PROMO AND CLEAN ===================-->
-          <div class="order-sheet_promo_clean">
-            <form class="promo">
-              <input class="promo-input" type="text" name="promo-input" id="promo-input" placeholder="Промокод"/>
-              <button class="promo-button" type="button">Использовать</button>
-            </form>
-            <button class="clean_basket" type="button">Очистить корзину</button>
+          <ul class="page-list">
+            <li><a href="menu.html">Каталог</a></li>
+            <li><a href="promo.html">Акции</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="basket">
+            <div class="price">
+              <p>0 &#8381;</p>
+              <p class="small-red">0 товаров</p>
+            </div><a class="button" href="basket.html">
+              <div class="bin">
+                <div class="count">1</div>
+              </div><span>Корзина</span></a>
           </div>
-          <!-- SUM ======================-->
-          <div class="order-sheet_sum-block">
-            <p class="sum-basket">Сумма вашей корзины</p>
-            <div class="delivery">
-              <div class="dlvry"> <img src="img/delivery.png" alt=""/>Доставка:</div>
-              <p class="sum-price">100<span class="sum-rub">&#8381;</span></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="basket sec-p">
+        <div class="container">
+          <h1>Корзина</h1>
+          <div class="order-sheet">
+            <div class="order-sheet_list">
+              <div class="order-sheet_item">
+                <img src="https://tokiobuy.ru/media/catalog/_0001_%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%82_%D1%81_%D0%BA%D1%83%D1%80%D0%B8%D1%86%D0%B5%D0%B9.jpg" alt="No img" class="item_img">
+                <div class="item_desc">
+                  <div class="title">
+                    <h4>Динамит с курицей</h4>
+                  </div>
+                  <div class="desc">суши рис, курица х/к, майонез, спайси соус, сыр, унаги соус, кунжут, зелёный лук.<br>✅Вес: 310гр.
+                  </div>
+                  <div class="info">
+                    270
+                    <span class="rub">руб</span>
+                  </div>
+                </div>
+                <div class="item_number">
+                  <div class="counts">
+                    <button type="button" class="minus-btn"></button>
+                    <div class="count">2</div>
+                    <button type="button" class="plus-btn"></button>
+                  </div>
+                  <div class="price">540<span class="rub">руб</span>
+                  </div>
+                </div>
+                <div class="item_delete-btn">
+                  <button type="button" class="item_delete"></button>
+                </div>
+              </div>
+            </div>
+            <div class="order-sheet_promo_clean">
+              <form class="promo">
+                <input type="text" name="promo-input" id="promo-input" placeholder="Промокод" class="promo-input">
+                <button type="button" class="promo-button">Использовать</button>
+              </form>
+              <button type="button" class="clean_basket">Очистить корзину</button>
+            </div>
+            <div class="order-sheet_presum-block">
+              <p class="comment-orders-sheet">Обратите внимание, имбирь и васаби а так же соевый соус не входят в заказ.</p>
+            </div>
+            <div class="order-sheet_sum-block">
+              <p class="sum-basket">Сумма вашей корзины</p>
+              <div class="delivery"><div class="dlvry">
+                <img src="/static/img/delivery.png" alt="">
+                Доставка:
+              </div>
+              <p class="sum-price">0<span class="sum-rub">₽</span></p>
             </div>
             <div class="sum">
               <p>Сумма заказа:</p>
-              <p class="sum-price">1425<span class="sum-rub">&#8381;</span></p>
-            </div>
+              <p class="sum-price">0<span class="sum-rub">₽</span></p>
+            </div><!---->
           </div>
-          <!-- NUMBER OF PEOPLE ======================-->
           <div class="order-sheet_num">
             <h2>Количество персон</h2>
             <div class="num_desc">
               <p>Исходя из количества участников вашей трапезы, мы бесплатно укомплектуем Ваш заказ аксессуарами.</p>
               <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">1</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
+                <button type="button" class="minus-btn"></button>
+              <div class="count">1</div>
+              <button type="button" class="plus-btn"></button>
             </div>
           </div>
-          <!-- COMMENT ==================-->
-          <div class="order-sheet_comment">
-            <h2>Комментарий к заказу</h2>
-            <form class="comment">
-              <textarea name="comment" placeholder="Комментарий..."></textarea>
-            </form>
-          </div>
-          <!-- PAYMENT METHOD =========================-->
-          <div class="order-sheet_payment-method">
-            <h2>Способ оплаты</h2>
-            <form class="methods">
-              <div class="method courier">
-                <input class="custom-radio" type="radio" name="payment-method" id="method_courier" value="1" checked="checked"/>
-                <label for="method_courier">Наличными курьеру</label>
-              </div>
-              <div class="method courier-online">
-                <input class="custom-radio" type="radio" name="payment-method" id="method_courier-online" value="2"/>
-                <label for="method_courier-online">Оплата картой при получении</label>
-              </div>
-              <div class="method online">
-                <input class="custom-radio" type="radio" name="payment-method" id="method_online" value="3"/>
-                <label for="method_online">Оплатить онлайн</label>
-              </div>
-            </form>
-          </div>
-          <!-- PERSON DETAILS =============================-->
-          <div class="order-sheet_person-details">
-            <h2>Контактные данные и адрес</h2>
-            <form class="details">
-              <div class="field name">
-                <label for="name">Имя</label>
-                <input class="detail" type="text" name="name" id="name"/>
-              </div>
+        </div>
+        <div class="order-sheet_comment">
+          <h2>Комментарий к заказу</h2>
+          <form class="comment">
+            <textarea name="comment" placeholder="Комментарий..."></textarea>
+          </form>
+        </div>
+        <div class="order-sheet_payment-method">
+          <h2>Способ оплаты</h2><form class="methods">
+            <div class="method courier">
+              <input type="radio" name="payment-method" id="method_courier" value="1" checked="checked" class="custom-radio">
+              <label for="method_courier">Наличными курьеру</label>
+            </div>
+            <div class="method courier-online">
+              <input type="radio" name="payment-method" id="method_courier-online" value="2" class="custom-radio">
+              <label for="method_courier-online">Оплата картой при получении</label>
+            </div>
+          </form>
+        </div>
+        <div class="order-sheet_person-details">
+          <h2>Контактные данные и адрес</h2>
+          <form class="details">
+            <div class="field name">
+              <label for="name">Имя *</label>
+              <input type="text" name="name" id="name" class="detail"></div>
               <div class="field tel">
-                <label for="tel">Номер телефона</label>
-                <input class="detail" type="number" name="tel" id="tel"/>
+                <label for="tel">Номер телефона *</label>
+                <input type="number" name="tel" id="tel" class="detail"></div>
+                <div class="field street">
+                  <label for="street">Улица *</label>
+                  <input type="text" name="street" id="street" class="detail"></div>
+                  <div class="field house"><label for="house">Дом *</label>
+                    <input type="text" name="house" id="house" class="detail">
+                  </div>
+                  <div class="field body">
+                    <label for="body">Корпус</label>
+                    <input type="text" name="body" id="body" class="detail"></div>
+                    <div class="field entrance">
+                      <label for="entrance">Подъезд</label>
+                      <input type="text" name="entrance" id="entrance" class="detail">
+                    </div>
+                    <div class="field intercom">
+                      <label for="intercom">Домофон</label>
+                      <input type="text" name="intercom" id="intercom" class="detail">
+                    </div>
+                    <div class="field floor">
+                      <label for="floor">Этаж</label>
+                      <input type="text" name="floor" id="floor" class="detail">
+                    </div>
+                    <div class="field flat">
+                      <label for="flat">Квартира/Офис</label>
+                      <input type="text" name="flat" id="flat" class="detail">
+                    </div>
+                      <div class="recaptcha-widget">
+                        <div style="width: 304px; height: 78px;"><div>
+                          <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdrYMcZAAAAADrEy9eNKYJr39_2nXWJFWj7PEJj&amp;co=aHR0cHM6Ly90b2tpb2J1eS5ydTo0NDM.&amp;hl=ru&amp;v=_KUxfxvAoJ4k7SaKyLbja4Mi&amp;size=normal&amp;cb=m50n4x2rz7cq" width="304" height="78" role="presentation" name="a-htanypfqlrsb" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
+                          </iframe>
+                        </div>
+                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                      </div>
+                      <iframe style="display: none;"></iframe>
+                    </div>
+                    <div class="btn-send">
+                      <button type="button" class="btn-detail">Отправить</button>
+                    </div>
+                  </form>
+                  <div class="politika">
+                    <a href="privacy.html" class="header-link">Нажимая кнопку вы принимаете политику конфиденциальности.</a>
+                  </div>
+                </div>
               </div>
-              <div class="field street">
-                <label for="street">Улица</label>
-                <input class="detail" type="text" name="street" id="street"/>
-              </div>
-              <div class="field house">
-                <label for="house">Дом</label>
-                <input class="detail" type="text" name="house" id="house"/>
-              </div>
-              <div class="field body">
-                <label for="body">Корпус</label>
-                <input class="detail" type="text" name="body" id="body"/>
-              </div>
-              <div class="field entrance">
-                <label for="entrance">Подъезд</label>
-                <input class="detail" type="text" name="entrance" id="entrance"/>
-              </div>
-              <div class="field intercom">
-                <label for="intercom">Домофон</label>
-                <input class="detail" type="text" name="intercom" id="intercom"/>
-              </div>
-              <div class="field floor">
-                <label for="floor">Этаж</label>
-                <input class="detail" type="text" name="floor" id="floor"/>
-              </div>
-              <div class="field flat">
-                <label for="flat">Квартира/Офис</label>
-                <input class="detail" type="text" name="flat" id="flat"/>
-              </div>
-              <div class="btn-send">
-                <button class="btn-detail" type="button">Отправить</button>
-              </div>
-            </form>
-          </div>
+            </div>
+          </section>
+    </main>
+
+    <footer>
+      <div class="container footer">
+        <div class="logo"><img src="img/logo.png" alt=""/></div>
+        <div class="copyright">
+          <p>TokioBuy © 2020 • ИП Михайлин Павел Сергеевич • ОГРНИП 320631300097594</p>
+        </div>
+        <div class="soc-list">
+          <div class="soc-list_item"><a href="#"><i class="fab fa-vk"></i></a></div>
+          <div class="soc-list_item"><a href="#"><i class="fab fa-instagram"></i></a></div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer>
-    <!-- FOOTER =======================================-->
-    <div class="container">
-      <p class="copyright">&copy;copyright 2020</p>
-      <div class="socials">
-        <div class="social inst"><a href="#"><i class="fab fa-instagram"></i></a></div>
-        <div class="social vk"><a href="#"><i class="fab fa-vk"></i></a></div>
+      <div class="footer-mob">
+        <a class="button" href="basket.html">
+          <div class="bin">
+            <div class="count">1</div>
+          </div>
+        </a>
+        <div class="soc-list">
+          <div class="soc-list_item"><a href="contacts.html"><i class="fa fa-phone-alt"></i></a></div>
+          <div class="soc-list_item"><a href="promo.html"><i class="fa fa-percent"></i></a></div>
+          <div class="soc-list_item"><a href="https://www.vk.com/tokiobuy"><i class="fab fa-vk"></i></a></div>
+          <div class="soc-list_item"><a href="https://www.instagram.com/tokiobuy_63/"><i class="fab fa-instagram"></i></a></div>
+        </div>
+        <div class="copyright">
+          <p>TokioBuy © 2020 • ИП Михайлин Павел Сергеевич • ОГРНИП 320631300097594</p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="js/script.min.js"></script>
-</body>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

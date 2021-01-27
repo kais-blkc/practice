@@ -1,278 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-  <title>Главная</title>
-</head>
-<body>
-  <div class="black" id="black"></div>
-  <header>
-    <!-- HEADER ============================-->
-    <div class="container"><a class="basket-logo" href="basket.html"><i class="fas fa-shopping-cart"></i></a><a href="index.html"><img class="logo" src="img/logo.png"/></a>
-      <div class="header-nav">
-        <nav><a class="header-link" href="index.html">Главная</a><a class="header-link" href="contacts.html">Контакты</a><a class="header-link" href="basket.html">Корзина</a>
-        </nav>
-      </div>
-      <div class="burger-click">
-        <div class="burger" id="burger"></div>
-      </div>
-      <div class="burger-menu" id="burger-menu">
-        <div class="close-btn" id="close-burger">
-          <div class="btn-close"></div>
-        </div>
-        <nav><a class="header-link" href="index.html">Главная</a><a class="header-link" href="contacts.html">Контакты</a><a class="header-link" href="basket.html">Корзина</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <!-- MODAL DEMO =========================================-->
-    <div class="modal-bg" id="modal-bg">
-      <div class="container">
-        <div class="modal">
-          <div class="close" id="close"></div>
-          <h2>Внимание</h2>
-          <p>Здесь представлена демо-версия сайта.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRODUCTS SECTION =========================================-->
-    <section class="products">
-      <div class="container">
-        <div class="product-list">
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-1.jpg" alt="Not img" title="Ланч с креветками и курицей"/>
-              <h4 class="product-title">Ланч с креветками и курицей</h4>
-              <p class="product-desc">Окинава ролл, салат сендай, лапша с курицей, булочка с кунжутом</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">495</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">4550</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-2.jpg" alt="Not img" title="Ланч с бургером"/>
-              <h4 class="product-title">Ланч с бургером</h4>
-              <p class="product-desc">Бургер с говядиной, картофель фри, цезарь с курицей</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">495</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">550</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-3.jpg" alt="Not img" title="Ланч с лососем и курицей"/>
-              <h4 class="product-title">Ланч с лососем и курицей</h4>
-              <p class="product-desc">Ролл с лососем, чикен спайси, овощной салат,  булочка с кунжутом</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">495</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">550</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-4.jpg" alt="Not img" title="Ланч с курицей"/>
-              <h4 class="product-title">Ланч с курицей</h4>
-              <p class="product-desc">Калифорния, салат кофу, тяхан с курицей, булочка с кунжутом</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">495</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">5750</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-5.jpg" alt="Not img" title="Тунец Фьюжн"/>
-              <h4 class="product-title">Тунец Фьюжн</h4>
-              <p class="product-desc">Тунец, огурец, авокадо, сыр, кинза, лук фри</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">450</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">500</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-6.jpg" alt="Not img" title="Премиум Блэк"/>
-              <h4 class="product-title">Премиум Блэк</h4>
-              <p class="product-desc">Гребешок, авокадо, манго, сыр, омлет, микс соусов, 6 шт.</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">455</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">5500</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-7.jpg" alt="Not img" title="Азиатский салат с курицей"/>
-              <h4 class="product-title">Азиатский салат с курицей</h4>
-              <p class="product-desc">Курица в перечно-цитрусовом соусе, руккола, дайкон, огурец, шпинат, кинза, кешью, кунжут, соус «Вафу-лемонграсс»</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">380</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">450</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-8.jpg" alt="Not img" title="Филадельфия Нисуаз"/>
-              <h4 class="product-title">Филадельфия Нисуаз</h4>
-              <p class="product-desc">Угорь, авокадо, сыр, имбирь, тобико, соус «Нисуаз», кунжут, 6 шт.</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">455</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">5000</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-8.jpg" alt="Not img" title="Филадельфия Нисуаз"/>
-              <h4 class="product-title">Филадельфия Нисуаз</h4>
-              <p class="product-desc">Угорь, авокадо, сыр, имбирь, тобико, соус «Нисуаз», кунжут, 6 шт.</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">455</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">5000</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-          </div>
-          <!-- PRODUCT ITEM =========================================-->
-          <section class="products"></section>
-          <div class="product-item">
-            <div class="product-body"><img src="img/product/img-8.jpg" alt="Not img" title="Филадельфия Нисуаз"/>
-              <h4 class="product-title">Филадельфия Нисуаз</h4>
-              <p class="product-desc">Угорь, авокадо, сыр, имбирь, тобико, соус «Нисуаз», кунжут, 6 шт.</p>
-            </div>
-            <div class="product-footer">
-              <div class="product-price">
-                <div class="new-price"><span class="price">455</span><span class="rub"> руб</span></div>
-                <div class="old-price"><span class="price">5000</span><span class="rub"> руб</span></div>
-              </div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tokiobuy</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/f-a-pro-all.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css"/>
+  </head>
+  <body><!-- HEADER =============================== -->
+    <header>
+      <div class="burger-wrapper">
+        <div class="burger-menu">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Каталог</a></li>
+            <li><a href="promo.html">Акции</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="phone-number"><a href="tel:+79277444646">+7 (927) 744-4-646</a>
+            <p class="small-red">Доставка 10:00 - 20:00</p>
           </div>
         </div>
       </div>
-    </section>
-    <div class="modal" id="myModal">
       <div class="container">
-        <div class="modal-content">
-          <div class="close" id="close">&times;</div>
-          <div class="left"><img src="img/product/img-1.jpg" alt=""/></div>
-          <div class="right">
-            <h3>Ланч с креветками и курицей</h3>
-            <p class="desc">Окинава ролл, салат сендай, лапша с курицей, булочка с кунжутом</p>
+        <div class="navbar">
+          <div class="burger-btn">
+            <div class="burger"></div>
+          </div><a class="logo" href="index.html"><img class="img" src="./img/logo.png" alt="Tokio Buy"/></a>
+          <div class="phone-number"><a href="tel:+79277444646">+7 (927) 744-4-646</a>
+            <p class="small-red">Доставка 10:00 - 20:00</p>
+          </div>
+          <ul class="page-list">
+            <li><a href="menu.html">Каталог</a></li>
+            <li><a href="promo.html">Акции</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="basket">
             <div class="price">
-              <div class="info">495<span class="rub">руб</span></div>
-              <div class="counts">
-                <button class="minus-btn" type="button"></button>
-                <div class="count">0</div>
-                <button class="plus-btn" type="button"></button>
-              </div>
-            </div>
-            <div class="desc-2"></div>
-            <div class="socials">
-              <div class="social inst"><a href="#"><i class="fab fa-instagram"></i></a></div>
-              <div class="social vk"><a href="#"><i class="fab fa-vk"></i></a></div>
-            </div>
+              <p>0 &#8381;</p>
+              <p class="small-red">0 товаров</p>
+            </div><a class="button" href="basket.html">
+              <div class="bin">
+                <div class="count">1</div>
+              </div><span>Корзина</span></a>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <!-- FOOTER =======================================-->
-    <div class="container">
-      <p class="copyright">&copy;copyright 2020</p>
-      <div class="socials">
-        <div class="social inst"><a href="#"><i class="fab fa-instagram"></i></a></div>
-        <div class="social vk"><a href="#"><i class="fab fa-vk"></i></a></div>
+    </header>
+    <main><!-- MAIN =============================== -->
+      <section class="main-nav">
+        <div class="container">
+          <div class="left_right">
+            <div class="left">
+              <ul>
+                      <li><a href="#"><img src="img/nav-1.png" alt=""/><span>Роллы</span></a></li>
+                      <li><a href="#"><img src="img/nav-2.png" alt=""/><span>Пицца</span></a></li>
+                      <li><a href="#"><img src="img/nav-3.png" alt=""/><span>Суши</span></a></li>
+                      <li><a href="#"><img src="img/nav-4.png" alt=""/><span>Сеты</span></a></li>
+                      <li><a href="#"><img src="img/nav-5.png" alt=""/><span>Закуски</span></a></li>
+                      <li><a href="#"><img src="img/nav-6.png" alt=""/><span>Поке</span></a></li>
+                      <li><a href="#"><img src="img/nav-7.png" alt=""/><span>Напитки</span></a></li>
+                      <li><a href="#"><img src="img/nav-8.png" alt=""/><span>Соусы</span></a></li>
+                      <li><a href="#"><img src="img/nav-9.png" alt=""/><span>Новое</span></a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <div class="swiper-promo">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="img/promo.png" alt=""/></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/promo.png" alt=""/></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="img/promo.png" alt=""/></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main><!-- FOOTER =============================== -->
+    <footer>
+      <div class="container footer">
+        <div class="logo"><img src="img/logo.png" alt=""/></div>
+        <div class="copyright">
+          <p>TokioBuy © 2020 • ИП Михайлин Павел Сергеевич • ОГРНИП 320631300097594</p>
+        </div>
+        <div class="soc-list">
+          <div class="soc-list_item"><a href="#"><i class="fab fa-vk"></i></a></div>
+          <div class="soc-list_item"><a href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="js/script.min.js"></script>
-</body>
+      <div class="footer-mob">
+        <a class="button" href="basket.html">
+          <div class="bin">
+            <div class="count">1</div>
+          </div>
+        </a>
+        <div class="soc-list">
+          <div class="soc-list_item"><a href="contacts.html"><i class="fa fa-phone-alt"></i></a></div>
+          <div class="soc-list_item"><a href="promo.html"><i class="fa fa-percent"></i></a></div>
+          <div class="soc-list_item"><a href="https://www.vk.com/tokiobuy"><i class="fab fa-vk"></i></a></div>
+          <div class="soc-list_item"><a href="https://www.instagram.com/tokiobuy_63/"><i class="fab fa-instagram"></i></a></div>
+        </div>
+        <div class="copyright">
+          <p>TokioBuy © 2020 • ИП Михайлин Павел Сергеевич • ОГРНИП 320631300097594</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
