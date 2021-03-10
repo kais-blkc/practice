@@ -14,6 +14,7 @@ body {
   font-family: "Ubuntu", helvetica;
   min-height: 100vh;
   padding: 50px 0;
+  position: relative;
 }
 
 a {
@@ -42,6 +43,11 @@ ul {
   font-size: 1rem;
   letter-spacing: 0.25em;
   opacity: 0.8;
+  animation-name: flashing;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
 }
 
 .work-list {
@@ -81,4 +87,36 @@ footer {
   opacity: 0.2;
   position: absolute;
   bottom: 15px;
+}
+
+@media (max-width: 778px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .title-block h1 {
+    font-size: 2.6rem;
+  }
+
+  .title-block small {
+    font-size: 0.8rem;
+  }
+
+  .work-list {
+    margin-top: 80px;
+  }
+
+  .work-list li a {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
