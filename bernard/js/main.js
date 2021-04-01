@@ -16,6 +16,7 @@ const header = $('header .header__container')
 function scrollHeader() {
   if ($(this).scrollTop() > 110) {
     header.css({'padding': '10px 0'})
+    $('body').css({'padding-top': '70px'})
     $(window).off('scroll', scrollHeader)
   }
 }
