@@ -9,11 +9,12 @@
 }
 
 body {
-  color: #fff;
-  background-color: #001f35;
-  font-family: "Ubuntu", helvetica;
-  min-height: 100vh;
   padding: 50px 0;
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Ubuntu", helvetica;
+  background-color: #001f35;
+  background: linear-gradient(220deg, rgb(20 55 135 / 92%) 0%, rgb(0 27 96 / 69%) 100%);
   position: relative;
 }
 
@@ -61,14 +62,14 @@ ul {
   transform: scale(1);
   transition: all 0.3s ease;
   opacity: 0.3;
+  border-left: 1px solid #fff;
 }
 .work-list li:hover {
+  border-left: 3px solid #fff;
   transform: scale(1.1);
   opacity: 1;
 }
 .work-list li:hover a {
-  text-shadow: 0px 0px 0px #2768e7, 4px 2px 0px #2768e7;
-  -webkit-text-stroke: 0px;
   color: #fff;
 }
 
