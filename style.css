@@ -59,7 +59,7 @@ ul {
 .work-list li {
   margin: 0 auto;
   padding: 13px 0;
-  max-width: 300px;
+  max-width: 340px;
   transform: scale(1);
   transition: all 0.3s ease;
   opacity: 0.3;
