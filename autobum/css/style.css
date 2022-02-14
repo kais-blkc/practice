@@ -1335,8 +1335,8 @@ footer .footer-bottom .development img {
 .fixed-buttons a,
 .fixed-buttons button {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
