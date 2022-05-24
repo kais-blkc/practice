@@ -157,23 +157,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const fftItem = document.querySelector('.ff-team__list');
 
     fftItem.addEventListener('click', function(e) {
-      console.log(e.target.className);
 
       if (e.target.className === 'ff-team__item-more') {
+        const fftItems = document.querySelectorAll('.ff-team__item');
+        const fftDescs = document.querySelectorAll('.ff-team__item .ff-team__item-desc');
         const fftDesc = e.target.closest('.ff-team__item').querySelector('.ff-team__item-desc');
         const fftMore = e.target.closest('.ff-team__item').querySelector('.ff-team__item-more');
 
+        fftDescs.forEach(el => {
+          if (el.closest('.ff-team__item') != e.target.closest('.ff-team__item')) {
+            el.classList.remove('active')
+          }
+        });
         fftDesc.classList.toggle('active');
         fftDesc.style.maxHeight = fftDesc.scrollHeight + 20 + 'px';
-        if (fftDesc.className.includes('active')) {
-          fftMore.innerHTML = 'Свернуть';
-        } else {
-          fftMore.innerHTML = 'Моя история';
-        }
+        
+        fftItems.forEach(el => {
+          const elDesc = el.querySelector('.ff-team__item-desc')
+          if (elDesc.className.includes('active')) {
+            el.querySelector('.ff-team__item-more').innerHTML = 'Свернуть';
+          } else {
+            el.querySelector('.ff-team__item-more').innerHTML = 'Моя история';
+          }
+        });
 
       }
 
     });
   } catch (err) {}
+
+// Autopaly video
+try {
+  document.querySelector('.video-bg video').play();
+} catch (err) {}
+
 })
 

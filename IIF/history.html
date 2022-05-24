@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
-    <!-- meta(name="viewport", content="width=device-width, initial-scale=1.0")-->
-    <title>Доверительное управление</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Коференции</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/fancybox.css"/>
+    <link rel="stylesheet" href="css/style.css?v=2"/>
   </head>
   <body>
     <header> 
@@ -19,7 +20,7 @@
             <li><a href="index.html">Главная </a></li>
             <li><a href="./market.html">IIF market </a></li>
             <li><a href="history.html">Доходность </a></li>
-            <li><a href="javascript:void(0)">Куда инвестируем </a>
+            <li><a class="hide-desc" href="javascript:void(0)">Куда инвестируем </a>
               <ul class="sub-menu">
                 <li><a href="./Invest-technology.html">Стартапы</a></li>
                 <li><a href="./tm.html">Дов. Управление</a></li>
@@ -39,7 +40,7 @@
         <div class="img-bg"> <img class="fill-cover" src="img/h-hero.jpg" alt=""/></div>
         <div class="container"> 
           <div class="hero-top">
-            <div class="logo"><img src="img/logo.svg" alt=""/>
+            <div class="logo"><img src="img/logo-new.png" alt=""/>
               <p>Invest in the <br/> Future Capital</p>
             </div><a class="profile" href="#"><img src="img/prof-man.svg" alt=""/>
               <p>Личный кабинет</p></a>
@@ -74,7 +75,20 @@
                         <div class="confs-past-events__item-btns">
                           <div class="per-wrapper">
                             <div class="confs-past-events__item-per">Период <br> Прибыль</div>
-                            <div class="confs-past-events__item-mth">3 месяцев <br> 100%</div>
+                            <div class="confs-past-events__item-mth">3 месяца <br> 100%</div>
+                          </div>
+                          <div><a class="btn-brown" href="javascript:void(0)">Инвестировать</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="confs-past-events__item">
+                        <div class="confs-past-events__item-img"><img class="fill-cover" src="img/ppi-1.jpg" alt=""/></div>
+                        <div class="confs-past-events__item-title">Пункт обмена криптовалюты в Анталии (наличная ликвидность)</div>
+                        <div class="confs-past-events__item-btns">
+                          <div class="per-wrapper">
+                            <div class="confs-past-events__item-per">Период <br> Прибыль</div>
+                            <div class="confs-past-events__item-mth">1 месяц <br> от 25%</div>
                           </div>
                           <div><a class="btn-brown" href="javascript:void(0)">Инвестировать</a></div>
                         </div>
@@ -110,34 +124,41 @@
         <div class="container"> 
           <div class="title-desc">В IIF capital много внимания уделяется финансовой грамотности, <br/> риск менеджменту и страхованию рисков, каждый проект<br/> проверяется и исполняется командой профессионалов, <br/> поэтому с нами инвестировать надежно.</div><a class="btn-brown" href="javascript:void(0)">Стать резидентом</a>
         </div>
-      </section><!--it-project-pass =================-->
-      <section class="contacts">
+      </section>
+    </main>
+    <footer><!--contacts =================-->
+      <section class="start-invest">
         <div class="container"> 
-          <div class="contacts__left">
-            <h2 class="h2 __left">Я не нашел ответа <br/> на интересующий меня вопрос</h2>
-            <div class="title-desc">Напишите нам свой вопрос на почту<a href="support@llf-capital.com">support@llf-capital.com</a></div>
-            <div class="small-desc"> <img src="img/stopwatch.svg" alt=""/>
-              <p>Мы вернемся к вам с ответом в максимально короткие сроки</p>
+          <div class="start-invest__top">
+            <div class="logo"><img src="img/logo-new.png" alt=""/>
+              <p>Invest in the <br/> Future Capital</p>
             </div>
+            <div class="address">LONDON <br/> 5 Stratford Place W1C 1AX United Kingdom IIF Capital LTD. <br/><br/> Связь с нами <a href="https://t.me/Diagilev_Anton">Telegram,</a> <a href="mailto:info@iif.capital">@llfcapital</a> <br/> Напишите нам свой вопрос на почту <a href="mailto:support@llf-capital.com">support@llf-capital.com</a> </div>
           </div>
-          <div class="contacts__right">
-            <h3 class="h3">Связь с нами</h3>
-            <div class="contact-us__list">
-                    <div class="contact-us__item">
-                      <div class="contact-us__item-title">Инвест блог</div><a class="contact-us__item-link" href="javascript:void(0)">Перейти</a>
-                    </div>
-                    <div class="contact-us__item">
-                      <div class="contact-us__item-title">Сообщество инвесторов (Telegram)</div><a class="contact-us__item-link" href="javascript:void(0)">@llfcapital</a>
-                    </div>
-                    <div class="contact-us__item">
-                      <div class="contact-us__item-title">LLF invest на Medium</div><a class="contact-us__item-link" href="javascript:void(0)">Перейти</a>
-                    </div>
-            </div>
+          <div class="start-invest__bottom">
+            <div class="copyright">2022 © IIF Capital</div><a class="profile" href="#"><img src="img/prof-man.svg" alt=""/>
+              <p>Личный кабинет</p></a>
           </div>
         </div>
       </section>
-    </main>
+    </footer><!--modal =================-->
+    <div class="modal">
+      <div class="close-modal"></div>
+      <div class="modal-items">
+        <div class="modal__market-pp modal-content">
+          <div class="modal__market-pp__img img"><img src="img/ppi-1.jpg" alt=""/></div>
+          <div class="modal__market-pp__body">
+            <div class="h3 title">Заголовок</div>
+            <div class="modal__market-pp__desc desc"> 
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Осталось ведущими, заглавных вершину, но взгляд толку его составитель свою речью запятой буквенных послушавшись переулка снова города lorem назад знаках, единственное ручеек точках однажды щеке.</p>
+              <p>словесными горами в стране, гласных и согласных живут рыбные тексты. Осталось ведущими, заглавных вершину, но взгляд толку.</p>
+            </div><a class="btn-brown" href="javascript:void(0)">Перейти на сайт</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js?v=2"></script>
   </body>
 </html>

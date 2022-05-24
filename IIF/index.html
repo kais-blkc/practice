@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
-    <!-- meta(name="viewport", content="width=device-width, initial-scale=1.0")-->
-    <title>IIF</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Коференции</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/fancybox.css"/>
+    <link rel="stylesheet" href="css/style.css?v=2"/>
   </head>
   <body>
     <header> 
@@ -18,7 +20,7 @@
             <li><a href="index.html">Главная </a></li>
             <li><a href="./market.html">IIF market </a></li>
             <li><a href="history.html">Доходность </a></li>
-            <li><a href="javascript:void(0)">Куда инвестируем </a>
+            <li><a class="hide-desc" href="javascript:void(0)">Куда инвестируем </a>
               <ul class="sub-menu">
                 <li><a href="./Invest-technology.html">Стартапы</a></li>
                 <li><a href="./tm.html">Дов. Управление</a></li>
@@ -36,13 +38,13 @@
     <main><!--Hero =================-->
       <section class="hero main main-bg">
         <div class="video-bg">
-           <video loop="" muted="" autoplay="true">
+           <video loop muted autoplay>
 <source src="video/bg-hero-main.mp4" type="video/mp4">
 </video>
         </div>
         <div class="container"> 
           <div class="hero-top">
-            <div class="logo"><img src="img/logo.svg" alt=""/>
+            <div class="logo"><img src="img/logo-new.png" alt=""/>
               <p>Invest in the <br/> Future Capital</p>
             </div><a class="profile" href="#"><img src="img/prof-man.svg" alt=""/>
               <p>Личный кабинет</p></a>
@@ -165,41 +167,7 @@
           <h2 class="h2">Куда инвестируют резиденты IIF capital?</h2>
           <div class="where-invest__wrapper">
             <div class="where-invest__left">
-              <div class="where-invest__list">
-                <div class="where-invest__list-row __right-items">
-                        <div class="where-invest__item brown-bg">
-                          <div class="where-invest__item-text">В личное <br> оброзование</div>
-                        </div>
-                        <div class="where-invest__item white-bg">
-                          <div class="where-invest__item-text">Мета <br> вселенные</div>
-                        </div>
-                        <div class="where-invest__item white-bg">
-                          <div class="where-invest__item-text">IDO</div>
-                        </div>
-                </div>
-                <div class="where-invest__list-row __left-items">
-                        <div class="where-invest__item white-bg">
-                          <div class="where-invest__item-text">В инновационные <br> изобретения</div>
-                        </div>
-                        <div class="where-invest__item hide">
-                          <div class="where-invest__item-text"></div>
-                        </div>
-                        <div class="where-invest__item brown-bg">
-                          <div class="where-invest__item-text">В криптовалютный <br> трейдинг</div>
-                        </div>
-                </div>
-                <div class="where-invest__list-row __right-items">
-                        <div class="where-invest__item brown-bg">
-                          <div class="where-invest__item-text">ICO</div>
-                        </div>
-                        <div class="where-invest__item white-bg">
-                          <div class="where-invest__item-text">В цифровые <br> системы</div>
-                        </div>
-                        <div class="where-invest__item white-bg">
-                          <div class="where-invest__item-text">В экопродукты <br> и умные товары</div>
-                        </div>
-                </div>
-              </div>
+              <div class="where-invest__left-img"> <img src="img/wi-left.svg" alt=""/></div>
             </div>
             <div class="where-invest__right">
               <div class="where-invest__right-block">
@@ -248,48 +216,43 @@
       </section><!--partners =================-->
       <section class="partners">
         <h2 class="h2">Партнеры</h2>
-        <div class="partners__list"><a class="partners__item" href="javascript:void(0)"><img src="img/p-1.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-2.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-3.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-4.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-5.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-6.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-7.png" alt=""/></a><a class="partners__item" href="javascript:void(0)"><img src="img/p-8.png" alt=""/></a>
+        <div class="partners__list"><a class="partners__item" href="https://www.alptr.com/"><img src="img/lg-1.svg" alt=""/></a><a class="partners__item" href="https://alppad.com/"><img src="img/lg-2.png" alt=""/></a><a class="partners__item" href="https://metavibes.ai/"><img src="img/lg-3.png" alt=""/></a><a class="partners__item" href="https://blockchainwave.org/"><img src="img/lg-4.png" alt=""/></a>
         </div>
-      </section><!--contacts =================-->
-      <section class="contacts">
-        <div class="container"> 
-          <div class="contacts__left">
-            <h2 class="h2 __left">Я не нашел ответа <br/> на интересующий меня вопрос</h2>
-            <div class="title-desc">Напишите нам свой вопрос на почту<a href="support@llf-capital.com">support@llf-capital.com</a></div>
-            <div class="small-desc"> <img src="img/stopwatch.svg" alt=""/>
-              <p>Мы вернемся к вам с ответом в максимально короткие сроки</p>
-            </div>
-          </div>
-          <div class="contacts__right">
-            <h3 class="h3">Связь с нами</h3>
-            <div class="contact-us__list">
-                    <div class="contact-us__item">
-                      <div class="contact-us__item-title">Инвест блог</div><a class="contact-us__item-link" href="javascript:void(0)">Перейти</a>
-                    </div>
-                    <div class="contact-us__item">
-                      <div class="contact-us__item-title">Сообщество инвесторов (Telegram)</div><a class="contact-us__item-link" href="javascript:void(0)">@llfcapital</a>
-                    </div>
-                    <div class="contact-us__item">
-                      <div class="contact-us__item-title">LLF invest на Medium</div><a class="contact-us__item-link" href="javascript:void(0)">Перейти</a>
-                    </div>
-            </div>
-          </div>
-        </div>
-      </section><!--start-invest =================-->
+      </section>
+    </main>
+    <footer><!--contacts =================-->
       <section class="start-invest">
         <div class="container"> 
-          <div class="logo"><img src="img/logo.svg" alt=""/>
-            <p>Invest in the <br/> Future Capital</p>
+          <div class="start-invest__top">
+            <div class="logo"><img src="img/logo-new.png" alt=""/>
+              <p>Invest in the <br/> Future Capital</p>
+            </div>
+            <div class="address">LONDON <br/> 5 Stratford Place W1C 1AX United Kingdom IIF Capital LTD. <br/><br/> Связь с нами <a href="https://t.me/Diagilev_Anton">Telegram,</a> <a href="mailto:info@iif.capital">@llfcapital</a> <br/> Напишите нам свой вопрос на почту <a href="mailto:support@llf-capital.com">support@llf-capital.com</a> </div>
           </div>
-          <div class="h1">Начните инвестировать сейчас</div>
-          <div class="title-desc">Создайте надежный источник пассивного доход</div><a class="btn-brown" href="javascript:void(0)">Инвестировать</a>
           <div class="start-invest__bottom">
             <div class="copyright">2022 © IIF Capital</div><a class="profile" href="#"><img src="img/prof-man.svg" alt=""/>
               <p>Личный кабинет</p></a>
           </div>
         </div>
       </section>
-    </main>
-    <script src="./js/main.js"></script>
+    </footer><!--modal =================-->
+    <div class="modal">
+      <div class="close-modal"></div>
+      <div class="modal-items">
+        <div class="modal__market-pp modal-content">
+          <div class="modal__market-pp__img img"><img src="img/ppi-1.jpg" alt=""/></div>
+          <div class="modal__market-pp__body">
+            <div class="h3 title">Заголовок</div>
+            <div class="modal__market-pp__desc desc"> 
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Осталось ведущими, заглавных вершину, но взгляд толку его составитель свою речью запятой буквенных послушавшись переулка снова города lorem назад знаках, единственное ручеек точках однажды щеке.</p>
+              <p>словесными горами в стране, гласных и согласных живут рыбные тексты. Осталось ведущими, заглавных вершину, но взгляд толку.</p>
+            </div><a class="btn-brown" href="javascript:void(0)">Перейти на сайт</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js?v=2"></script>
   </body>
 </html>
