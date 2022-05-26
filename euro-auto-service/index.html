@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220526133809">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="index.html" class="header__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип ЕвроАвтоСервис"></picture>
+					</a>
+					<div class="header__location">
+						<img src="img/header/location.svg" alt="Локация">
+						<div class="header__name">Ваш город: <span class="js-open-modal" data-modal="select-cities">Минск</span></div>
+						<div class="header__box active">
+							<div class="header__minimodal">
+								<div class="header__name header__name_m">Ваш город: <span>Минск</span></div>
+								<button class="header__yes close-header-box">Да, верно</button>
+								<button class="header__no js-open-modal" data-modal="select-cities">Нет, другой</button>
+							</div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="menu__bg"></div>
+							<div class="menu__box">
+								<ul class="menu__list">
+									<li class="menu__item"><a id="registration" href="registration.html#registration" class="menu__link menu__link_m">Сеть сто</a></li>
+									<li class="menu__item"><a id="stock" href="stock.html#stock" class="menu__link">Акции</a>
+									</li>
+									<li class="menu__item"><a id="about" href="about.html#about" class="menu__link">О
+											компании</a></li>
+									<li class="menu__item"><a id="contact" href="contact.html#contact" class="menu__link">Контакты</a></li>
+									<li class="menu__item"><a id="franchise" href="franchise.html#franchise" class="menu__link">Франшиза</a>
+									</li>
+								</ul>
+								<div class="menu__newLocation">
+								</div>
+								<div class="menu__enroll">
+									<div class="menu__btn">
+										<a href="registration.html" class="">Записаться на сто</a>
+									</div>
+									<div class="menu__social">
+										<a href="#"><img src="img/header/vk.svg" alt="Вконтакте"></a>
+										<a href="#"><img src="img/header/instagram.svg" alt="Инстаграм"></a>
+										<a href="#"><img src="img/header/ok.svg" alt="Одноклассники"></a>
+										<a href="#"><img src="img/header/facebook.svg" alt="Фэйсбук"></a>
+									</div>
+									<div class="menu__bgwhite">
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<button type="button" class="menu__icon icon-menu "><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="top">
+				<div class="top__container">
+					<div class="top__body">
+						<div class="top__title">
+							<h1>Запишитесь в удобное для вас СТО</h1>
+						</div>
+						<div class="top__text">
+							<p>У нас <span>98 автосервисов</span> в 40 городах по всей Беларуси. Гарантия 2 года
+								действительна по всей сети</p>
+						</div>
+						<a href="registration.html" class="btn_save-sto">Записаться на СТО</a>
+					</div>
+				</div>
+				<div class="top__bg1-ibg">
+					<picture><source srcset="img/top/bg.webp" type="image/webp"><img src="img/top/bg.png" alt="Фон сайта"></picture>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<div class="services__body">
+						<div class="services__title">
+							<h2>Предоставляем все виды услуг</h2>
+						</div>
+						<div class="services__text">
+							<p>Ваш автомобиль в надёжных руках: мы предлагаем множество услуг, связанных с вашим
+								автомобилем, самого высокого качества и по разумной цене. Комплексные цены, которые
+								объединяют стоимости работ и запасных частей подойдут каждому автолюбителю, а
+								расширенная гарантия в 2 года или 20 000 км пробега - подтверждают наш профессионализм.
+							</p>
+						</div>
+						<div class="services__search">
+							<a href class="services__input js-open-modal" data-modal="1">
+								<span>Введите требуемую услугу</span>
+
+							</a>
+							<button class="services__btn">Заправка кондиционера</button>
+							<button class="services__btn">Химчистка салона</button>
+							<button class="services__btn">Сход/Развал</button>
+						</div>
+						<div class="services__box">
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>ДИАГНОСТИКА</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/1.svg" alt="ДИАГНОСТИКА">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>РЕМОНТ ДВИГАТЕЛЯ</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/2.svg" alt="РЕМОНТ ДВИГАТЕЛЯ">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>ШИНОМОНТАЖ</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/3.svg" alt="ШИНОМОНТАЖ">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>ЗАМЕНА КОЛОДОК</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/4.svg" alt="ЗАМЕНА КОЛОДОК">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Ремонт трансмиссии</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/5.svg" alt="Ремонт трансмиссии">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Кузовной ремонт</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/6.svg" alt="Кузовной ремонт">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Сход/развал</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/7.svg" alt="Сход/развал">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Химчистка салона</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/8.svg" alt="Химчистка салона">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Замена масла</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/9.svg" alt="Замена масла">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Ремонт АКПП</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/10.svg" alt="Ремонт АКПП">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Рулевое управление</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/11.svg" alt="Рулевое управление">
+								</div>
+							</a>
+							<a href="#" class="services__item">
+								<div class="services__name">
+									<h5>Топливная система</h5>
+									<span class="replace">ОТ 32 РУБЛЕЙ</span>
+								</div>
+								<div class="services__image">
+									<img src="img/services/12.svg" alt="Топливная система">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="call">
+				<div class="call__container">
+					<div class="call__body">
+						<div class="call__image">
+							<picture><source srcset="img/call/1.webp" type="image/webp"><img src="img/call/1.png" alt="Оставьте заявку на звонок"></picture>
+						</div>
+						<div class="call__content">
+							<div class="call__title">
+								<h2>Не нашли нужную услугу?</h2>
+							</div>
+							<div class="call__text">
+								<p>Оставьте заявку на звонок? Первый свободный мастер перезвонит вам и ответит на все
+									вопросы.</p>
+							</div>
+							<form action="#" class="call__form">
+								<input type="text" placeholder="Как вас зовут?" class="call__input">
+								<input type="tel" placeholder="Введите ваш номер телефона" class="call__input call__input_m tel">
+								<button class="call__btn">Позвоните мне</button>
+							</form>
+							<span> оставляя заявку я даю свое согласие на <a href="#">обработку персональных
+									данных</a></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<div class="why__container top__container-m">
+					<div class="why__body">
+						<div class="why__title">
+							<h2>Почему автовладельцы выбирают <span>СТО ЕВРОАВТОСЕРВИС?</span></h2>
+						</div>
+						<div class="why__content">
+							<div class="why__image">
+								<div class="why__img-ibgg">
+									<picture><source srcset="img/why/gb.webp" type="image/webp"><img src="img/why/gb.png" alt="Почему автовладельцы выбирают СТО ЕВРОАВТОСЕРВИС?"></picture>
+								</div>
+							</div>
+							<div class="why__box">
+								<div class="why__text">
+									<p>ЕВРОАВТОСЕРВИС – это постоянно развивающаяся сеть независимых СТО по всей
+										Беларуси. В нашу сеть входят также станции PATRON Авто, ШАТЕ-М Дизель) Также мы
+										являемся частью международной сервисной концепции EUROGARAGE, принадлежащей
+										ассоциации поставщиков автозапчастей GROUPAUTO INTERNATIONAL (GAI).
+										Наши автосервисы есть по всей Беларуси (как в крупных городах, так и в небольших
+										населённых пунктах). Предоставляем услуги по ремонту и обслуживанию автомобилей
+										уже более 21 года и за это время закрепили репутацию ответственной и надёжного
+										поставщика услуг. Мы гарантируем единый высокий уровень профессионализма
+										сотрудников во всех автосервисах сети. </p>
+								</div>
+								<div class="why__inner">
+									<div class="why__small-item">
+										<div class="why__number">98</div>
+										<div class="why__name"> Автосервисов в сети </div>
+									</div>
+									<div class="why__small-item">
+										<div class="why__number">21</div>
+										<div class="why__name">Год на рынке автоуслуг</div>
+									</div>
+									<div class="why__small-item">
+										<div class="why__number">40</div>
+										<div class="why__name">Городов в Беларуси</div>
+									</div>
+									<div class="why__small-item">
+										<div class="why__number">40</div>
+										<div class="why__name">Городов в Беларуси</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="why__cards">
+							<div class="why__item">
+								<div class="why__img-content">
+									<img src="img/why/1.svg" alt="">
+								</div>
+								<div class="why__subtitle">
+									<h3>Гарантия 2 года</h3>
+								</div>
+								<div class="why__desc">
+									<p>Расширенная официальная гарантия действует в любом СТО сети
+										в течение 24 месяцев (исключая детали подверженные естественному износу).</p>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__img-content">
+									<img src="img/why/2.svg" alt="">
+								</div>
+								<div class="why__subtitle">
+									<h3>Бесплатная диагностика для наших клиентов</h3>
+								</div>
+								<div class="why__desc">
+									<p>Постоянные клиенты СТО ЕВРОАВТОСЕВИС получают услугу диагностики
+										неисправностей бесплатно.</p>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__img-content">
+									<img src="img/why/3.svg" alt="">
+								</div>
+								<div class="why__subtitle">
+									<h3>Наши СТО всегда есть рядом</h3>
+								</div>
+								<div class="why__desc">
+									<p>Во многих городах Беларуси есть по несколько наших автосервисов, поэтому вы
+										наверняка найдёте СТО ЕВРОАВТОСЕВИС рядом со своим домом или местом
+										поломки.</p>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__img-content">
+									<img src="img/why/4.svg" alt="">
+								</div>
+								<div class="why__subtitle">
+									<h3>Прозрачное ценообразование</h3>
+								</div>
+								<div class="why__desc">
+									<p>Мы работаем по нормативам времени автопроизводителей и
+										изготовителей автозапчастей – вы заранее знаете точную стоимость услуги.</p>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__img-content">
+									<img src="img/why/5.svg" alt="">
+								</div>
+								<div class="why__subtitle">
+									<h3>Всегда около 350 000 запчастей в наличии</h3>
+								</div>
+								<div class="why__desc">
+									<p>Свои склады с самым большим ассортиментом запчастей и налаженной
+										логистикой поставок в автосервисы позволяют максимально быстро устранить поломку
+										или провести техобслуживание</p>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__img-content">
+									<img src="img/why/6.svg" alt="">
+								</div>
+								<div class="why__subtitle">
+									<h3>Доступные цены на работы и запчасти</h3>
+								</div>
+								<div class="why__desc">
+									<p>Большой ассортимент запасных частей разных ценовых категорий позволяет выбрать
+										нужный уровень затрат для любого автолюбителя</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="quality">
+				<div class="quality__container top__container-m">
+					<div class="quality__body">
+						<div class="quality__title">
+							<h2>Мы обеспечиваем высокое качество работ автосервисов</h2>
+						</div>
+						<div class="quality__box">
+							<div class="quality__item">
+								<div class="quality__img">
+									<img src="img/quality/1.svg" alt="">
+								</div>
+								<div class="quality__subtitle">
+									<h3>482 специалиста успешно подтвердивших квалификацию</h3>
+								</div>
+								<div class="quality__text">
+									<p>Для обеспечения единого высокого уровня проффесионализм наших сотрудников – после
+										приёма на работу отправляем в собственную Академию.</p>
+								</div>
+							</div>
+							<div class="quality__item">
+								<div class="quality__img">
+									<img src="img/quality/2.svg" alt="">
+								</div>
+								<div class="quality__subtitle">
+									<h3>Каждая СТО проходит атттестацию 1 раз вгод</h3>
+								</div>
+								<div class="quality__text">
+									<p>С целью контроля и поддержания профессионального <br>
+										уровня персонала – раз в год проводим переаттестацию</p>
+								</div>
+							</div>
+							<div class="quality__item">
+								<div class="quality__img">
+									<img src="img/quality/3.svg" alt="">
+								</div>
+								<div class="quality__subtitle">
+									<h3>70 000+ стандартизированных технологических процесса</h3>
+								</div>
+								<div class="quality__text">
+									<p>Чтобы быть уверенными в качестве поставляемых услуг – <br>
+										регулярно проводим проверки сервисных центров с помощью <br>
+										«Тайных Покупателей».</p>
+								</div>
+							</div>
+							<div class="quality__item">
+								<div class="quality__img">
+									<img src="img/quality/4.svg" alt="">
+								</div>
+								<div class="quality__subtitle">
+									<h3>Проводим послесервисный опрос</h3>
+								</div>
+								<div class="quality__text">
+									<p>Это позволяет оценить удовлетворённость клиента и при <br>
+										необходимости внести корректировки в работу персонала.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="location">
+				<div class="location__container top__container-m">
+					<div class="location__body">
+						<div class="location__title">
+							<h2>Выберите удобное для вас СТО</h2>
+						</div>
+						<button class="location__btn">
+							<img src="img/header/location.svg" alt="Выберите удобное СТО">
+							<span>Выберите ваш город</span>
+						</button>
+						<div class="location__map">
+							<picture><source srcset="img/location/map.webp" type="image/webp"><img src="img/location/map.png" alt="Здесь должна быть интерактивная карта"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="discount">
+				<div class="discount__container top__container-m">
+					<div class="discount__body">
+						<div class="discount__title">
+							<h2>Акции, предложения, скидки</h2>
+						</div>
+						<div class="discount__text">
+							<p>Плановое техническое обслуживание, текущий и капитальный ремонт, установка
+								дополнительного оборудования (тюнинг)</p>
+						</div>
+						<div class="discount__cards">
+							<a href="diagnostics.html" class="discount__item discount__item_m">
+								<div class="discount__subtitle discount__subtitle_m">
+									<h3>ПОЛНАЯ ДИАГНОСТИКА АВТОМОБИЛЯ СО СКИДКОЙ 50%</h3>
+								</div>
+								<div class="discount__desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div>
+							</a>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/1.webp" type="image/webp"><img src="img/discount/1.png" alt="Бесплатная замена"></picture>
+								</div>
+							</div>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/2.webp" type="image/webp"><img src="img/discount/2.png" alt="Скидка 100%"></picture>
+								</div>
+							</div>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/3.webp" type="image/webp"><img src="img/discount/3.png" alt="Ремонт авто в рассрочку"></picture>
+								</div>
+							</div>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/4.webp" type="image/webp"><img src="img/discount/4.png" alt="Восстановленные АКПП и вариаторы"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="stages">
+				<div class="stages__container top__container-m">
+					<div class="stages__body">
+						<div class="stages__title">
+							<h2>Этапы работ</h2>
+						</div>
+						<div class="stages__box">
+							<div class="stages__content">
+								<div class="stages__row">
+									<div class="stages__small-img">
+										<img src="img/stages/1.svg" alt="Начало работы">
+									</div>
+									<div class="stages__column stages__column_m">
+										<div class="stages__subtitle">
+											<h4>Поступление и закрепление заявки за персональным менеджером.</h4>
+										</div>
+										<div class="stages__text">
+											<p>Менеджер сопровождает ваш заказ и в любой момент готов ответить на любой
+												вопрос.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small">
+									</div>
+									<div class="stages__column">
+										<div class="stages__subtitle">
+											<h4>Предварительное обсуждение деталей заявки.</h4>
+										</div>
+										<div class="stages__text">
+											<p>Перед подтверждением заявки менеджер задаёт ряд вопросов для понимания
+												задачи.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small">
+									</div>
+									<div class="stages__column">
+										<div class="stages__subtitle">
+											<h4>Подготовка автосервиса к визиту клиента.</h4>
+										</div>
+										<div class="stages__text">
+											<p>В мастерской подготавливают инструмент и место для автомобиля для
+												оперативного приёма в работу.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small">
+									</div>
+									<div class="stages__column">
+										<div class="stages__subtitle">
+											<h4>Приём автомобиля в ремонт или на ТО.</h4>
+										</div>
+										<div class="stages__text">
+											<p>При приёме оформляется договор на все виды услуг с указанием сроков и
+												итоговой стоимости.</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small">
+									</div>
+									<div class="stages__column">
+										<div class="stages__subtitle">
+											<h4>Выполнение ремонтных работ или техобслуживания.</h4>
+										</div>
+										<div class="stages__text">
+											<p>Наши мастера работают в соответствии с регламентами автопроизводителей.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small">
+									</div>
+									<div class="stages__column">
+										<div class="stages__subtitle">
+											<h4>Контроль качества выполненных работ.</h4>
+										</div>
+										<div class="stages__text">
+											<p>Перед выдачей готового авто клиенту – проводится дополнительна проверка.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small stages__small_m">
+									</div>
+									<div class="stages__column">
+										<div class="stages__subtitle">
+											<h4>Выдача автомобиля клиенту с гарантией на 2 года.</h4>
+										</div>
+										<div class="stages__text">
+											<p>Вы получаете официальную гарантию на 24 месяца (за исключением запчастей
+												с естественным износом).</p>
+										</div>
+									</div>
+								</div>
+								<div class="stages__row">
+									<div class="stages__small-img">
+										<img src="img/stages/2.svg" alt="Начало работы">
+									</div>
+									<div class="stages__column stages__column_m">
+										<div class="stages__subtitle">
+											<h4>Послесервисный опрос клиента.</h4>
+										</div>
+										<div class="stages__text">
+											<p>Менеджер интересуется удовлетворённостью качеством работ и сервиса.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stages__image">
+								<picture><source srcset="img/stages/bg.webp" type="image/webp"><img src="img/stages/bg.png" alt="Этапы работ"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="franchise">
+				<div class="franchise__container top__container-m">
+					<div class="franchise__body">
+						<div class="franchise__image">
+							<picture><source srcset="img/franchise/bg.webp" type="image/webp"><img src="img/franchise/bg.png" alt="Открой свою франшизу"></picture>
+						</div>
+						<div class="franchise__content">
+							<div class="franchise__title">
+								<h2>Откройте собственную СТО
+									<span>по франшизе ЕВРОАВТОСЕРВИС</span>
+								</h2>
+							</div>
+							<div class="franchise__text">
+								<p>У нас самые выгодные условия из всех франшиз автосервисов! Предлагаем полностью
+									готовый бизнес в нашей сети СТО и поддержку на каждом этапе работы: даём подробный
+									план действий для открытия и работы, обучаем и аттестуем персонал, поставляем
+									запчасти с наших складов. А также обеспечиваем высокоэффективное управление и
+									маркетинг.</p>
+							</div>
+							<div class="franchise__box">
+								<div class="franchise__item">
+									<div class="franchise__subtitle">
+										<h3>Развивающаяся сеть</h3>
+									</div>
+									<div class="franchise__number">
+										<span>98</span>
+									</div>
+									<div class="franchise__subtext">
+										<p>ЕВРОАВТОСЕРВИС всегда рядом с домом или местом поломки</p>
+									</div>
+								</div>
+								<div class="franchise__item">
+									<div class="franchise__subtitle">
+										<h3>Наши автосервисы открыты</h3>
+									</div>
+									<div class="franchise__number">
+										в <span>40</span> городах
+									</div>
+									<div class="franchise__subtext">
+										<p>По всей территории Беларуси, что
+											повышает лояльность клиентов</p>
+									</div>
+								</div>
+								<div class="franchise__item">
+									<div class="franchise__subtitle">
+										<h3>Опыт работы</h3>
+									</div>
+									<div class="franchise__number">
+										<span>17</span> лет
+									</div>
+									<div class="franchise__subtext">
+										<p>Мы зарекомендовали себя как
+											надёжные поставщики услуг</p>
+									</div>
+								</div>
+								<div class="franchise__item">
+									<div class="franchise__subtitle">
+										<h3>Бесплатная реклама</h3>
+									</div>
+									<div class="franchise__number">
+										<span>60</span> дней
+									</div>
+									<div class="franchise__subtext">
+										<p>Стартовая рекламная кампания
+											после открытия</p>
+									</div>
+								</div>
+							</div>
+							<button class="franchise__price">Узнать условия франшизы</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="brend">
+				<div class="brend__container top__container-m">
+					<div class="brend__body">
+						<div class="brend__title">
+							<h2>Расширенные гарантии бренды</h2>
+						</div>
+						<!-- Оболочка слайдера -->
+						<div class="brend__slider">
+							<div class="brend__slider swiper">
+								<!-- Двигающееся часть слайдера -->
+								<div class="brend__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/AP.webp" type="image/webp"><img src="img/brend/AP.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Bosch.webp" type="image/webp"><img src="img/brend/Bosch.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/brembo.webp" type="image/webp"><img src="img/brend/brembo.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Corteco.webp" type="image/webp"><img src="img/brend/Corteco.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/DOLZ.webp" type="image/webp"><img src="img/brend/DOLZ.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/ERCS.webp" type="image/webp"><img src="img/brend/ERCS.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/FormPart.webp" type="image/webp"><img src="img/brend/FormPart.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/gates.webp" type="image/webp"><img src="img/brend/gates.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/HSB.webp" type="image/webp"><img src="img/brend/HSB.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/iljin.webp" type="image/webp"><img src="img/brend/iljin.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/KYB.webp" type="image/webp"><img src="img/brend/KYB.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/lemf.webp" type="image/webp"><img src="img/brend/lemf.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Lesj.webp" type="image/webp"><img src="img/brend/Lesj.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/LUK.webp" type="image/webp"><img src="img/brend/LUK.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/NGK.webp" type="image/webp"><img src="img/brend/NGK.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/PATRON.webp" type="image/webp"><img src="img/brend/PATRON.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/sachs.webp" type="image/webp"><img src="img/brend/sachs.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Vernet.webp" type="image/webp"><img src="img/brend/Vernet.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-prev"></button>
+								<button type="button" class="swiper-button-next"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__top">
+						<a href="index.html" class="footer__logo">
+							<picture><source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt="Логотип сайта"></picture>
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">Сеть сто</a></li>
+								<li class="footer__item"><a href="stock.html" class="footer__link">Акции</a></li>
+								<li class="footer__item"><a href="about.html" class="footer__link">О компании</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Франшиза</a></li>
+							</ul>
+						</nav>
+						<div class="footer__social">
+							<a href="#"><img src="img/footer/vk.svg" class="footer__img" alt="Вконтакте"></a>
+							<a href="#"><img src="img/footer/instagram.svg" class="footer__img" alt="Инстаграм"></a>
+							<a href="#"><img src="img/footer/ok.svg" class="footer__img" alt="Одноклассники"></a>
+							<a href="#"><img src="img/footer/facebook.svg" class="footer__img" alt="Фэйсбук"></a>
+						</div>
+					</div>
+					<div class="footer__middle">
+						<div class="footer__block">
+							<div class="footer__location">
+								<span>Адрес</span>
+								<p>
+									Центральный офис «Шате-М Плюс»: Минская обл., Минский р-он, Луговослободской с/с, пос.
+									Привольный, ул. Мира, 2А.
+								</p>
+							</div>
+							<div class="footer__tel">
+								<span>Телефон</span>
+								<p>
+									Velcom, MТС, LIFE (многоканальный): 505-8-505, 6600 <br>
+									(017) 500-66-00</p>
+							</div>
+							<div class="footer__mail">
+								<span>E-mail</span>
+								<a href="mailto:info@shate-m.com">info@shate-m.com</a>
+							</div>
+						</div>
+						<div class="footer__buttons">
+							<a href="registration.html" class="btn_save-sto footer-btn">Записаться на СТО</a>
+							<a href="#" class="btn_application footer-btn footer-btn__m js-open-modal" data-modal="2">Обратная
+								связь</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__offer">
+							<p>
+								© ООО «ЕвроАвтосервис», 2012- 2022. Материалы, размещенные на сайте, носят информационный
+								характер и не являются публичной офертой.</p>
+						</div>
+						<div class="footer__other">
+							<div class="footer__privacy">
+								<p>Политика конфиденциальности</p>
+							</div>
+							<div class="footer__agreement">
+								<p>Пользовательское соглашение</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+	<!-- Поиск -->
+	<div class="modal search__modal" data-modal="1">
+		<button class="application-exit js-modal-close"></button>
+		<div class="search__body">
+			<div class="search__title">
+				<h3>ПОИСК УСЛУГИ</h3>
+			</div>
+			<div class="search__input">
+				<input autocomplete="off" type="text" name="" placeholder="Введите название услуги">
+			</div>
+			<div class="search__box">
+				<div class="search__subtitle">
+					<span>найдено 6 услуг по вашему запросу</span>
+				</div>
+				<div class="search__list">
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Обратная связь -->
+	<div class="modal modal-with-modal" data-modal="2">
+		<button class="application-exit js-modal-close"></button>
+		<div class="feedback__body">
+			<div class="feedback__box">
+				<div class="feedback__title">
+					<h5>Оставить заявку</h5>
+				</div>
+				<div class="feedback__text">
+					<p>Оставьте заявку на звонок. Первый свободный мастер перезвонит вам и ответит на все вопросы.</p>
+				</div>
+				<div class="feedback__form">
+					<div class="feedback__item">
+						<label for="formName" class="feedback__label">Как вас зовут?</label>
+						<input id="formName" placeholder="Йохан" type="text" name="name" class="feedback__input">
+					</div>
+					<div class="feedback__item">
+						<label for="formTel" class="feedback__label">Ваш номер
+							телефона</label>
+						<input id="formTel" placeholder="+3" type="tel" name="tel" class="feedback__input tel">
+					</div>
+					<button type="text" class="feedback__button js-open-modal" data-modal="3">Перезвоните мне</button>
+					<p>Оставляя заявку я даю свое согласие на обработку персональных данных.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- спасибо -->
+	<div class="modal" data-modal="3">
+		<button class="application-exit js-modal-close"></button>
+		<div class="thank__modal">
+			<div class="header__thank">
+				<div class="thank__title">
+					<h3>Спасибо за заявку</h3>
+				</div>
+				<div class="thank__text">
+					<p>Спасибо. Заявка принята. В ближайшее время с Вами свяжется наш менеджер.</p>
+				</div>
+				<div class="thank__label">
+					<span>подпишитесь на нас в соц. сетях</span>
+				</div>
+				<div class="thank__social">
+				</div>
+				<div class="thank__sto">
+					<span>или запишитесь на сто в одну из наших СТО на всей территории Беларуси</span>
+				</div>
+				<a href="registration.html" class="thank__btn">Записаться на сто</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal select-cities" data-modal="select-cities">
+		<h3>Список городов с нашими СТО</h3>
+		<ul class="select-cities__list">
+			<li class="select-cities__item"><a href="javascript:void(0)">Брест</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Витебск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Орша</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Гродно</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Пинск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Солигорск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Минск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Барановичи</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Молодечно</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Гомель</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Борисов</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Новополоцк</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Могилев</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Бобруйск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Полоцк</a> </li>
+		</ul>
+	</div>
+
+	<div class="overlay js-overlay-modal"></div>
+
+	<script src="js/app.min.js?_v=20220526133809"></script>
+</body>
+
+</html>

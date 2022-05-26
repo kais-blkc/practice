@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Акции</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220526133809">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="index.html" class="header__logo">
+						<picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="Логотип ЕвроАвтоСервис"></picture>
+					</a>
+					<div class="header__location">
+						<img src="img/header/location.svg" alt="Локация">
+						<div class="header__name">Ваш город: <span class="js-open-modal" data-modal="select-cities">Минск</span></div>
+						<div class="header__box active">
+							<div class="header__minimodal">
+								<div class="header__name header__name_m">Ваш город: <span>Минск</span></div>
+								<button class="header__yes close-header-box">Да, верно</button>
+								<button class="header__no js-open-modal" data-modal="select-cities">Нет, другой</button>
+							</div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="menu__bg"></div>
+							<div class="menu__box">
+								<ul class="menu__list">
+									<li class="menu__item"><a id="registration" href="registration.html#registration" class="menu__link menu__link_m">Сеть сто</a></li>
+									<li class="menu__item"><a id="stock" href="stock.html#stock" class="menu__link">Акции</a>
+									</li>
+									<li class="menu__item"><a id="about" href="about.html#about" class="menu__link">О
+											компании</a></li>
+									<li class="menu__item"><a id="contact" href="contact.html#contact" class="menu__link">Контакты</a></li>
+									<li class="menu__item"><a id="franchise" href="franchise.html#franchise" class="menu__link">Франшиза</a>
+									</li>
+								</ul>
+								<div class="menu__newLocation">
+								</div>
+								<div class="menu__enroll">
+									<div class="menu__btn">
+										<a href="registration.html" class="">Записаться на сто</a>
+									</div>
+									<div class="menu__social">
+										<a href="#"><img src="img/header/vk.svg" alt="Вконтакте"></a>
+										<a href="#"><img src="img/header/instagram.svg" alt="Инстаграм"></a>
+										<a href="#"><img src="img/header/ok.svg" alt="Одноклассники"></a>
+										<a href="#"><img src="img/header/facebook.svg" alt="Фэйсбук"></a>
+									</div>
+									<div class="menu__bgwhite">
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<button type="button" class="menu__icon icon-menu "><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="bread-crumbs__container">
+				<div class="about-header__bread-crumbs bread-crumbs bread-crumbs__stock">
+					<ul class="bread-crumbs__list">
+						<li class="bread-crumbs__item">
+							<a href="index.html" class="bread-crumbs__link">
+								<img src="img/about/aboutHeader/home.svg" alt="Главная"><span>главная</span>
+							</a>
+						</li>
+						<li class="bread-crumbs__item bread-crumbs__item_m"><a class="bread-crumbs__link"> / акции</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="discount">
+				<div class="discount__container">
+					<div class="discount__body discount__body_m">
+						<div class="discount__title">
+							<h2>Акции, предложения, скидки</h2>
+						</div>
+						<div class="discount__text">
+							<p>Плановое техническое обслуживание, текущий и капитальный ремонт, установка
+								дополнительного оборудования (тюнинг)</p>
+						</div>
+						<div class="discount__cards">
+							<a href="diagnostics.html" class="discount__item discount__item_m">
+								<div class="discount__subtitle discount__subtitle_m">
+									<h3>ПОЛНАЯ ДИАГНОСТИКА АВТОМОБИЛЯ СО СКИДКОЙ 50%</h3>
+								</div>
+								<div class="discount__desc">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div>
+							</a>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/1.webp" type="image/webp"><img src="img/discount/1.png" alt="Бесплатная замена"></picture>
+								</div>
+							</div>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/2.webp" type="image/webp"><img src="img/discount/2.png" alt="Скидка 100%"></picture>
+								</div>
+							</div>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/3.webp" type="image/webp"><img src="img/discount/3.png" alt="Ремонт авто в рассрочку"></picture>
+								</div>
+							</div>
+							<div class="discount__item">
+								<div class="discount__image">
+									<picture><source srcset="img/discount/4.webp" type="image/webp"><img src="img/discount/4.png" alt="Восстановленные АКПП и вариаторы"></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="brend">
+				<div class="brend__container">
+					<div class="brend__body">
+						<div class="brend__title">
+							<h2>Расширенные гарантии бренды</h2>
+						</div>
+						<!-- Оболочка слайдера -->
+						<div class="brend__slider">
+							<div class="brend__slider swiper">
+								<!-- Двигающееся часть слайдера -->
+								<div class="brend__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/AP.webp" type="image/webp"><img src="img/brend/AP.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Bosch.webp" type="image/webp"><img src="img/brend/Bosch.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/brembo.webp" type="image/webp"><img src="img/brend/brembo.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Corteco.webp" type="image/webp"><img src="img/brend/Corteco.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/DOLZ.webp" type="image/webp"><img src="img/brend/DOLZ.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/ERCS.webp" type="image/webp"><img src="img/brend/ERCS.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/FormPart.webp" type="image/webp"><img src="img/brend/FormPart.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/gates.webp" type="image/webp"><img src="img/brend/gates.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/HSB.webp" type="image/webp"><img src="img/brend/HSB.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/iljin.webp" type="image/webp"><img src="img/brend/iljin.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/KYB.webp" type="image/webp"><img src="img/brend/KYB.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/lemf.webp" type="image/webp"><img src="img/brend/lemf.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Lesj.webp" type="image/webp"><img src="img/brend/Lesj.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/LUK.webp" type="image/webp"><img src="img/brend/LUK.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/NGK.webp" type="image/webp"><img src="img/brend/NGK.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/PATRON.webp" type="image/webp"><img src="img/brend/PATRON.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/sachs.webp" type="image/webp"><img src="img/brend/sachs.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+									<div class="brend__slide swiper-slide">
+										<div class="brend__image">
+											<picture><source srcset="img/brend/Vernet.webp" type="image/webp"><img src="img/brend/Vernet.jpg" alt="Бренды"></picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__top">
+						<a href="index.html" class="footer__logo">
+							<picture><source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt="Логотип сайта"></picture>
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#" class="footer__link">Сеть сто</a></li>
+								<li class="footer__item"><a href="stock.html" class="footer__link">Акции</a></li>
+								<li class="footer__item"><a href="about.html" class="footer__link">О компании</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Франшиза</a></li>
+							</ul>
+						</nav>
+						<div class="footer__social">
+							<a href="#"><img src="img/footer/vk.svg" class="footer__img" alt="Вконтакте"></a>
+							<a href="#"><img src="img/footer/instagram.svg" class="footer__img" alt="Инстаграм"></a>
+							<a href="#"><img src="img/footer/ok.svg" class="footer__img" alt="Одноклассники"></a>
+							<a href="#"><img src="img/footer/facebook.svg" class="footer__img" alt="Фэйсбук"></a>
+						</div>
+					</div>
+					<div class="footer__middle">
+						<div class="footer__block">
+							<div class="footer__location">
+								<span>Адрес</span>
+								<p>
+									Центральный офис «Шате-М Плюс»: Минская обл., Минский р-он, Луговослободской с/с, пос.
+									Привольный, ул. Мира, 2А.
+								</p>
+							</div>
+							<div class="footer__tel">
+								<span>Телефон</span>
+								<p>
+									Velcom, MТС, LIFE (многоканальный): 505-8-505, 6600 <br>
+									(017) 500-66-00</p>
+							</div>
+							<div class="footer__mail">
+								<span>E-mail</span>
+								<a href="mailto:info@shate-m.com">info@shate-m.com</a>
+							</div>
+						</div>
+						<div class="footer__buttons">
+							<a href="registration.html" class="btn_save-sto footer-btn">Записаться на СТО</a>
+							<a href="#" class="btn_application footer-btn footer-btn__m js-open-modal" data-modal="2">Обратная
+								связь</a>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__offer">
+							<p>
+								© ООО «ЕвроАвтосервис», 2012- 2022. Материалы, размещенные на сайте, носят информационный
+								характер и не являются публичной офертой.</p>
+						</div>
+						<div class="footer__other">
+							<div class="footer__privacy">
+								<p>Политика конфиденциальности</p>
+							</div>
+							<div class="footer__agreement">
+								<p>Пользовательское соглашение</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+	<!-- Поиск -->
+	<div class="modal search__modal" data-modal="1">
+		<button class="application-exit js-modal-close"></button>
+		<div class="search__body">
+			<div class="search__title">
+				<h3>ПОИСК УСЛУГИ</h3>
+			</div>
+			<div class="search__input">
+				<input autocomplete="off" type="text" name="" placeholder="Введите название услуги">
+			</div>
+			<div class="search__box">
+				<div class="search__subtitle">
+					<span>найдено 6 услуг по вашему запросу</span>
+				</div>
+				<div class="search__list">
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+					<div class="search__item">
+						<a href="javascript:void(0)" class="search__name">Замена масла в МКПП </a>
+						<div class="search__price"> от 120 BYN </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Обратная связь -->
+	<div class="modal modal-with-modal" data-modal="2">
+		<button class="application-exit js-modal-close"></button>
+		<div class="feedback__body">
+			<div class="feedback__box">
+				<div class="feedback__title">
+					<h5>Оставить заявку</h5>
+				</div>
+				<div class="feedback__text">
+					<p>Оставьте заявку на звонок. Первый свободный мастер перезвонит вам и ответит на все вопросы.</p>
+				</div>
+				<div class="feedback__form">
+					<div class="feedback__item">
+						<label for="formName" class="feedback__label">Как вас зовут?</label>
+						<input id="formName" placeholder="Йохан" type="text" name="name" class="feedback__input">
+					</div>
+					<div class="feedback__item">
+						<label for="formTel" class="feedback__label">Ваш номер
+							телефона</label>
+						<input id="formTel" placeholder="+3" type="tel" name="tel" class="feedback__input tel">
+					</div>
+					<button type="text" class="feedback__button js-open-modal" data-modal="3">Перезвоните мне</button>
+					<p>Оставляя заявку я даю свое согласие на обработку персональных данных.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- спасибо -->
+	<div class="modal" data-modal="3">
+		<button class="application-exit js-modal-close"></button>
+		<div class="thank__modal">
+			<div class="header__thank">
+				<div class="thank__title">
+					<h3>Спасибо за заявку</h3>
+				</div>
+				<div class="thank__text">
+					<p>Спасибо. Заявка принята. В ближайшее время с Вами свяжется наш менеджер.</p>
+				</div>
+				<div class="thank__label">
+					<span>подпишитесь на нас в соц. сетях</span>
+				</div>
+				<div class="thank__social">
+				</div>
+				<div class="thank__sto">
+					<span>или запишитесь на сто в одну из наших СТО на всей территории Беларуси</span>
+				</div>
+				<a href="registration.html" class="thank__btn">Записаться на сто</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal select-cities" data-modal="select-cities">
+		<h3>Список городов с нашими СТО</h3>
+		<ul class="select-cities__list">
+			<li class="select-cities__item"><a href="javascript:void(0)">Брест</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Витебск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Орша</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Гродно</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Пинск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Солигорск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Минск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Барановичи</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Молодечно</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Гомель</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Борисов</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Новополоцк</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Могилев</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Бобруйск</a> </li>
+			<li class="select-cities__item"><a href="javascript:void(0)">Полоцк</a> </li>
+		</ul>
+	</div>
+
+	<div class="overlay js-overlay-modal"></div>
+
+	<script src="js/app.min.js?_v=20220526133809"></script>
+</body>
+
+</html>
