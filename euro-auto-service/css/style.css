@@ -1981,6 +1981,11 @@ body {
     color: #888888;
   }
 }
+@media (max-width: 47.99875em) {
+  .menu__link {
+    padding-top: 0;
+  }
+}
 @media (max-width: 600px) {
   .menu__link {
     font-size: 26px;
@@ -2114,6 +2119,11 @@ body {
   width: 500%;
   height: 100%;
   background: #fbfbfb;
+}
+@media (max-width: 47.99875em) {
+  .footer__top {
+    display: none;
+  }
 }
 @media (max-width: 550px) {
   .footer__top {
@@ -2490,13 +2500,8 @@ footer {
 }
 @media (max-width: 47.99875em) {
   .top__title {
-    font-size: 40px;
+    font-size: 36px;
     max-width: 400px;
-  }
-}
-@media (max-width: 29.99875em) {
-  .top__title {
-    font-size: 30px;
   }
 }
 .top__text {
@@ -2866,7 +2871,7 @@ footer {
   width: 230px;
   height: 230px;
   border-radius: 50%;
-  transition: all 0.5s ease 0s;
+  transition: all 0.9s ease;
   background: linear-gradient(128.11deg, #0e4194 -28.23%, #2998ff 95.99%);
 }
 @media (max-width: 61.99875em) {
@@ -2888,7 +2893,7 @@ footer {
   }
 }
 .services__item:hover::after {
-  transform: scale(5);
+  transform: scale(10);
 }
 .services__item:hover .services__name {
   color: #fff;
@@ -3037,7 +3042,7 @@ footer {
 }
 @media (max-width: 47.99875em) {
   .call__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .call__text {
@@ -3114,9 +3119,18 @@ footer {
   background: #0c3578;
 }
 
+.why {
+  overflow: hidden;
+}
 .why__body {
   padding-top: 105px;
   padding-bottom: 40px;
+}
+@media (max-width: 47.99875em) {
+  .why__body {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
 }
 .why__title {
   font-weight: 700;
@@ -3143,13 +3157,9 @@ footer {
 }
 @media (max-width: 47.99875em) {
   .why__title {
-    font-size: 30px;
+    font-size: 32px;
+    line-height: 120%;
     max-width: 455px;
-  }
-}
-@media (max-width: 29.99875em) {
-  .why__title {
-    font-size: 26px;
   }
 }
 .why__content {
@@ -3159,6 +3169,11 @@ footer {
   row-gap: 50px;
   margin-bottom: 92px;
 }
+@media (max-width: 47.99875em) {
+  .why__content {
+    margin-bottom: 0;
+  }
+}
 .why__image {
   position: relative;
   width: 40%;
@@ -3167,6 +3182,11 @@ footer {
   .why__image {
     width: 100%;
     height: 400px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .why__image {
+    height: 360px;
   }
 }
 .why__image::after {
@@ -3187,6 +3207,12 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 47.99875em) {
+  .why__img-ibgg {
+    width: 120%;
+    left: -10%;
+  }
 }
 .why__box {
   padding-top: 30px;
@@ -3236,6 +3262,7 @@ footer {
   .why__inner {
     width: 100%;
     justify-content: space-between;
+    padding-left: 10px;
   }
 }
 @media (max-width: 650px) {
@@ -3264,6 +3291,14 @@ footer {
     column-gap: 15px;
   }
 }
+@media (max-width: 47.99875em) {
+  .why__small-item {
+    width: 100%;
+  }
+  .why__small-item:last-child {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .why__small-item {
     flex-wrap: wrap;
@@ -3285,13 +3320,9 @@ footer {
 }
 @media (max-width: 47.99875em) {
   .why__number {
-    font-size: 50px;
-  }
-}
-@media (max-width: 500px) {
-  .why__number {
-    text-align: center;
-    margin: 0 auto;
+    width: 100px;
+    font-size: 68px;
+    font-weight: 700;
   }
 }
 .why__name {
@@ -3307,13 +3338,10 @@ footer {
 @media (max-width: 47.99875em) {
   .why__name {
     font-size: 20px;
-    flex: 0 1 128px;
-  }
-}
-@media (max-width: 500px) {
-  .why__name {
-    text-align: center;
-    margin: 0 auto;
+    flex: 0 1 140px;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
   }
 }
 .why__cards {
@@ -3321,6 +3349,11 @@ footer {
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 28px;
+}
+@media (max-width: 47.99875em) {
+  .why__cards {
+    display: none;
+  }
 }
 .why__item {
   max-width: 708px;
@@ -3370,6 +3403,11 @@ footer {
 
 .quality {
   background: #f8f8f8;
+}
+@media (max-width: 47.99875em) {
+  .quality {
+    display: none;
+  }
 }
 .quality__body {
   padding-top: 53px;
@@ -3488,6 +3526,11 @@ footer {
   width: 100%;
   padding-top: 43.26%;
 }
+@media (max-width: 47.99875em) {
+  .location__map {
+    padding-top: 400px;
+  }
+}
 .location__map img {
   position: absolute;
   top: 0;
@@ -3496,6 +3539,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .discount__body {
@@ -3604,6 +3648,11 @@ footer {
   max-width: 100%;
 }
 
+@media (max-width: 47.99875em) {
+  .stages {
+    display: none;
+  }
+}
 .stages__body {
   padding-top: 57px;
   margin-left: 11px;
@@ -3802,6 +3851,11 @@ footer {
   display: flex;
   column-gap: 92px;
 }
+@media (max-width: 47.99875em) {
+  .franchise__body {
+    display: none;
+  }
+}
 .franchise__imageimg {
   max-width: 100%;
 }
@@ -3987,6 +4041,11 @@ footer {
 .brend__container {
   padding-top: 169px;
   padding-bottom: 90px;
+}
+@media (max-width: 47.99875em) {
+  .brend__container {
+    padding-top: 70px;
+  }
 }
 .brend__body {
   position: relative;
@@ -4176,6 +4235,7 @@ footer {
 }
 .about-header__content {
   max-width: 800px;
+  overflow: hidden;
 }
 .about-header__title {
   padding-top: 84px;
@@ -4691,6 +4751,9 @@ footer {
   }
 }
 
+.about-about {
+  overflow: hidden;
+}
 .about-about__body {
   padding-top: 92px;
   position: relative;
@@ -4996,6 +5059,14 @@ footer {
     flex: 1 1 48%;
   }
 }
+@media (max-width: 47.99875em) {
+  .about-jobs__item {
+    display: none;
+  }
+  .about-jobs__item:nth-child(1), .about-jobs__item:nth-child(2) {
+    display: block;
+  }
+}
 @media (max-width: 600px) {
   .about-jobs__item {
     flex: 1 1 100%;
@@ -5029,15 +5100,11 @@ footer {
 }
 
 .about-program {
+  overflow: hidden;
   position: relative;
 }
 .about-program__container {
   padding-top: 55px;
-}
-@media (max-width: 61.99875em) {
-  .about-program__container {
-    padding-bottom: 100px;
-  }
 }
 .about-program__body {
   position: relative;
@@ -6027,6 +6094,11 @@ footer {
   border-radius: 30px;
   height: 835px;
 }
+@media (max-width: 47.99875em) {
+  .map-block .map {
+    height: 535px;
+  }
+}
 .map-block .map img {
   display: block;
   width: 100%;
@@ -6101,6 +6173,9 @@ footer {
 @media (max-width: 47.99875em) {
   .map-info__item {
     display: none;
+  }
+  .map-info__item.mob {
+    display: block;
   }
 }
 .map-info__item-title {
