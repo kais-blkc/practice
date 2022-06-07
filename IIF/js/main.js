@@ -93,6 +93,29 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       }
     });
+    const partnersSlider = new Swiper('.partners__list', {
+      preloadImages: false,
+      loop: true,
+      autoplay: {
+        delay: 1700,
+      },
+      speed: 1000,
+      // navigation: {
+      //   nextEl: '.h-what-yield__slider .swiper-button-next',
+      //   prevEl: '.h-what-yield__slider .swiper-button-prev',
+      // },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        767: {
+          slidesPerView: 3,
+        },
+        996: {
+          slidesPerView: 4,
+        }
+      }
+    });
   } catch(err) {}
 
   // Modals
