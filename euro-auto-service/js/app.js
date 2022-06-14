@@ -17384,7 +17384,7 @@
         const input = document.querySelector(".input-flags");
         try {
             intl_tel_input(input, {
-                initialCountry: "auto",
+                initialCountry: "by",
                 separateDialCode: true,
                 geoIpLookup: function(callback) {
                     jQuery.get("https://ipinfo.io", (function() {}), "jsonp").always((function(resp) {
@@ -17395,6 +17395,15 @@
                 utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.17/js/utils.js"
             });
         } catch (err) {}
+        const headerCityBtns = [ document.querySelector(".header__yes"), document.querySelector(".header__no") ];
+        const headerBox = document.querySelectorAll(".header__box");
+        let citySelected = localStorage.citySelected || false;
+        if (citySelected) headerBox.forEach((el => el.classList.remove("active")));
+        headerCityBtns.forEach((btn => {
+            btn.addEventListener("click", (() => {
+                localStorage.citySelected = true;
+            }));
+        }));
         document.addEventListener("DOMContentLoaded", (() => {
             const requestSelect = document.querySelector(".request-page .select-city select");
             const selectStoAddresses = document.querySelector(".select-sto__addresses");
