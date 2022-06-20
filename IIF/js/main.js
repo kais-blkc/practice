@@ -4,17 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.querySelector('.close-btn');
   const headerNavbar = document.querySelector('header .navbar');
 
-  burger.addEventListener('click', e => {
-    headerNavbar.classList.add('active');
-    document.body.style.overflowY = 'hidden';
-  })
-
-  headerNavbar.addEventListener('click', e => {
-    if (e.target.className.includes('navbar ') || e.target.className.includes('close-btn')) {
-      headerNavbar.classList.remove('active');
-      document.body.style.overflowY = 'auto';
-    }
-  })
+  try {
+    burger.addEventListener('click', e => {
+      headerNavbar.classList.add('active');
+      document.body.style.overflowY = 'hidden';
+    })
+  
+    headerNavbar.addEventListener('click', e => {
+      if (e.target.className.includes('navbar ') || e.target.className.includes('close-btn')) {
+        headerNavbar.classList.remove('active');
+        document.body.style.overflowY = 'auto';
+      }
+    })
+  } catch (error) {}
 
   // Sliders
   try {
@@ -118,51 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } catch(err) {}
 
-  // Modals
-  try {
-    const modal = document.querySelector('.modal');
-    const modalItems = document.querySelectorAll('.modal-items > div');
-    const modalBtns = document.querySelectorAll('*[data-modal]');
-
-    modalBtns.forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.preventDefault();
-
-        const curDataModal = btn.dataset.modal
-        switch (curDataModal) {
-          case '.modal__market-pp':
-            openModal(curDataModal)
-            moreMarketPP(
-              btn.closest('.popular-projects__item'),
-              document.querySelector(curDataModal)
-            )
-            break;
-        }
-      })
-    })
-
-    modal.addEventListener('click', e => {
-      if (e.target.className.includes('close-modal') || e.target.className.includes('modal')) {
-        closeModal();
-      }
-    })
-  } catch (err) {}
-
-
-  /* Fucntions =========== */
-  // modal
-  function openModal(curItem) {
-    modalItems.forEach(item => item.classList.remove('active'))
-    document.querySelector(curItem).classList.add('active') 
-    modal.classList.add('active')
-    document.body.style.overflowY = 'hidden'
-  }
-  
-  function closeModal() {
-      document.body.style.overflowY = 'auto'
-      modal.classList.remove('active')
-  }
-  
   // Market popular projects
   function moreMarketPP(item, modal) {
     const curImg = item.querySelector('.img img').src
@@ -209,10 +166,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } catch (err) {}
 
-// Autopaly video
-try {
-  document.querySelector('.video-bg video').play();
-} catch (err) {}
+  // Autopaly video
+  try {
+    document.querySelector('.video-bg video').play();
+  } catch (err) {}
+
+  // New modals
+  const newModalBtn = document.querySelectorAll('*[data-modal-btn]');
+  const newModalItems = document.querySelectorAll('*[data-modal-item]');
+  
+  newModalBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+
+      newModalItems.forEach(item => {
+        if (btn.dataset.modalBtn === item.dataset.modalItem) {
+          item.classList.add('active');
+        }
+      })
+
+    })
+  })
+
+  newModalItems.forEach(item => {
+    item.addEventListener('click', e => {
+      if (e.target.className.includes('modal ') || e.target.className.includes('modal-close-btn')) {
+        item.classList.remove('active');
+      }
+    })
+  });
 
 })
 
