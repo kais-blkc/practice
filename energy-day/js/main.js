@@ -90,6 +90,40 @@ try {
       prevEl: '.video-slider .swiper-button-prev',
     },
   })
+
+  const csSliser = new Swiper('.cs-slider', {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.cs-slider .swiper-button-next',
+      prevEl: '.cs-slider .swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        centeredSlides: true,
+      },
+      767: {
+        slidesPerView: 'auto',
+      }
+    }
+  })
+
+  const crSliser = new Swiper('.cr-slider', {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.cr-slider .swiper-button-next',
+      prevEl: '.cr-slider .swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        centeredSlides: true,
+      },
+      767: {
+        slidesPerView: 'auto',
+      }
+    }
+  })
 } catch (err) {
   console.log('Error in sliders: ' + err);
 }
