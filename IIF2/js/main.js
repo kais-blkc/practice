@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const partnersSlider = new Swiper('.partners__list', {
       preloadImages: false,
-      loop: true,
+      // loop: true,
       autoplay: {
         delay: 1700,
       },
