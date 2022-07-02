@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // CurPage
+  const url = window.location.href;
+  const headerNavbarLinks = document.querySelectorAll('header .navbar ul li a');
 
+  headerNavbarLinks.forEach(link => {
+    if (link.href === url) {
+      link.closest('li').classList.add('active');
+
+      if (link.closest('.sub-menu')) {
+       link.closest('.sub-menu').parentElement.classList.add('active');
+      }
+    } 
+  })
+
+  // Burger
   const burger = document.querySelector('.burger');
   const closeBtn = document.querySelector('.close-btn');
   const headerNavbar = document.querySelector('header .navbar');
