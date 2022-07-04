@@ -30,7 +30,9 @@
             <li><a href="target.html">История создания </a></li>
             <li><a href="reviews.html">Отзывы</a></li>
             <li><a href="./team.html">Команда </a></li>
-            <li class="desc-none"><a class="profile" href="sign-in.html">Личный кабинет</a></li>
+            <li class="desc-none">
+              <div class="profile" data-modal-btn="sign-reg">Личный кабинет</div>
+            </li>
             <li class="mob-none lang-desc"><a href="javascript:void(0)">Eng </a><a class="txt-brown" href="javascript:void(0)">Ru </a></li>
           </ul>
         </nav>
@@ -44,8 +46,10 @@
           <div class="hero-top">
             <div class="logo"><img src="img/logo-new.png" alt=""/>
               <p>Invest in the <br/> Future Capital</p>
-            </div><a class="profile" href="sign-in.html"><img src="img/prof-man.svg" alt=""/>
-              <p>Личный кабинет</p></a>
+            </div>
+            <div class="profile" data-modal-btn="sign-reg"><img src="img/prof-man.svg" alt=""/>
+              <p>Личный кабинет</p>
+            </div>
           </div>
           <div class="hero-middle">
             <h1 class="h1">Инвестируй в технологические <br/> стартапы и действующие бизнесы</h1>
@@ -56,7 +60,7 @@
       </section><!--it-where-invest =================-->
       <section class="iif-today it-where-invest">
         <div class="container"> 
-          <h2 class="h2 __left">Куда инвестируют клиенты <span class="iif-words">IIF CAPITAL?</span></h2>
+          <h2 class="h2">Куда инвестируют клиенты <span class="iif-words">IIF CAPITAL?</span></h2>
           <div class="iif-today__list">
                   <div class="iif-today__list-item iif-today__item">
                     <div class="iif-today__item-img img-icon__item"><img src="img/it-wi-1.svg" alt=""/></div>
@@ -78,7 +82,7 @@
       </section><!--it-project-pass =================-->
       <section class="it-project-pass">
         <div class="container"> 
-          <h2 class="h2 __left">Проекты проходят многоэтапный отбор <br/> и контроль на всех этапах реализации:</h2>
+          <h2 class="h2">Проекты проходят многоэтапный отбор <br/> и контроль на всех этапах реализации:</h2>
           <div class="it-project-pass__list">
                   <div class="it-project-pass__item">
                     <div class="it-project-pass__item-wrapper">
@@ -138,17 +142,14 @@
     <footer><!--contacts =================-->
       <section class="start-invest">
         <div class="container"> <a class="btn-top" href="#header" id="header"></a>
-          <div class="start-invest__top">
-            <div class="address"><span class="iif-words">IIF CAPITAL</span> - INVEST IN THE FUTURE CAPITAL <br/> LONDON <br/> 5 Stratford Place W1C 1AX United Kingdom <span class="iif-words">IIF CAPITAL</span> LTD. <br/> Регистрационные данные </div>
-          </div>
-          <div class="start-invest__bottom">
-            <div class="copyright">2022 © <span class="iif-words">IIF CAPITAL</span></div><a class="profile" href="sign-in.html"><img src="img/prof-man.svg" alt=""/>
-              <p>Личный кабинет</p></a>
-          </div>
           <div class="start-invest__mobile">
+            <h4>Связаться с нами</h4>
             <div class="start-invest__mobile-item"><img src="img/tlgrm.svg" alt=""/><a href="https://t.me/Diagilev_Anton">@iifcapital</a></div>
             <div class="start-invest__mobile-item"><img src="img/inst.svg" alt=""/><a href="https://www.instagram.com/iif.capital/">@iif.capital</a></div>
             <div class="start-invest__mobile-item"><img src="img/mail.svg" alt=""/><a href="mailto:info@iif.capital">info@iif.capital</a></div>
+          </div>
+          <div class="start-invest__top">
+            <div class="address"><span class="iif-words">IIF CAPITAL</span> - INVEST IN THE FUTURE CAPITAL <br/><br/> LONDON <br/> 5 Stratford Place W1C 1AX United Kingdom <span class="iif-words">IIF CAPITAL</span> LTD. <br/> Регистрационные данные </div>
           </div>
         </div>
       </section>
@@ -168,6 +169,43 @@
         </div>
       </div>
     </div>
+    <section class="modal-form modal__sign-reg" data-modal-item="sign-reg">
+      <div class="close-btn modal-close-btn"></div>
+      <div class="container"> <a class="logo" href="index.html"><img src="img/logo-new.png" alt=""/></a>
+        <div class="tabs-titles">
+          <div class="tabs-titles__item active" data-tab-btn="sign-in-form">Авторизация</div>
+          <div class="tabs-titles__item" data-tab-btn="reg-form">Регистрация</div>
+        </div>
+        <div class="modal-form__wrapper active" data-tab-item="sign-in-form">
+          <div class="mf-title">Вход в учетную запись</div>
+          <form>
+            <label for="sign-login">Никнейм/Email</label>
+            <input type="text" name="login" id="sign-login"/>
+            <label for="password">Пароль</label>
+            <input type="password" name="sign-password" id="sign-password"/>
+            <button class="btn-brown" type="button">Войти в личный кабинет</button>
+          </form>
+        </div>
+        <div class="modal-form__wrapper" data-tab-item="reg-form">
+          <div class="mf-title">Создать учетную запись</div>
+          <div class="mf-desc">Зарегистрируйтесь по электронной почте и начните работу со своей бесплатной учетной записью</div>
+          <form>
+            <label for="name">Полное имя</label>
+            <input type="text" name="name" id="name"/>
+            <label for="email">Адрес электронной почты *</label>
+            <input type="email" name="email" id="email"/>
+            <label for="password">Пароль *</label>
+            <input type="password" name="password" id="password"/>
+            <div class="mf-flex">
+              <input type="checkbox" name="" id="allow"/>
+              <label for="allow">Я согласен с Terms & Condition</label>
+            </div>
+            <button class="btn-brown" type="button">Войти в личный кабинет</button>
+          </form>
+        </div>
+        <div class="home">на главную    </div>
+      </div>
+    </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js?v=2"></script>

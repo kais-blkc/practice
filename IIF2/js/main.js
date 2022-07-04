@@ -195,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
       newModalItems.forEach(item => {
         if (btn.dataset.modalBtn === item.dataset.modalItem) {
           item.classList.add('active');
+          document.body.style.overflowY = 'hidden';
         }
       })
 
@@ -205,9 +206,32 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', e => {
       if (e.target.className.includes('modal ') || e.target.className.includes('modal-close-btn')) {
         item.classList.remove('active');
+        document.body.style.overflowY = 'visible';
       }
     })
   });
+
+  // Tabs
+  try {
+    const tabBtns = document.querySelectorAll('*[data-tab-btn]');
+    const tabItems = document.querySelectorAll('*[data-tab-item]');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', e => {
+        
+        tabItems.forEach((item, index) => {
+          tabBtns[index].classList.remove('active');
+          tabItems[index].classList.remove('active');
+
+          if (btn.dataset.tabBtn === item.dataset.tabItem) {
+            item.classList.add('active');
+            btn.classList.add('active')
+          }
+        })
+  
+      })
+    })
+  } catch(err) {}
 
 })
 
