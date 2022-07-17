@@ -147,4 +147,15 @@ try {
   }
 } catch (err) {}
 
+
+/* Burger ================== */
+const burger = document.querySelector('.burger');
+const burgerWrapper = document.querySelector('.burger-wrapper');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active')
+  burgerWrapper.classList.toggle('active')
+})
+
 });
+
