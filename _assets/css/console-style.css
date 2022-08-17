@@ -1,0 +1,70 @@
+/* @import url('https://allfont.ru/allfont.css?fonts=anonymous-pro'); */
+
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-style: normal;
+    font-weight: 400;
+    src:  url('../fonts/anonymous-pro.woff') format('woff'),
+          url('../fonts/anonymous-pro.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Anonymous Pro', arial;
+  background: #000;
+  color: #fff;
+  padding-top: 35px;
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+li::before {
+  content: '*';
+}
+
+a {
+  text-decoration: none;
+}
+a,
+a:visited {
+  color: blue;
+}
+a:focus,
+a:hover {
+  opacity: .8;
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.window-btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* border: 1px solid #fff; */
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 6px 5px;
+}
+
+.window-btns > div {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.window-btns .close {
+  border-radius: 50%;
+  background:red;
+  font-size: 0.8rem;
+}

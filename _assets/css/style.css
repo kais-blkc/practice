@@ -52,7 +52,7 @@ ul {
 }
 
 .work-list {
-  margin-top: 120px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -72,12 +72,13 @@ ul {
 }
 .work-list li:hover a {
   color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255, 0.4);
 }
 
 .work-list li a {
   font-size: 2rem;
   color: #fff;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   transition: all 0.2s linear;
   -webkit-text-stroke: 0.5px;
   -webkit-text-stroke-color: #fff;
