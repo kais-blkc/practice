@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Интер Металл</title>
+    <link rel="stylesheet" href="./css/style.min.css"/>
+    <link rel="stylesheet" href="./css/fancybox.css"/><link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header data-modal-block="mob-menu">
+      <div class="container">
+        <div class="header-logo"> <img src="img/logo.png" alt=""/><img class="mob" src="img/logo-mob.png" alt=""/></div>
+        <div class="work-time flex-center black-text"><img src="img/clock-black.svg" alt=""/>
+          <p>Пн-Сб: с 8:30-18:00 <br/> Вс: выходной</p>
+        </div>
+        <div class="navbar">
+          <div class="header-el address"><img src="img/map-tag.svg" alt=""/>
+            <p>ул. Московское Шоссе, <br/> д.92, стр  55</p>
+          </div>
+          <div class="header-el worktime"><img src="img/clock.svg" alt=""/>
+            <p>Пн-Сб: с 8:30-18:00 <br/> Вс: выходной</p>
+          </div>
+          <div class="btn btn-transparent btn-w300">Рассчитать стоимость</div>
+          <div class="search search-header">
+            <input type="text" placeholder="Поиск"/>
+            <button></button>
+          </div>
+          <div class="header-links"> 
+            <div class="phones a-links"><a href="+74999387426">+7 (499) 938-74-26</a><a href="89021222037">8(902) 122-20-37</a></div>
+            <div class="socs"> <a href="javascript:void(0)"><img src="img/whtsapp.svg" alt=""/></a><a href="javascript:void(0)"><img src="img/viber.svg" alt=""/></a></div>
+          </div>
+        </div>
+        <div class="burger" data-modal-open="mob-menu">
+          <div class="burger-line"></div>
+        </div>
+      </div>
+      <div class="navbar-orange">
+        <div class="container">
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/services.html">услуги</a></li>
+            <li><a href="/prices.html">цены</a></li>
+            <li><a href="/blog.html">вакансии</a></li>
+            <li><a href="/#about-us">О нас</a></li>
+            <li><a href="/#qa">Вопрос/ответ</a></li>
+            <li><a href="/contacts.html">контакты</a></li>
+          </ul>
+          <div class="search">
+            <input type="text" placeholder="Поиск"/>
+            <button></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal-wrapper" data-modal-block="mob-menu">
+      <div class="mob-menu">
+        <div class="mob-menu__navbar">
+          <ul>
+            <li> <a href="javascript:void(0)">Главная</a></li>
+            <li class="menu-item-has-children"><a href="javascript:void(0)">услуги</a>
+              <ul class="sub-menu">
+                <li> <a href="javascript:void(0)">Вывоз лома</a></li>
+                <li> <a href="javascript:void(0)">Прием лома</a></li>
+                <li> <a href="javascript:void(0)">Демонтаж</a></li>
+                <li> <a href="javascript:void(0)">Моментальный хим. анализ металла </a></li>
+                <li> <a href="javascript:void(0)">Моментальный хим. анализ металла </a></li>
+              </ul>
+            </li>
+            <li> <a href="javascript:void(0)">цены</a></li>
+            <li> <a href="javascript:void(0)">вакансии</a></li>
+            <li> <a href="javascript:void(0)">О нас</a></li>
+            <li> <a href="javascript:void(0)">Вопрос/ответ</a></li>
+            <li> <a href="javascript:void(0)">контакты</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu__bottom"><a class="mob-menu__bottom-item" href="javascript:void(0)">
+                <div class="mob-menu__bottom-item-img"><img src="img/bi-1.svg" alt=""/></div>
+                <div class="mob-menu__bottom-item-text">
+                  <p>Whats App</p>
+                </div></a><a class="mob-menu__bottom-item" href="javascript:void(0)">
+                <div class="mob-menu__bottom-item-img"><img src="img/bi-2.svg" alt=""/></div>
+                <div class="mob-menu__bottom-item-text">
+                  <p>Услуги</p>
+                </div></a><a class="mob-menu__bottom-item" href="javascript:void(0)">
+                <div class="mob-menu__bottom-item-img"><img src="img/bi-3.svg" alt=""/></div>
+                <div class="mob-menu__bottom-item-text">
+                  <p>Позвонить</p>
+                </div></a><a class="mob-menu__bottom-item" href="javascript:void(0)">
+                <div class="mob-menu__bottom-item-img"><img src="img/bi-4.svg" alt=""/></div>
+                <div class="mob-menu__bottom-item-text">
+                  <p>Сдать металл</p>
+                </div></a><a class="mob-menu__bottom-item" href="javascript:void(0)">
+                <div class="mob-menu__bottom-item-img"><img src="img/bi-5.svg" alt=""/></div>
+                <div class="mob-menu__bottom-item-text">
+                  <p>Карта</p>
+                </div></a>
+        </div>
+      </div>
+    </div>
+    <section class="hero absolute-header">
+      <div class="container"> 
+        <div class="LR-wrapper">
+          <div class="hero-left">
+            <h1 class="h1">Приём металлолома <br/> в Ульяновске ДОРОГО!</h1>
+            <div class="h1-desc">Предлагаем лучшие условия приема металлолома. <br/> Оказываем услуги по вывозу металла! </div>
+            <div class="hero-btns"><a class="btn btn-orange" href="/prices.html">Смотреть цены</a>
+              <div class="btn btn-transparent" data-modal-open="order-call">Связаться </div>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-informer">
+              <div class="hero-informer__item">
+                <div class="hero-informer__item-title">Информер - Товарные рынки (Драгоценные металлы, цветные металлы, нефть)</div>
+                <div class="hero-informer__item-table">
+                  <table>
+                    <tr> 
+                      <td>Алюминий</td>
+                      <td>2357.00</td>
+                      <td>2360.00</td>
+                    </tr>
+                    <tr> 
+                      <td>Никель</td>
+                      <td>22605.00</td>
+                      <td>22650.00</td>
+                    </tr>
+                    <tr> 
+                      <td>Медь</td>
+                      <td>7702.00</td>
+                      <td>7710.00</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="hero-informer__item">
+                <div class="hero-informer__item-title">Информер - Курс рубля на межбанковском рынке</div>
+                <div class="hero-informer__item-table">
+                  <table>
+                    <tr> 
+                      <td colspan="3">Курсы валют</td>
+                    </tr>
+                    <tr> 
+                      <td> </td>
+                      <td>Покупка</td>
+                      <td>Продажа</td>
+                    </tr>
+                    <tr> 
+                      <td>USD/RUB</td>
+                      <td>60.21</td>
+                      <td>60.22</td>
+                    </tr>
+                    <tr> 
+                      <td>EUR/RUB</td>
+                      <td>58.408</td>
+                      <td>58.428</td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3">Данные на: 18:59 мск</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="secs-bg" style="background-image: url('img/secs-bg-1.jpg')">
+      <section class="why-we sec-p">
+        <div class="container"> 
+          <h2 class="h2">Почему <br class="mob-br"/> выбирают нас</h2>
+          <div class="ww-list list-m-top">
+                  <div class="ww-list__item">
+                    <div class="ww-list__item-img"><img src="img/wwli-1.svg" alt=""/></div>
+                    <div class="ww-list__item-text">Высокие цены</div>
+                  </div>
+                  <div class="ww-list__item">
+                    <div class="ww-list__item-img"><img src="img/wwli-2.svg" alt=""/></div>
+                    <div class="ww-list__item-text">Честные весы</div>
+                  </div>
+                  <div class="ww-list__item">
+                    <div class="ww-list__item-img"><img src="img/wwli-3.svg" alt=""/></div>
+                    <div class="ww-list__item-text">Без посредников</div>
+                  </div>
+                  <div class="ww-list__item">
+                    <div class="ww-list__item-img"><img src="img/wwli-4.svg" alt=""/></div>
+                    <div class="ww-list__item-text">Самовывоз</div>
+                  </div>
+                  <div class="ww-list__item">
+                    <div class="ww-list__item-img"><img src="img/wwli-5.svg" alt=""/></div>
+                    <div class="ww-list__item-text">Наличие лицензии</div>
+                  </div>
+                  <div class="ww-list__item">
+                    <div class="ww-list__item-img"><img src="img/wwli-6.svg" alt=""/></div>
+                    <div class="ww-list__item-text">Большой опыт работы с клиентами</div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="services sec-p">
+        <div class="container"> 
+          <h2 class="h2">Услуги</h2>
+          <div class="services-list list-m-top">
+                  <div class="services-list__item">
+                    <div class="services-list__item-img"><img src="img/sli-1.jpg" alt=""/></div>
+                    <div class="services-list__item-body">
+                      <div class="services-list__item-title">Прием лома</div>
+                      <div class="services-list__item-desc"></div>
+                    </div>
+                  </div>
+                  <div class="services-list__item">
+                    <div class="services-list__item-img"><img src="img/sli-2.jpg" alt=""/></div>
+                    <div class="services-list__item-body">
+                      <div class="services-list__item-title">Вывоз лома</div>
+                      <div class="services-list__item-desc">В автопарке нашей компании есть огромное количество транспорта, предназначенного для вывоза металлолома и других материалов.</div>
+                    </div>
+                  </div>
+                  <div class="services-list__item">
+                    <div class="services-list__item-img"><img src="img/sli-3.jpg" alt=""/></div>
+                    <div class="services-list__item-body">
+                      <div class="services-list__item-title">Демонтаж</div>
+                      <div class="services-list__item-desc">Вы можете заказать демонтаж металлических сооружений с последующим вывозом получившихся отходов.</div>
+                    </div>
+                  </div>
+                  <div class="services-list__item">
+                    <div class="services-list__item-img"><img src="img/sli-4.jpg" alt=""/></div>
+                    <div class="services-list__item-body">
+                      <div class="services-list__item-title">Моментальный хим. <br> анализ металла </div>
+                      <div class="services-list__item-desc"></div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="secs-bg" style="background-image: url('img/hlam.jpg')">
+      <section class="car-park sec-p">
+        <div class="container">
+          <h2 class="h2">Наш автопарк</h2>
+          <div class="car-park-list list-m-top">
+                  <div class="car-park-list__item">
+                    <div class="car-park-list__item-img"><a href="img/cpli-1_big.jpg" data-fancybox="car-auto"><img class="img-cover" src="img/cpli-1.jpg" alt=""/></a></div>
+                  </div>
+                  <div class="car-park-list__item">
+                    <div class="car-park-list__item-img"><a href="img/cpli-2_big.jpg" data-fancybox="car-auto"><img class="img-cover" src="img/cpli-2.jpg" alt=""/></a></div>
+                  </div>
+                  <div class="car-park-list__item">
+                    <div class="car-park-list__item-img"><a href="img/cpli-3_big.jpg" data-fancybox="car-auto"><img class="img-cover" src="img/cpli-3.jpg" alt=""/></a></div>
+                  </div>
+                  <div class="car-park-list__item">
+                    <div class="car-park-list__item-img"><a href="img/cpli-4_big.jpg" data-fancybox="car-auto"><img class="img-cover" src="img/cpli-4.jpg" alt=""/></a></div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us sec-p" id="about-us">
+        <div class="container"> 
+          <h2 class="h2">О нас</h2>
+          <div class="LR-wrapper list-m-top">
+            <div class="about-us-left">
+              <p>ООО «Интер-металл» является одним из лидеров в сфере заготовки, переработки, реализации лома черных и цветных металлов в Приволжском федеральном округе. Свою деятельность компания осуществляет ни только на территории Приволжского федерального округа, а так же по всей территории России . </p>
+              <p>Наши менеджеры имеют богатый опыт работы с ломами и поставщиками со всех регионов страны. <br/> Всегда рады новым знакомствам и новым перспективам сотрудничества.</p>
+            </div>
+            <div class="about-us-right">
+              <div class="about-us__img"><img class="img-cover" src="img/au.jpg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners sec-p">
+        <div class="container"> 
+          <h2 class="h2">Наши партнеры </h2>
+          <div class="partners-list list-m-top">
+                  <div class="partners-list__item">
+                    <div class="partners-list__item-img"><img src="img/pli-1.png" alt=""/></div>
+                  </div>
+                  <div class="partners-list__item">
+                    <div class="partners-list__item-img"><img src="img/pli-2.png" alt=""/></div>
+                  </div>
+                  <div class="partners-list__item">
+                    <div class="partners-list__item-img"><img src="img/pli-3.png" alt=""/></div>
+                  </div>
+                  <div class="partners-list__item">
+                    <div class="partners-list__item-img"><img src="img/pli-4.png" alt=""/></div>
+                  </div>
+                  <div class="partners-list__item">
+                    <div class="partners-list__item-img"><img src="img/pli-5.png" alt=""/></div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="qa sec-p" id="qa">
+        <div class="container"> 
+          <h2 class="h2">Часто задаваемые вопросы</h2>
+          <div class="qa-list list-m-top" data-tabs-wrapper="qa">
+                  <div class="qa-list__item" data-tab-item="qa">
+                    <div class="qa-list__item-header" data-tab-header="data-tab-header">Что можно нам сдать?</div>
+                    <div class="qa-list__item-body" data-tab-body="data-tab-body">Вы можете сдать медь, латунь, алюминий, свинец, нержавейку, бронзу, цинк, магний, черный металл и пр. Можно сдать детали металлоконструкций, стружку разных материалов, радиаторы, кабель, запчасти автомобилей и множество прочих предметов из металла. Информацию том, какие именно виды металлолома принимает наша компания СамМетКом, регулярно публикуется на нашем сайте.</div>
+                  </div>
+                  <div class="qa-list__item" data-tab-item="qa">
+                    <div class="qa-list__item-header" data-tab-header="data-tab-header">Какой минимальный объем партии?</div>
+                    <div class="qa-list__item-body" data-tab-body="data-tab-body">Работаем с любым объемом. Но чем больше объем, тем выгоднее наше предложение.</div>
+                  </div>
+                  <div class="qa-list__item" data-tab-item="qa">
+                    <div class="qa-list__item-header" data-tab-header="data-tab-header">Как происходит прием?</div>
+                    <div class="qa-list__item-body" data-tab-body="data-tab-body">Процедура проходит в несколько этапов: <br> - Внешний осмотр; <br> - Взвешивание партии. <br> - Моментальный расчет.</div>
+                  </div>
+                  <div class="qa-list__item" data-tab-item="qa">
+                    <div class="qa-list__item-header" data-tab-header="data-tab-header">Как быстро вы получаете деньги?</div>
+                    <div class="qa-list__item-body" data-tab-body="data-tab-body">Выплата наличными происходит сразу. Если вы выбираете безналичный расчет, оплата может занять некоторое время (условия определяются банком), но при этом вы получаете дополнительное увеличение цены + 3%.</div>
+                  </div>
+                  <div class="qa-list__item" data-tab-item="qa">
+                    <div class="qa-list__item-header" data-tab-header="data-tab-header">Зависит ли цена от объема?</div>
+                    <div class="qa-list__item-body" data-tab-body="data-tab-body">Да, объем партии влияет на цену. Для поставщиков, готовых сдать большое количество металлолома, мы предоставляем индивидуальные цены.</div>
+                  </div>
+            <div class="more-qa" data-modal-block="more-qa">
+                    <div class="qa-list__item" data-tab-item="qa">
+                      <div class="qa-list__item-header" data-tab-header="data-tab-header">Сможете выгрузить металлолом из крытого фургона?</div>
+                      <div class="qa-list__item-body" data-tab-body="data-tab-body">Да, сможем. Имеются рабочие и необходимая техника для выгрузки металлолома.</div>
+                    </div>
+                    <div class="qa-list__item" data-tab-item="qa">
+                      <div class="qa-list__item-header" data-tab-header="data-tab-header">Как формируется цена на неочищенный кабель в изоляции?</div>
+                      <div class="qa-list__item-body" data-tab-body="data-tab-body">Если вес кабеля до 100 кг. то оценка его происходит при визуальном осмотре и согласовывается с мастером на площадке. Если кабеля больше…то берется контрольный образец(около 20 см). Взвешивается, затем разделывается. Завешивается медь или алюминий, полученный из данного кабеля. Таким образом выясняем процент содержания цветного лома в кабеле. Далее взвешиваем весь кабель в изоляции, и вычитаем процент засора из веса брутто…получаем вес нетто, то есть, фактическое содержание металла в кабеле, за которое будет произведена оплата.</div>
+                    </div>
+                    <div class="qa-list__item" data-tab-item="qa">
+                      <div class="qa-list__item-header" data-tab-header="data-tab-header">Как долго происходит приемка металла?</div>
+                      <div class="qa-list__item-body" data-tab-body="data-tab-body">Все зависит от количества сдаваемого лома…Обычно ломосдатчики проводят у нас на площадке от 10 минут до 1 часа. Стараемся не задерживать клиентов.</div>
+                    </div>
+                    <div class="qa-list__item" data-tab-item="qa">
+                      <div class="qa-list__item-header" data-tab-header="data-tab-header">Как протекает процесс разгрузки и взвешивания?</div>
+                      <div class="qa-list__item-body" data-tab-body="data-tab-body">Наши грузчики разгружают лом цветных металлов из автомобиля клиента на электронные весы. Если количество цветного лома не маленькое, то брибегаем к помощи погрузчика.</div>
+                    </div>
+              <div class="btn btn-transparent__black btn-w215" data-modal-open="more-qa">Еще вопросы</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="any-questions sec-p">
+      <div class="container"> 
+        <div class="LR-wrapper">
+          <div class="aqs-left">
+            <div class="aqs-title">Остались <br class="mob"/> вопросы?  </div>
+            <div class="aqs-desc">Свяжитесь с нами и мы ответим <br class="mob"/> на все интересующие вас вопросы.</div>
+          </div>
+          <div class="aqs-right"><a class="aqs-socs__item aqs-phone" href="javascript:void(0)"> <img src="img/aq-phone.svg" alt=""/>
+              <p>+7 (499) 938-74-26</p></a>
+            <div class="aqs-socs"><a class="aqs-socs__item aqs-socs__whatsapp" href="javascript:void(0)"><img src="img/aq-whatsapp.svg" alt=""/>
+                <p>WhatsApp</p></a><a class="aqs-socs__item aqs-socs__viber" href="javascript:void(0)"><img src="img/aq-viber.svg" alt=""/>
+                <p>Viber</p></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="secs-bg" style="background-image: url('img/hlam.jpg')">
+      <section class="contacts">
+        <div class="ymap"><img class="img-cover" src="img/ymap.jpg" alt=""/></div>
+        <div class="contacts-block a__hover-opacity">
+          <div class="contacts-block__title">КОНТАКТЫ</div>
+          <div class="contacts-block__item"><img src="img/map-tag.svg" alt=""/>
+            <p>Адрес: г. Ульяновск, ул. Московское Шоссе, д.92, стр  55, помещение 2 (въезд через улицу Азовскую , бывшая северная проходная УАЗ) </p>
+          </div>
+          <div class="contacts-block__item"><img src="img/aq-phone.svg" alt=""/>
+            <div class="contacts__phones">
+              <div class="contacts__phones-list"><a href="javascript:void(0)">+7 (499) 938-74-26</a><a href="javascript:void(0)">8(902) 122-20-37</a></div>
+              <div class="socs"> <a href="javascript:void(0)"><img src="img/whtsapp.svg" alt=""/></a><a href="javascript:void(0)"><img src="img/viber.svg" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="contacts-block__item"><img src="img/clock.svg" alt=""/>
+            <div>
+              <p>Пн-Сб: с 8:30-18:00 </p>
+              <p>Вс: выходной</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-calc">
+          <div class="LR-wrapper">
+            <div class="contacts-calc__left">
+              <p>Воспользуйтесь калькулятором <br/> для рассчета стоимости</p>
+            </div>
+            <div class="contacts-calc__right">
+              <button class="btn btn-transparent__black btn-w300">Рассчитать стоимость</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="sec-p">
+      <div class="container"> 
+        <div class="logo"> <img src="img/logo.png" alt=""/></div>
+        <div class="footer-list">
+          <ul> 
+            <li> <a href="javascript:void(0)">Услуги</a></li>
+            <li> <a href="javascript:void(0)">Прием лома</a></li>
+            <li> <a href="javascript:void(0)">Вывоз лома</a></li>
+            <li> <a href="javascript:void(0)">Демонтаж</a></li>
+            <li> <a href="javascript:void(0)">Моментальный хим. <br/> анализ металла </a></li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <ul> 
+            <li> <a href="javascript:void(0)">Информация</a></li>
+            <li> <a href="javascript:void(0)">Вопрос/Ответ</a></li>
+            <li> <a href="javascript:void(0)">Отзывы</a></li>
+            <li> <a href="javascript:void(0)">Цены</a></li>
+            <li> <a href="javascript:void(0)">Вакансии</a></li>
+            <li> <a href="javascript:void(0)">О нас</a></li>
+          </ul>
+        </div>
+        <div class="footer-list footer-contacts">
+          <ul>
+            <li>Контакты</li>
+            <li> <a href="javascript:void(0)"> <img src="img/aq-phone.svg" alt=""/>
+                <p>8(902) 122-20-37</p></a></li>
+            <li> <img src="img/map-tag.svg" alt=""/>
+              <p>Адрес: г. Ульяновск, ул. Московское Шоссе , д.92, стр  55, помещение 2  </p>
+            </li>
+            <li> <img src="img/clock.svg" alt=""/>
+              <p>Пн-Сб: с 8:30-18:00 <br/> Вс: выходной </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom a__hover-opacity">
+        <div class="container"><a href="javascript:void(0)">Правовая информация</a>
+          <div class="socs-white"><a href="javascript:void(0)"><img src="img/w-whatsapp.svg" alt=""/></a><a href="javascript:void(0)"><img src="img/w-vk.svg" alt=""/></a><a href="javascript:void(0)"><img src="img/w-viber.svg" alt=""/></a></div>
+          <p>Сайт не является публичной офертой <br class="tablet"/> и носит информационный характер</p><a href="#">Карта сайта</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-wrapper flex-center" data-modal-block="order-call">
+      <div class="modal__item order-call">
+        <div class="close-btn" data-modal-close="order-call"></div>
+        <div class="modal__item-title">Заказ звонка</div>
+        <div class="modal__item-form"> 
+          <form>
+            <input type="number" name="your-phone" placeholder="Телефон"/>
+            <input type="text" name="your-name" placeholder="Имя"/>
+            <button class="btn btn-orange__white" type="button">Позвонить</button>
+          </form>
+        </div>
+        <div class="aqs-socs __all __two-col"><a class="aqs-socs__item aqs-socs__email" href="javascript:void(0)"><img src="img/aq-mail.svg" alt=""/>
+            <p>Почта</p></a><a class="aqs-socs__item aqs-socs__whatsapp" href="javascript:void(0)"><img src="img/aq-whatsapp.svg" alt=""/>
+            <p>WhatsApp</p></a><a class="aqs-socs__item aqs-socs__telegram" href="javascript:void(0)"><img src="img/aq-telegram.svg" alt=""/>
+            <p>Telegram</p></a><a class="aqs-socs__item aqs-socs__viber" href="javascript:void(0)"><img src="img/aq-viber.svg" alt=""/>
+            <p>Viber</p></a></div>
+      </div>
+    </div>
+    <div class="modal-wrapper flex-center" data-modal-block="submit-request">
+      <div class="modal__item order-call">
+        <div class="close-btn" data-modal-close="submit-request"></div>
+        <div class="modal__item-title">ОСТАВЬТЕ ЗАЯВКУ</div>
+        <div class="modal__item-desc">Рассчитаем примерную стоимость</div>
+        <div class="modal__item-form">
+          <form>
+            <input type="text" name="your-metall" placeholder="Выбор металла"/>
+            <input type="number" name="your-metall-weight" placeholder="Количество в кг"/>
+            <button class="btn btn-orange__white" type="button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrapper flex-center" data-modal-block="any-question">
+      <div class="modal__item order-call">
+        <div class="close-btn" data-modal-close="any-question"></div>
+        <div class="modal__item-title">Остались вопросы?  </div>
+        <div class="modal__item-desc">Свяжитесь с нами и мы ответим на все интересующие вас вопросы.</div>
+        <div class="modal__item-form">
+          <form>
+            <input type="text" name="your-metall" placeholder="Выбор металла"/>
+            <input type="text" name="your-metall-weight" placeholder="Количество в кг"/>
+            <button class="btn btn-orange__white" type="button">Связаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrapper flex-center" data-modal-block="vacancy">
+      <div class="modal__item order-call modal__vacancy">
+        <div class="close-btn" data-modal-close="vacancy"></div>
+        <div class="modal__item-title">Интер-Металл примет на работу:  </div>
+        <div class="modal__item-content"> 
+          <p><b>1 Сортировщик</b> цветного лома (от 30 тыс.руб) </p>
+          <p>Обязанности: разгрузка/погрузка грузовых машин,сортировка металла.</p>
+          <p>Требования: ответственность, трудолюбие, оперативность. </p>
+        </div>
+        <button class="btn btn-orange__white" type="button">Связаться с менеджером</button>
+      </div>
+    </div>
+    <div class="modal-wrapper flex-center" data-modal-block="contact-manager">
+      <div class="modal__item order-call modal__contact-manager">
+        <div class="close-btn close-btn__white" data-modal-close="contact-manager"></div>
+        <div class="LR-wrapper">
+          <div class="modal__contact-manager-left flex-center">
+            <div class="modal__item-h1">СВязаться <br/> с менеджером  </div>
+          </div>
+          <div class="modal__contact-manager-right">
+            <div class="modal__item-title">89021222037  </div>
+            <div class="modal__item-desc">Алексей Владимирович  </div><a class="btn btn-orange__white" href="tel:89021222037">Позвонить</a>
+            <div class="aqs-socs __all __two-col"><a class="aqs-socs__item aqs-socs__email" href="javascript:void(0)"><img src="img/aq-mail.svg" alt=""/>
+                <p>Почта</p></a><a class="aqs-socs__item aqs-socs__whatsapp" href="javascript:void(0)"><img src="img/aq-whatsapp.svg" alt=""/>
+                <p>WhatsApp</p></a><a class="aqs-socs__item aqs-socs__telegram" href="javascript:void(0)"><img src="img/aq-telegram.svg" alt=""/>
+                <p>Telegram</p></a><a class="aqs-socs__item aqs-socs__viber" href="javascript:void(0)"><img src="img/aq-viber.svg" alt=""/>
+                <p>Viber</p></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-wrapper flex-center" data-modal-block="add-product">
+      <div class="modal__item">
+        <div class="close-btn" data-modal-close="add-product"></div>
+        <div class="modal__item-title">Добавить к заказу  </div>
+        <div class="modal__item-form">
+          <form>
+            <select name="metal-select">
+              <option value="Выбор металла">Выбор металла</option>
+              <option value="ЗА (26 600 руб.)">ЗА (26 600 руб.)</option>
+              <option value="5А">5А</option>
+              <option value="12А">12А</option>
+              <option value="16А">16А</option>
+              <option value="Алюминий ">Алюминий </option>
+              <option value="Медь">Медь</option>
+              <option value="Латунь ">Латунь </option>
+              <option value="Аккумуляторы (цена)">Аккумуляторы (цена)</option>
+              <option value="Свинец ">Свинец </option>
+              <option value="Нержавейка">Нержавейка</option>
+              <option value="Цинк">Цинк</option>
+              <option value="Электроплаты (цена)">Электроплаты (цена)</option>
+            </select>
+            <input type="number" name="your-metall-weight" placeholder="Количество в кг"/>
+          </form>
+        </div>
+        <button class="btn btn-orange__white" type="button">Связаться с менеджером</button>
+      </div>
+    </div>
+    <div class="modal-wrapper flex-center active" data-modal-block="cost-metal">
+      <div class="modal__item">
+        <div class="close-btn" data-modal-close="cost-metal"></div>
+        <div class="modal__item-title">Узнать стоимость металлолома  </div>
+        <div class="modal__item-form">
+          <form>
+            <select name="metal-select">
+              <option value="Выбор металла" disabled="disabled" selected="selected">Выбор металла</option>
+              <option value="ЗА (26 600 руб.)">ЗА (26 600 руб.)</option>
+              <option value="5А">5А</option>
+              <option value="12А">12А</option>
+              <option value="16А">16А</option>
+              <option value="Алюминий ">Алюминий </option>
+              <option value="Медь">Медь</option>
+              <option value="Латунь ">Латунь </option>
+              <option value="Аккумуляторы (цена)">Аккумуляторы (цена)</option>
+              <option value="Свинец ">Свинец </option>
+              <option value="Нержавейка">Нержавейка</option>
+              <option value="Цинк">Цинк</option>
+              <option value="Электроплаты (цена)">Электроплаты (цена)</option>
+            </select>
+            <input type="number" name="your-metall-weight" placeholder="Количество в кг"/>
+          </form>
+        </div>
+        <button class="btn btn-orange__white" type="button">Связаться с менеджером</button>
+        <div class="modal__item-desc modal__item-desc-bottom">Цены являются приблизительными. Более точную стоимость узнавайте у менеджеров</div>
+      </div>
+    </div><script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
