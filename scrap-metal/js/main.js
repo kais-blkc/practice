@@ -99,12 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   
   /* Select 2 */
-  const modalFormSelects = document.querySelectorAll('.modal__item-form select');
+  // const modalFormSelects = document.querySelectorAll('.modal__item-form select');
   
-  modalFormSelects.forEach(select => {
-    $(select).select2({
-      minimumResultsForSearch: Infinity
-    });
-  })
+  // modalFormSelects.forEach(select => {
+  //   $(select).select2({
+  //     minimumResultsForSearch: Infinity
+  //   });
+  // })
 
 })
