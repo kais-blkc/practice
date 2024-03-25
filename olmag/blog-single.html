@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог страница</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body> 
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="container"><a class="header__logo" href="/"><img src="img/logo.svg" alt="ОЛМАГ - Логотип"></a>
+          <div class="header-wrapper__center">
+            <div class="header__search">
+              <button class="header__search-open hover-opacity" data-modal-open="header-search"><img src="img/search-icon.svg" alt=""></button>
+              <div class="header__search-form" data-modal-block="header-search">
+                <form>
+                  <div class="icon"><img src="img/search-icon.svg" alt=""></div>
+                  <input type="text">
+                  <button class="btn btn-orange btn-send" type="button">Искать</button>
+                </form>
+                <button class="header__search-close" data-modal-close="header-search"><img src="img/x-icon.svg" alt=""></button>
+              </div>
+            </div>
+            <div class="header__contacts">
+              <div class="header__contacts-item"><a class="link hover-opacity" href="javascript:void(0)">+7 (495) 555-55-55</a>
+                <div class="text">Номер по Москве</div>
+              </div>
+              <div class="header__contacts-item"><a class="link hover-opacity" href="javascript:void(0)">+7 (495) 555-55-55</a>
+                <div class="text">Номер по России</div>
+              </div>
+              <div class="header__contacts-item"><a class="link hover-opacity" href="javascript:void(0)">INFO@OLMAG.com</a>
+                <div class="text">Почта для связи</div>
+              </div>
+            </div>
+          </div>
+          <div class="header-wrapper__right">
+            <div class="header__socs"><a class="header__socs-item hover-opacity" href="javascript:void(0)"><img src="img/telegram.svg" alt=""></a><a class="header__socs-item hover-opacity" href="javascript:void(0)"><img src="img/whatsapp.png" alt=""></a></div>
+            <div class="header__call">
+              <button class="btn btn-orange" data-modal-open="order-call">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-navbar">
+        <div class="container">
+          <ul> 
+            <li class="has-children"><a href="javascript:void(0)" data-modal-open="modal-catalog">Каталог</a></li>
+            <li> <a href="about.html">О компании</a></li>
+            <li> <a href="product-select.html">Типовые отраслевые решения</a></li>
+            <li> <a href="services.html">Услуги</a></li>
+            <li> <a href="works.html">Наши работы</a></li>
+            <li> <a href="product-selection.html">Подобрать продукцию</a></li>
+            <li> <a href="cooperation.html">Сотрудничество</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-mob">
+        <div class="container">
+          <ul class="catalog hover-opacity__inner-a">
+            <li class="has-children"><a href="javascript:void(0)" data-modal-open="modal-catalog">Каталог</a></li>
+          </ul>
+          <div class="header__search">
+            <button class="header__search-open hover-opacity" data-modal-open="header-search"><img src="img/search-icon.svg" alt=""></button>
+            <div class="modal-wrapper" data-modal-block="header-search">
+              <div class="header__search-form active">
+                <form>
+                  <div class="icon"><img src="img/search-icon.svg" alt=""></div>
+                  <input type="text">
+                  <button class="btn btn-orange btn-send" type="button">Искать</button>
+                </form>
+                <button class="header__search-close" data-modal-close="header-search"><img src="img/x-icon.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-orange btn-burger" data-modal-open="mob-menu"><img src="img/btn-burger-lines.svg" alt=""></div>
+        </div>
+      </div>
+      <div class="modal-wrapper" data-modal-block="mob-menu">
+        <div class="header-mob-menu">
+          <div class="btn btn-orange btn-burger" data-modal-close="mob-menu"><img src="img/btn-burger-lines-x.svg" alt=""></div>
+          <div class="navbar hover-opacity__inner-a">
+            <ul> 
+              <li class="has-children"><a href="javascript:void(0)" data-modal-open="modal-catalog">Каталог</a></li>
+              <li> <a href="about.html">О компании</a></li>
+              <li> <a href="product-select.html">Типовые отраслевые решения</a></li>
+              <li> <a href="services.html">Услуги</a></li>
+              <li> <a href="works.html">Наши работы</a></li>
+              <li> <a href="product-selection.html">Подобрать продукцию</a></li>
+              <li> <a href="cooperation.html">Сотрудничество</a></li>
+            </ul>
+          </div>
+          <div class="header__socs"><a class="header__socs-item hover-opacity" href="javascript:void(0)"><img src="img/telegram.svg" alt=""></a><a class="header__socs-item hover-opacity" href="javascript:void(0)"><img src="img/whatsapp.png" alt=""></a></div>
+          <div class="header__contacts">
+            <div class="header__contacts-item"><a class="link hover-opacity" href="javascript:void(0)">+7 (495) 555-55-55</a>
+              <div class="text">Номер по Москве</div>
+            </div>
+            <div class="header__contacts-item"><a class="link hover-opacity" href="javascript:void(0)">+7 (495) 555-55-55</a>
+              <div class="text">Номер по России</div>
+            </div>
+            <div class="header__contacts-item"><a class="link hover-opacity" href="javascript:void(0)">INFO@OLMAG.com</a>
+              <div class="text">Почта для связи</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-catalog" data-modal-block="modal-catalog">
+        <div class="container"> 
+          <div class="navbar">
+            <div class="col"><a href="product.html">Манитные сепараторы</a><a href="product.html">Комплексы магнитной сепарации</a><a href="product.html">Прочие магнитные системы</a></div>
+            <div class="col"><a href="product.html">Пищевое оборудование</a><a href="product.html">Магнитная опалубка для ЖБИ</a><a href="product.html">Прочее оборудование</a></div>
+          </div><a class="more btn btn-orange" href="catalog.html">Смотреть всё</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="blog-single sec-py">
+        <div class="container">
+          <div class="blog-single__body">
+            <div class="blog-single__img img-cover"><img src="img/bs-1.png" alt=""></div>
+            <div class="blog-single__content desc-p">
+              <h2 class="h2">Заголовок</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam. </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam. </p>
+            </div>
+            <div class="blog-single__img img-cover"><img src="img/bs-1.png" alt="">
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="blog-single__content desc-p">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam. </p>
+            </div>
+            <div class="blog-single__quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem."</div>
+            <div class="blog-single__content desc-p">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+            </div>
+            <div class="blog-single__content desc-p">
+              <h2 class="h2">Заголовок</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.</p>
+            </div>
+          </div><a class="btn btn-orange btn-big" href="javascript:void(0)">Перейти к проекту</a>
+        </div>
+      </section>
+      <section class="services sec-py blog">
+        <div class="container">
+          <div class="services__header">
+            <h2>Похожие статьи:</h2>
+          </div>
+          <div class="services__list blog__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="services__item">
+                  <div class="services__item-img img-cover"><img src="img/blog-1.png" alt=""></div>
+                  <div class="services__item-body">
+                    <div class="services__item-title">НАЗВАНИЕ УСЛУГИ</div>
+                    <div class="services__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam</div>
+                    <div class="services__item-more btn btn-transparent">Подробнее</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services__item">
+                  <div class="services__item-img img-cover"><img src="img/blog-1.png" alt=""></div>
+                  <div class="services__item-body">
+                    <div class="services__item-title">НАЗВАНИЕ УСЛУГИ</div>
+                    <div class="services__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam</div>
+                    <div class="services__item-more btn btn-transparent">Подробнее</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services__item">
+                  <div class="services__item-img img-cover"><img src="img/blog-1.png" alt=""></div>
+                  <div class="services__item-body">
+                    <div class="services__item-title">НАЗВАНИЕ УСЛУГИ</div>
+                    <div class="services__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam</div>
+                    <div class="services__item-more btn btn-transparent">Подробнее</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services__item">
+                  <div class="services__item-img img-cover"><img src="img/blog-1.png" alt=""></div>
+                  <div class="services__item-body">
+                    <div class="services__item-title">НАЗВАНИЕ УСЛУГИ</div>
+                    <div class="services__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam</div>
+                    <div class="services__item-more btn btn-transparent">Подробнее</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services__footer">
+              <div class="services__control swiper-buttons-relative">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div><a class="btn btn-orange min-d-none-sm more-btn" href="javascript:void(0)">Смотреть всё</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner-sec sec-py">
+        <div class="container">
+          <div class="banner__body">
+            <div class="banner__content fw-600">
+              <div class="banner__content-title h2">Расчет стоимости оборудования</div>
+              <div class="banner__content-desc">Lorem ipsum dмolor sit amet, consectetur adipiscing elit. </div>
+            </div><a class="banner__btn btn btn-white btn-big" href="javascript:void(0)" data-modal-open="order-request">Заказать консультацию</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="email-subscribe">
+      <div class="container">
+        <div class="es__img"><img src="img/es-bg.svg" alt=""></div>
+        <div class="es__body">
+          <h3 class="es__title">Подпишитесь и будьте в курсе!</h3>
+          <div class="es__title-desc">Акции, скидки, распродажи ждут!</div>
+          <form class="es__form">
+            <div class="es__form-email-input">
+              <input type="email" name="email" placeholder="Введите email" required="true">
+              <button class="btn btn-orange" type="button">Подписаться</button>
+            </div>
+            <label class="es__form-check">
+              <input type="checkbox" name="es__form-check">
+              <p>Я даю согласие на обработку своих персональных данных.</p>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="qa sec-py">
+      <div class="container">
+        <div class="df-jcsb">
+          <h2 class="h2">О компании</h2><a class="btn btn-white" href="javascript:void(0)">Подробнее</a>
+        </div>
+        <div class="qa__list">
+              <div class="qa__item">
+                <button class="qa__item-title" data-modal-open="qa-1">О компании</button>
+                <div class="qa__item-desc" data-modal-block="qa-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </div>
+              </div>
+              <div class="qa__item">
+                <button class="qa__item-title" data-modal-open="qa-2">Преимущества сотрудников</button>
+                <div class="qa__item-desc" data-modal-block="qa-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </div>
+              </div>
+              <div class="qa__item">
+                <button class="qa__item-title" data-modal-open="qa-3">Достижения компании</button>
+                <div class="qa__item-desc" data-modal-block="qa-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </div>
+              </div>
+              <div class="qa__item">
+                <button class="qa__item-title" data-modal-open="qa-4">Карьерный рост</button>
+                <div class="qa__item-desc" data-modal-block="qa-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas dui id ornare arcu odio ut sem. Cras ornare arcu dui vivamus arcu felis bibendum ut. Porttitor leo a diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="req-form">
+      <div class="container">
+        <div class="req-form__body">
+          <h3 class="h3">Остались вопросы?</h3>
+          <div class="h-desc max-d-none-sm">Задайте их по номеру телефона +7 (999) 000-00-00 или оставьте свои координаты и наш менеджер перезвонит вам через 10 минут</div>
+          <div class="h-desc min-d-none-sm">Оставьте свои координаты и наш менеджер <br> перезвонит вам через 10 минут</div>
+          <form class="req-form__form">
+            <div class="req-form__form-body">
+              <label>
+                <p>Ваше имя</p>
+                <input type="text" name="y-name">
+              </label>
+              <label>
+                <p>Ваш email</p>
+                <input type="text" name="y-email">
+              </label>
+              <label>
+                <p>Ваш телефон</p>
+                <input type="text" name="y-phone">
+              </label>
+              <label>
+                <p>Ваш вопрос</p><textarea name="y-message"></textarea>
+              </label>
+            </div>
+            <div class="req-form__form-footer">
+              <button class="btn btn-orange" type="submit">Отправить</button><span class="privacy">Я соглашаюсь c обработкой персональных данных на условиях <a class="text-orange" href="javascript:void(0)">Политики конфиденциальности</a>.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="modals">
+      <div class="modal-wrapper" data-modal-block="order-call">
+        <div class="form-popup">
+          <button class="form-popup__close close-btn" data-modal-close="order-call"></button>
+          <div class="form-popup__title">Получить консультацию</div>
+          <div class="form-popup__desc">Закажите звонок — мы свяжемся с вами в течение 10 минут</div>
+          <input type="text" name="y-name" placeholder="Иванов Иван Иванович">
+          <input type="text" name="y-phone" placeholder="+7 (999) 999 99 99 ">
+          <button class="form-popup__btn btn btn-orange" type="button" data-modal-open="order-call">Заказать звонок</button>
+          <div class="form-popup__conf">Нажимая кнопку получить, вы соглашаетесь на обработку персональных данных</div>
+        </div>
+      </div>
+      <div class="modal-wrapper" data-modal-block="order-request">
+        <div class="form-popup">
+          <button class="form-popup__close close-btn" data-modal-close="order-request"></button>
+          <div class="form-popup__title">Оставить заявку</div>
+          <div class="form-popup__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          <input type="text" name="y-name" placeholder="Иванов Иван Иванович">
+          <input type="text" name="y-phone" placeholder="+7 (999) 999 99 99 ">
+          <button class="form-popup__btn btn btn-orange" type="button">Отправить</button>
+          <div class="form-popup__conf">Нажимая кнопку получить, вы соглашаетесь на обработку персональных данных</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__menu">
+            <div class="footer__menu-title">Покупателям</div>
+            <ul>
+              <li> <a href="javascript:void(0)">О компании</a></li>
+              <li> <a href="javascript:void(0)">Сертификаты</a></li>
+              <li> <a href="javascript:void(0)">Гарантии</a></li>
+              <li> <a href="javascript:void(0)">Услуги</a></li>
+              <li> <a href="javascript:void(0)">Доставка</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-title">Каталог</div>
+            <ul>
+              <li> <a href="javascript:void(0)">Магнитные сепараторы </a></li>
+              <li> <a href="javascript:void(0)">Пищевое оборудование </a></li>
+              <li> <a href="javascript:void(0)">Прочие магнитные сепараторы </a></li>
+              <li> <a href="javascript:void(0)">Прочее отечественное оборудование </a></li>
+              <li> <a href="javascript:void(0)">Магнитная опалубка для ЖБИ </a></li>
+              <li> <a href="javascript:void(0)">Прочее импортное оборудование </a></li>
+              <li> <a href="javascript:void(0)">Комплексы магнитной сепарации </a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-title">Контакты</div>
+            <p>Адрес: <br> г. Москва, ул. Lorem ipsum</p>
+            <p> <a href="javascript:void(0)">Карта проезда <img src="img/arrow-link.svg" alt=""></a></p>
+            <p>График работы: <br> Пн-Пт с 09:00-18:00, <br> Сб-Вс - выходной</p>
+            <p> <a href="javascript:void(0)">+7 000-000-00-00</a><br><a href="javascript:void(0)">+7 000-000-00-00</a><br><a href="javascript:void(0)">8 800-000-00-00</a><br><a href="javascript:void(0)">olmag@mail.ru</a></p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__logo"><img src="img/f-logo.svg" alt=""></div>
+          <div class="footer__socs">
+            <div class="footer__socs-title">Мы в соцсетях</div>
+            <div class="footer__socs-list"><a class="footer__socs-item" href="javascript:void(0)"><img src="img/f-vk.svg" alt=""></a><a class="footer__socs-item" href="javascript:void(0)"><img src="img/f-telegram.svg" alt=""></a><a class="footer__socs-item" href="javascript:void(0)"><img src="img/f-whatsapp.svg" alt=""></a></div>
+          </div>
+          <ul>
+            <li><a href="javascript:void(0)">Партнерская программа</a></li>
+            <li><a href="javascript:void(0)">Оптовые продажи</a></li>
+            <li><a href="javascript:void(0)">Реквизиты</a></li>
+          </ul>
+          <ul>
+            <li><a href="javascript:void(0)">Политика конфиденциальности</a></li>
+            <li><a href="javascript:void(0)">Условия соглашения</a></li>
+            <li><a href="javascript:void(0)">Карта сайта</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="js/fancybox.umd.js"> </script>
+    <script src="js/simple-tab-plugin.js"> </script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>
