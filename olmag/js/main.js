@@ -66,6 +66,7 @@ const MainHeroSlider = new Swiper(".mh__slider", {
 	slidesPerView: "auto",
 	centeredSlides: true,
 	// loop: true,
+	effect: "coverflow",
 	spaceBetween: 20,
 	navigation: {
 		nextEl: ".mh__slider .swiper-button-next",
@@ -286,3 +287,31 @@ window.addEventListener("scroll", (e) => {
 	modalCatalog.classList.remove("active");
 	modalCatalogBtn.classList.remove("active");
 });
+
+// const demo = $("#demo");
+// demo.carousel3d();
+(function ($) {
+	$("#main-hero").carousel3d({
+		with: 556,
+		perspective: 9500,
+	});
+
+	const indicatorLi = $(".carousel3d-indicator li");
+	const btnPrev = $(".js-carousel3d-prev");
+	const btnNext = $(".js-carousel3d-next");
+	const carouselItems = $(".page.carousel3d-list");
+	$(carouselItems[0]).addClass("active");
+
+	btnPrev.on("click", curSlide);
+	btnNext.on("click", curSlide);
+
+	function curSlide() {
+		indicatorLi.each((index, item) => {
+			if ($(item).hasClass("active")) {
+				$(carouselItems[index]).addClass("active");
+			} else {
+				$(carouselItems[index]).removeClass("active");
+			}
+		});
+	}
+})(jQuery);
