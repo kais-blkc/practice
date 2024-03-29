@@ -244,8 +244,35 @@ const quizSlider = new Swiper(".quiz__slider", {
 	// effect: 'fade',
 	autoHeight: true,
 	navigation: {
-		nextEl: ".quiz__slider .swiper-button-next",
-		prevEl: ".quiz__slider .swiper-button-prev",
+		nextEl: ".quiz__slider .quiz__nav .swiper-button-next",
+		prevEl: ".quiz__slider .quiz__nav .swiper-button-prev",
+	},
+});
+const quizResetBtn = document.querySelector(".quiz-reset-btn");
+quizResetBtn?.addEventListener("click", () => {
+	quizSlider.slideTo(0);
+});
+
+const quizWseSlider = new Swiper(".quiz-wse__slider", {
+	spaceBetween: 20,
+	autoHeight: true,
+	navigation: {
+		nextEl: ".quiz-wse__slider .swiper-button-next",
+		prevEl: ".quiz-wse__slider .swiper-button-prev",
+	},
+	pagination: {
+		el: ".quiz-wse__slider .swiper-pagination",
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		767: {
+			slidesPerView: 2,
+		},
+		900: {
+			slidesPerView: 3,
+		},
 	},
 });
 
@@ -259,7 +286,7 @@ quizInputRangeBlocks?.forEach((block) => {
 	const inputNum = block.querySelector(".quiz__item-input-num input");
 	const inputRange = block.querySelector(".quiz__item-range input");
 
-	inputNum.addEventListener("change", () => {
+	inputNum?.addEventListener("change", () => {
 		const rangeProgressWidth =
 			inputNum.value < 10 ? inputNum.value * 10 + 10 + "%" : inputNum.value * 10 + "%";
 
@@ -267,13 +294,16 @@ quizInputRangeBlocks?.forEach((block) => {
 		inputRange.style.setProperty("--range-progress", rangeProgressWidth);
 	});
 
-	inputRange.addEventListener("input", () => {
+	inputRange?.addEventListener("input", changeInputRange);
+	inputRange?.addEventListener("change", changeInputRange);
+
+	function changeInputRange() {
 		const rangeProgressWidth =
 			inputNum.value < 10 ? inputNum.value * 10 + 10 + "%" : inputNum.value * 10 + "%";
 
 		inputNum.value = inputRange.value;
 		inputRange.style.setProperty("--range-progress", rangeProgressWidth);
-	});
+	}
 
 	console.log(inputNum, inputRange);
 });
