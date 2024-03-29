@@ -53,21 +53,9 @@ new Tabs({
 });
 
 new Tabs({
-	titleContainer: ".ps__accordion .psa__body",
-	title: ".ps__accordion .psa__header-title",
-	content: ".ps__accordion .psa__content",
-});
-
-new Tabs({
-	titleContainer: ".ps__accordion .psa__content",
-	title: ".ps__accordion .psaci__title",
-	content: ".ps__accordion .psaci__content",
-});
-
-new Tabs({
-	titleContainer: ".ps__accordion .psaci__content",
-	title: ".ps__accordion .psacic__title",
-	content: ".ps__accordion .psacic__content",
+	titleContainer: ".works-list .wl__cats",
+	title: ".works-list .wl__cats-item",
+	content: ".works-list .wl__content",
 });
 
 /* FANCYBOX */
@@ -240,7 +228,16 @@ const productImgsSlider = new Swiper(".pm__imgs-slider", {
 	},
 });
 
-const productVideoSlider = new Swiper(".quiz__slider", {
+const productVideoSlider = new Swiper(".pm__video-slider", {
+	slidesPerView: "auto",
+	spaceBetween: 30,
+	navigation: {
+		nextEl: ".pm__video-slider .swiper-button-next",
+		prevEl: ".pm__video-slider .swiper-button-prev",
+	},
+});
+
+const quizSlider = new Swiper(".quiz__slider", {
 	slidesPerView: 1,
 	spaceBetween: 30,
 	// effect: 'fade',
@@ -249,4 +246,43 @@ const productVideoSlider = new Swiper(".quiz__slider", {
 		nextEl: ".quiz__slider .swiper-button-next",
 		prevEl: ".quiz__slider .swiper-button-prev",
 	},
+});
+
+const quizMainStart = document.querySelector("#quiz__main-start");
+quizMainStart?.addEventListener("click", () => {
+	quizSlider.slideNext();
+});
+
+const quizInputRangeBlocks = document.querySelectorAll(".quiz__item-range-block");
+quizInputRangeBlocks?.forEach((block) => {
+	const inputNum = block.querySelector(".quiz__item-input-num input");
+	const inputRange = block.querySelector(".quiz__item-range input");
+
+	inputNum.addEventListener("change", () => {
+		const rangeProgressWidth =
+			inputNum.value < 10 ? inputNum.value * 10 + 10 + "%" : inputNum.value * 10 + "%";
+
+		inputRange.value = inputNum.value;
+		inputRange.style.setProperty("--range-progress", rangeProgressWidth);
+	});
+
+	inputRange.addEventListener("input", () => {
+		const rangeProgressWidth =
+			inputNum.value < 10 ? inputNum.value * 10 + 10 + "%" : inputNum.value * 10 + "%";
+
+		inputNum.value = inputRange.value;
+		inputRange.style.setProperty("--range-progress", rangeProgressWidth);
+	});
+
+	console.log(inputNum, inputRange);
+});
+
+const modalCatalog = document.querySelector(".modal-catalog");
+const modalCatalogBtn = document.querySelector(
+	'.header-navbar .has-children a[data-modal-open="modal-catalog"]'
+);
+
+window.addEventListener("scroll", (e) => {
+	modalCatalog.classList.remove("active");
+	modalCatalogBtn.classList.remove("active");
 });

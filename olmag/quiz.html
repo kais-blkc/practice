@@ -49,10 +49,10 @@
           <ul> 
             <li class="has-children"><a href="javascript:void(0)" data-modal-open="modal-catalog">Каталог</a></li>
             <li> <a href="about.html">О компании</a></li>
-            <li> <a href="product-select.html">Типовые отраслевые решения</a></li>
+            <li> <a href="product-selection.html">Типовые отраслевые решения</a></li>
             <li> <a href="services.html">Услуги</a></li>
             <li> <a href="works.html">Наши работы</a></li>
-            <li> <a href="product-selection.html">Подобрать продукцию</a></li>
+            <li> <a href="product-select.html">Подобрать продукцию</a></li>
             <li> <a href="cooperation.html">Сотрудничество</a></li>
           </ul>
         </div>
@@ -83,12 +83,11 @@
           <div class="btn btn-orange btn-burger" data-modal-close="mob-menu"><img src="img/btn-burger-lines-x.svg" alt=""></div>
           <div class="navbar hover-opacity__inner-a">
             <ul> 
-              <li class="has-children"><a href="javascript:void(0)" data-modal-open="modal-catalog">Каталог</a></li>
               <li> <a href="about.html">О компании</a></li>
-              <li> <a href="product-select.html">Типовые отраслевые решения</a></li>
+              <li> <a href="product-selection.html">Типовые отраслевые решения</a></li>
               <li> <a href="services.html">Услуги</a></li>
               <li> <a href="works.html">Наши работы</a></li>
-              <li> <a href="product-selection.html">Подобрать продукцию</a></li>
+              <li> <a href="product-select.html">Подобрать продукцию</a></li>
               <li> <a href="cooperation.html">Сотрудничество</a></li>
             </ul>
           </div>
@@ -109,8 +108,8 @@
       <div class="modal-catalog" data-modal-block="modal-catalog">
         <div class="container"> 
           <div class="navbar">
-            <div class="col"><a href="product.html">Манитные сепараторы</a><a href="product.html">Комплексы магнитной сепарации</a><a href="product.html">Прочие магнитные системы</a></div>
-            <div class="col"><a href="product.html">Пищевое оборудование</a><a href="product.html">Магнитная опалубка для ЖБИ</a><a href="product.html">Прочее оборудование</a></div>
+            <div class="col"><a href="catalog.html">Манитные сепараторы</a><a href="catalog.html">Комплексы магнитной сепарации</a><a href="catalog.html">Прочие магнитные системы</a></div>
+            <div class="col"><a href="catalog.html">Пищевое оборудование</a><a href="catalog.html">Магнитная опалубка для ЖБИ</a><a href="catalog.html">Прочее оборудование</a></div>
           </div><a class="more btn btn-orange" href="catalog.html">Смотреть всё</a>
         </div>
       </div>
@@ -126,7 +125,7 @@
                     <div class="quiz__main-logo"><img src="img/f-logo.svg" alt=""></div>
                     <div class="quiz__main-title">Магнитная сепарация</div>
                     <div class="quiz__main-subtitle">Подбор по параметрам</div>
-                    <div class="quiz__main-btn btn btn-white">Начать</div><a class="quiz__main-phone fw-600 hover-opacity" href="javascript:void(0)">+7(999) 999 99 99</a>
+                    <div class="quiz__main-btn btn btn-white" id="quiz__main-start">Начать</div><a class="quiz__main-phone fw-600 hover-opacity" href="javascript:void(0)">+7(999) 999 99 99</a>
                   </div>
                 </div>
               </div>
@@ -334,6 +333,180 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="quiz__item quiz__item-range-block">
+                  <div class="quiz__item-title">Тип восприимчивости магнита</div>
+                  <div class="quiz__item-input-num">
+                    <input type="number" min="0" max="10" value="1">
+                  </div>
+                  <div class="quiz__item-desc">Оцените от 1 до 10 по шкале</div>
+                  <div class="quiz__item-range">
+                    <input type="range" step="1" min="0" max="10" value="1">
+                    <div class="quiz__item-range-footer">
+                      <p>Плохо</p>
+                      <p>Хорошо</p>
+                    </div>
+                  </div>
+                  <div class="quiz__control">
+                    <div class="quiz__control-progress">
+                      <div class="circle-progress"><svg viewbox="0 0 200 200">
+<circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="#ccc"/>
+                        <circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="#D4681A" stroke-linecap="round" stroke-dasharray="300 500" stroke-dashoffset="0"></circle></svg>
+                      </div>
+                      <div>
+                        <p>Готово</p>
+                        <p class="text-orange">63%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="quiz__item">
+                  <div class="quiz__item-title">Содержание металлопримесей</div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Содержание металлопримесей"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Более 10%</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Содержание металлопримесей"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Среднее, от 1 до 10%</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Содержание металлопримесей"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Низкое, менее 1%</p>
+                    </label>
+                  </div>
+                  <div class="quiz__control">
+                    <div class="quiz__control-progress">
+                      <div class="circle-progress"><svg viewbox="0 0 200 200">
+<circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="#ccc"/>
+                        <circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="#D4681A" stroke-linecap="round" stroke-dasharray="350 500" stroke-dashoffset="0"></circle></svg>
+                      </div>
+                      <div>
+                        <p>Готово</p>
+                        <p class="text-orange">75%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="quiz__item __flex">
+                  <div class="quiz__item-title">Способ транспортировки материала</div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Способ транспортировки материала"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Конвейер</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Способ транспортировки материала"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Воронка</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Способ транспортировки материала"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Трубопровод</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Способ транспортировки материала"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Нория</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Способ транспортировки материала"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>Место пересыпа</p>
+                    </label>
+                  </div>
+                  <div class="quiz__item-checkbox">
+                    <label>
+                      <input type="radio" name="quiz-Способ транспортировки материала"/>
+                      <div class="quiz__item-checkbox-radio"></div>
+                      <p>отдельностоящее оборудование с подводом любым способом</p>
+                    </label>
+                  </div>
+                  <div class="quiz__control">
+                    <div class="quiz__control-progress">
+                      <div class="circle-progress"><svg viewbox="0 0 200 200">
+<circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="#ccc"/>
+                        <circle r="80" cx="100" cy="100" fill="none" stroke-width="12" stroke="#D4681A" stroke-linecap="round" stroke-dasharray="550 500" stroke-dashoffset="0"></circle></svg>
+                      </div>
+                      <div>
+                        <p>Готово</p>
+                        <p class="text-orange">100%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="quiz__item quiz__item-range-block">
+                  <div class="quiz__item-cards">
+                    <div class="cl__list">
+                      <div class="ws-equipment">
+                        <div class="wse__list">
+                          <div class="wse__item">
+                            <div class="wse__item-img img-cover"><img src="img/wse-1.png" alt=""></div>
+                            <div class="wse__item-body">
+                              <div class="wse__item-title">НАЗВАНИЕ ОБОРУДОВАНИЯ</div>
+                              <div class="wse__item-tags">
+                                <div class="wse__item-tag __orange">магнитная система</div>
+                                <div class="wse__item-tag">до 30 кг</div>
+                              </div>
+                              <div class="wse__item-desc">Lorem ipsum dolor sit amet, consectetur</div>
+                              <div class="wse__item-btns"><a class="btn btn-orange" href="javascript:void(0)" data-modal-open="order-request">Заказать</a><a class="btn btn-orange-transparent max-d-none-sm" href="product.html"><span>Подробнее</span><img src="img/arrow-right-orange-thin.svg" alt=""></a><a class="btn btn-orange min-d-none-sm" href="product.html"> <span>Подробнее</span><img src="img/arrow-right-thin.svg" alt=""></a></div>
+                            </div>
+                          </div>
+                          <div class="wse__item">
+                            <div class="wse__item-img img-cover"><img src="img/wse-1.png" alt=""></div>
+                            <div class="wse__item-body">
+                              <div class="wse__item-title">НАЗВАНИЕ ОБОРУДОВАНИЯ</div>
+                              <div class="wse__item-tags">
+                                <div class="wse__item-tag __orange">магнитная система</div>
+                                <div class="wse__item-tag">до 30 кг</div>
+                              </div>
+                              <div class="wse__item-desc">Lorem ipsum dolor sit amet, consectetur</div>
+                              <div class="wse__item-btns"><a class="btn btn-orange" href="javascript:void(0)" data-modal-open="order-request">Заказать</a><a class="btn btn-orange-transparent max-d-none-sm" href="product.html"><span>Подробнее</span><img src="img/arrow-right-orange-thin.svg" alt=""></a><a class="btn btn-orange min-d-none-sm" href="product.html"> <span>Подробнее</span><img src="img/arrow-right-thin.svg" alt=""></a></div>
+                            </div>
+                          </div>
+                          <div class="wse__item">
+                            <div class="wse__item-img img-cover"><img src="img/wse-1.png" alt=""></div>
+                            <div class="wse__item-body">
+                              <div class="wse__item-title">НАЗВАНИЕ ОБОРУДОВАНИЯ</div>
+                              <div class="wse__item-tags">
+                                <div class="wse__item-tag __orange">магнитная система</div>
+                                <div class="wse__item-tag">до 30 кг</div>
+                              </div>
+                              <div class="wse__item-desc">Lorem ipsum dolor sit amet, consectetur</div>
+                              <div class="wse__item-btns"><a class="btn btn-orange" href="javascript:void(0)" data-modal-open="order-request">Заказать</a><a class="btn btn-orange-transparent max-d-none-sm" href="product.html"><span>Подробнее</span><img src="img/arrow-right-orange-thin.svg" alt=""></a><a class="btn btn-orange min-d-none-sm" href="product.html"> <span>Подробнее</span><img src="img/arrow-right-thin.svg" alt=""></a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quiz__control"></div>
+                </div>
+              </div>
             </div>
             <div class="quiz__nav swiper-buttons-relative swiper-buttons-control">
               <div class="swiper-button-prev"></div>
@@ -365,7 +538,7 @@
     <section class="qa sec-py">
       <div class="container">
         <div class="df-jcsb">
-          <h2 class="h2">О компании</h2><a class="btn btn-white" href="javascript:void(0)">Подробнее</a>
+          <h2 class="h2">О компании</h2><a class="btn btn-white" href="about.html">Подробнее</a>
         </div>
         <div class="qa__list">
               <div class="qa__item">
@@ -418,6 +591,9 @@
         </div>
       </div>
     </section>
+    <div class="hidden-btns d-none">
+      <div data-modal-close="modal-catalog"></div>
+    </div>
     <div class="modals">
       <div class="modal-wrapper" data-modal-block="order-call">
         <div class="form-popup">
@@ -494,6 +670,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.7.1.min.js"> </script>
     <script src="js/swiper-bundle.min.js"> </script>
     <script src="js/fancybox.umd.js"> </script>
     <script src="js/simple-tab-plugin.js"> </script>
