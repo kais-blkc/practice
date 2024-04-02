@@ -308,14 +308,19 @@ quizInputRangeBlocks?.forEach((block) => {
 	console.log(inputNum, inputRange);
 });
 
-const modalCatalog = document.querySelector(".modal-catalog");
-const modalCatalogBtn = document.querySelector(
-	'.header-navbar .has-children a[data-modal-open="modal-catalog"]'
-);
+/* Close catalog btn header */
+const modalCatalogWrapper = document.querySelector('[data-modal-block="modal-catalog"]');
+const modalCatalogBurger = document.querySelectorAll('[data-modal-open="modal-catalog"]');
 
 window.addEventListener("scroll", (e) => {
-	modalCatalog.classList.remove("active");
-	modalCatalogBtn.classList.remove("active");
+	modalCatalogWrapper.classList.remove("active");
+	modalCatalogBurger.forEach((item) => item.classList.remove("active"));
+});
+
+modalCatalogWrapper.addEventListener("click", (e) => {
+	if (e.target.className.includes("modal-wrapper")) {
+		modalCatalogBurger.forEach((item) => item.classList.remove("active"));
+	}
 });
 
 // const demo = $("#demo");
@@ -345,3 +350,87 @@ window.addEventListener("scroll", (e) => {
 		});
 	}
 })(jQuery);
+
+/* Tabs */
+const dataTabItems = document.querySelectorAll("*[data-tab-item]");
+
+dataTabItems.forEach((tabItem) => {
+	const curId = tabItem.dataset.tabItem;
+	const tabTitle = tabItem.querySelector(`[data-tab-title="${curId}"]`);
+	const tabContent = tabItem.querySelector(`[data-tab-content="${curId}"]`);
+
+	tabTitle.addEventListener("click", () => {
+		clearAllTabsById(dataTabItems, curId);
+
+		tabTitle.classList.add("active");
+		tabContent.classList.add("active");
+	});
+});
+
+function clearAllTabsById(tabs, curId) {
+	tabs.forEach((tabItem) => {
+		const tabTitle = tabItem.querySelector(`[data-tab-title="${curId}"]`);
+		const tabContent = tabItem.querySelector(`[data-tab-content="${curId}"]`);
+
+		tabTitle?.classList.remove("active");
+		tabContent?.classList.remove("active");
+	});
+}
+
+/* Catalog filter inputs */
+const sidebarFilterItem = document.querySelectorAll(".sidebar-filter__item");
+
+sidebarFilterItem.forEach((item) => {
+	const itemInput = item.querySelector(".sidebar-filter__item-title input");
+	const subItemInputs = item.querySelectorAll(".sidebar-filter__subitem-item input");
+
+	itemInput.addEventListener("change", () => {
+		if (itemInput.checked) {
+			subItemInputs.forEach((input) => (input.checked = true));
+		} else {
+			subItemInputs.forEach((input) => (input.checked = false));
+		}
+	});
+
+	subItemInputs.forEach((input) => {
+		input.addEventListener("change", () => {
+			filterCheckItemInputs(itemInput, subItemInputs);
+		});
+	});
+});
+
+function filterCheckItemInputs(itemInput, subItemInputs) {
+	let status = false;
+
+	subItemInputs.forEach((input) => {
+		if (input.checked) {
+			status = true;
+			return;
+		}
+	});
+
+	console.log(itemInput);
+
+	if (status) itemInput.checked = true;
+	else itemInput.checked = false;
+}
+
+/* Reset form */
+const forms = document.querySelectorAll("form");
+forms.forEach((form) => {
+	const formResetBtn = form.querySelector("input[type=reset]");
+	const formInputs = form.querySelectorAll("input");
+
+	formResetBtn?.addEventListener("click", (e) => {
+		e.preventDefault();
+
+		formInputs.forEach((input) => {
+			if (input.type == "checkbox") {
+				input.checked = false;
+			}
+			if (input.type == "text") {
+				input.value = "";
+			}
+		});
+	});
+});

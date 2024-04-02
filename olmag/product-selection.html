@@ -106,12 +106,14 @@
           </div>
         </div>
       </div>
-      <div class="modal-catalog" data-modal-block="modal-catalog">
-        <div class="container"> 
-          <div class="navbar">
-            <div class="col"><a href="catalog.html">Манитные сепараторы</a><a href="catalog.html">Комплексы магнитной сепарации</a><a href="catalog.html">Прочие магнитные системы</a></div>
-            <div class="col"><a href="catalog.html">Пищевое оборудование</a><a href="catalog.html">Магнитная опалубка для ЖБИ</a><a href="catalog.html">Прочее оборудование</a></div>
-          </div><a class="more btn btn-orange" href="catalog.html">Смотреть всё</a>
+      <div class="modal-wrapper modal-wrapper-catalog" data-modal-block="modal-catalog">
+        <div class="modal-catalog">
+          <div class="container"> 
+            <div class="navbar">
+              <div class="col"><a href="catalog.html">Манитные сепараторы</a><a href="catalog.html">Комплексы магнитной сепарации</a><a href="catalog.html">Прочие магнитные системы</a></div>
+              <div class="col"><a href="catalog.html">Пищевое оборудование</a><a href="catalog.html">Магнитная опалубка для ЖБИ</a><a href="catalog.html">Прочее оборудование</a></div>
+            </div><a class="more btn btn-orange" href="catalog.html">Смотреть всё</a>
+          </div>
         </div>
       </div>
     </header>
@@ -131,83 +133,46 @@
       <section class="ps__accordion sec-py">
         <div class="container">
           <div class="psa__body">
-                  <div class="psa__item">
+                  <div class="psa__item" data-tab-item="psa__item">
                     <div class="psa__header">
-                      <button class="psa__header-title title-accordion-arrow h2 active" data-modal-open="psa-MАГНИТНАЯ СЕПАРАЦИЯ">MАГНИТНАЯ СЕПАРАЦИЯ</button>
+                      <button class="psa__header-title title-accordion-arrow h2 active" data-tab-title="psa__item">MАГНИТНАЯ СЕПАРАЦИЯ</button>
                       <div class="psa__header-content">
                         <div class="psa__header-content-text fw-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                         <div class="psa__header-content-btns"><a class="btn btn-orange" href="javascript:void(0)">Обратный звонок</a><a class="btn btn-white" href="javascript:void(0)"> 
                             <p>Перейти в каталог</p><img src="img/arrow-right-orange.svg" alt=""></a></div>
                       </div>
                     </div>
-                    <div class="psa__content active" data-modal-block="psa-MАГНИТНАЯ СЕПАРАЦИЯ">
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">Горнодобывающая промышленность</button>
-                              <div class="psaci__content" data-modal-block="psaci-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьСахарная промышленность">
+                    <div class="psa__content active" data-tab-content="psa__item">
+                            <div class="psa__content-item psaci" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯ">Горнодобывающая промышленность</button>
+                              <div class="psaci__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯ">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленностьЗернохранилища">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                              </div>
-                            </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">Добыча нерудных материалов</button>
-                              <div class="psaci__content" data-modal-block="psaci-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловСахарная промышленность">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловКондитерские фабрики">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловМукомольные заводы">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материаловЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -215,73 +180,36 @@
                                       </div>
                               </div>
                             </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">Стекольная промышленность</button>
-                              <div class="psaci__content" data-modal-block="psaci-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьСахарная промышленность">
+                            <div class="psa__content-item psaci" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯ">Добыча нерудных материалов</button>
+                              <div class="psaci__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯ">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленностьЗернохранилища">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                              </div>
-                            </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">Металлургическая промышленность</button>
-                              <div class="psaci__content" data-modal-block="psaci-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьСахарная промышленность">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьКондитерские фабрики">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьМукомольные заводы">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленностьЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -289,36 +217,36 @@
                                       </div>
                               </div>
                             </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">Сортировка отходов</button>
-                              <div class="psaci__content" data-modal-block="psaci-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовСахарная промышленность">
+                            <div class="psa__content-item psaci" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯ">Стекольная промышленность</button>
+                              <div class="psaci__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯ">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯСортировка отходовЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -326,36 +254,110 @@
                                       </div>
                               </div>
                             </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow active" data-modal-open="psaci-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">Пищевая промышленность</button>
-                              <div class="psaci__content active" data-modal-block="psaci-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьСахарная промышленность">
+                            <div class="psa__content-item psaci" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯ">Металлургическая промышленность</button>
+                              <div class="psaci__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯ">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленностьЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯМеталлургическая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                            <div class="psa__content-item psaci" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯ">Сортировка отходов</button>
+                              <div class="psaci__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯ">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                            <div class="psa__content-item psaci" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯ">
+                              <button class="psaci__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯ">Пищевая промышленность</button>
+                              <div class="psaci__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯ">
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="MАГНИТНАЯ СЕПАРАЦИЯПищевая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -365,83 +367,46 @@
                             </div>
                     </div>
                   </div>
-                  <div class="psa__item">
+                  <div class="psa__item" data-tab-item="psa__item">
                     <div class="psa__header">
-                      <button class="psa__header-title title-accordion-arrow h2" data-modal-open="psa-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ</button>
+                      <button class="psa__header-title title-accordion-arrow h2" data-tab-title="psa__item">ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ</button>
                       <div class="psa__header-content">
                         <div class="psa__header-content-text fw-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                         <div class="psa__header-content-btns"><a class="btn btn-orange" href="javascript:void(0)">Обратный звонок</a><a class="btn btn-white" href="javascript:void(0)"> 
                             <p>Перейти в каталог</p><img src="img/arrow-right-orange.svg" alt=""></a></div>
                       </div>
                     </div>
-                    <div class="psa__content" data-modal-block="psa-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">Горнодобывающая промышленность</button>
-                              <div class="psaci__content" data-modal-block="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьСахарная промышленность">
+                    <div class="psa__content" data-tab-content="psa__item">
+                            <div class="psa__content-item psaci" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">Горнодобывающая промышленность</button>
+                              <div class="psaci__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленностьЗернохранилища">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                              </div>
-                            </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">Добыча нерудных материалов</button>
-                              <div class="psaci__content" data-modal-block="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловСахарная промышленность">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловКондитерские фабрики">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловМукомольные заводы">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материаловЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕГорнодобывающая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -449,73 +414,36 @@
                                       </div>
                               </div>
                             </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">Стекольная промышленность</button>
-                              <div class="psaci__content" data-modal-block="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьСахарная промышленность">
+                            <div class="psa__content-item psaci" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">Добыча нерудных материалов</button>
+                              <div class="psaci__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленностьЗернохранилища">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                              </div>
-                            </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">Металлургическая промышленность</button>
-                              <div class="psaci__content" data-modal-block="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьСахарная промышленность">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьКондитерские фабрики">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьМукомольные заводы">
-                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
-                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
-                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
-                                        </div>
-                                      </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленностьЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕДобыча нерудных материалов">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -523,36 +451,36 @@
                                       </div>
                               </div>
                             </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow" data-modal-open="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">Сортировка отходов</button>
-                              <div class="psaci__content" data-modal-block="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовСахарная промышленность">
+                            <div class="psa__content-item psaci" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">Стекольная промышленность</button>
+                              <div class="psaci__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходовЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСтекольная промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
@@ -560,36 +488,110 @@
                                       </div>
                               </div>
                             </div>
-                            <div class="psa__content-item psaci">
-                              <button class="psaci__title title-accordion-arrow active" data-modal-open="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">Пищевая промышленность</button>
-                              <div class="psaci__content active" data-modal-block="psaci-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьСахарная промышленность">Сахарная промышленность</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьСахарная промышленность">
+                            <div class="psa__content-item psaci" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">Металлургическая промышленность</button>
+                              <div class="psaci__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьКондитерские фабрики">Кондитерские фабрики</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьКондитерские фабрики">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow active" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьМукомольные заводы">Мукомольные заводы</button>
-                                        <div class="psacic__content active" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьМукомольные заводы">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
                                         </div>
                                       </div>
-                                      <div class="psaci__content-item psacic">
-                                        <button class="psacic__title title-accordion-arrow" data-modal-open="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьЗернохранилища">Зернохранилища</button>
-                                        <div class="psacic__content" data-modal-block="psacic-ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленностьЗернохранилища">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕМеталлургическая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                            <div class="psa__content-item psaci" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                              <button class="psaci__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">Сортировка отходов</button>
+                              <div class="psaci__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕСортировка отходов">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                            <div class="psa__content-item psaci" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                              <button class="psaci__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">Пищевая промышленность</button>
+                              <div class="psaci__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕ">
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">Сахарная промышленность</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">Кондитерские фабрики</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow active" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">Мукомольные заводы</button>
+                                        <div class="psacic__content active" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                          <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
+                                          <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
+                                              <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
+                                        </div>
+                                      </div>
+                                      <div class="psaci__content-item psacic" data-tab-item="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
+                                        <button class="psacic__title title-accordion-arrow" data-tab-title="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">Зернохранилища</button>
+                                        <div class="psacic__content" data-tab-content="ДРОБИЛЬНОЕ ОБОРУДОВАНИЕПищевая промышленность">
                                           <div class="psacic__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq...</div>
                                           <div class="psacic__content-btns"><a class="btn btn-orange" href="javascript:void(0)">Консультация</a><a class="btn btn-transparent" href="javascript:void(0)"> 
                                               <p>Перейти в каталог</p><img src="img/arrow-right-thin-black.svg" alt=""></a></div>
