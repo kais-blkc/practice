@@ -434,3 +434,32 @@ forms.forEach((form) => {
 		});
 	});
 });
+
+/* Accordion height */
+const accTitles = document.querySelectorAll(".psa__header-title");
+const accBody = document.querySelector(".psa__body");
+
+if (window.innerWidth > 900) {
+	accTitles?.forEach((item) => {
+		item.addEventListener("click", () => {
+			setTimeout(setAccHeight, 301);
+		});
+	});
+	setAccHeight();
+}
+
+// window.addEventListener("resize", () => {
+// 	if (window.innerWidth < 900) {
+// 		accBody.style.height = "auto";
+// 	}
+// });
+
+function setAccHeight(curTitle) {
+	const curAccContent = document.querySelector(".psa__content.active .psa__content-wrapper");
+	const curAccTitle = document.querySelector(".psa__header-title.active");
+	const accTitleOffsetTop = curAccTitle.getBoundingClientRect().top + window.scrollY;
+	const accBodyOffsetTop = accBody.getBoundingClientRect().top + window.scrollY;
+	const difference = accTitleOffsetTop - accBodyOffsetTop;
+
+	accBody.style.height = curAccContent.clientHeight + difference + "px";
+}
