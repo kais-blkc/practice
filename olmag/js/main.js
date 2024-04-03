@@ -448,12 +448,6 @@ if (window.innerWidth > 900) {
 	setAccHeight();
 }
 
-// window.addEventListener("resize", () => {
-// 	if (window.innerWidth < 900) {
-// 		accBody.style.height = "auto";
-// 	}
-// });
-
 function setAccHeight(curTitle) {
 	const curAccContent = document.querySelector(".psa__content.active .psa__content-wrapper");
 	const curAccTitle = document.querySelector(".psa__header-title.active");
@@ -461,5 +455,6 @@ function setAccHeight(curTitle) {
 	const accBodyOffsetTop = accBody.getBoundingClientRect().top + window.scrollY;
 	const difference = accTitleOffsetTop - accBodyOffsetTop;
 
-	accBody.style.height = curAccContent.clientHeight + difference + "px";
+	// accBody.style.height = curAccContent.clientHeight + difference + "px";
+	accBody.style.minHeight = curAccContent.clientHeight + difference + "px";
 }
